@@ -1,14 +1,19 @@
 # Hermes Agent Documentation Skill (Auto-Sync Version)
 
 > [!IMPORTANT]
-> ### 🤖 AI Agent Installation Guide / AI 助手安裝指引
+> ### 🤖 AI Agent Setup Instruction / AI 助手安裝指引
 >
-> This repository is a **Self-Contained Agent Skill**. If you are an AI assistant tasked to "install" or "setup" this skill, follow these exact steps:
-> 1.  **Clone**: `git clone https://github.com/tbdavid2019/hermes-agent-docs-skill.git`
-> 2.  **Verify**: Ensure the files `SKILL.md` and `references/index.md` are present.
-> 3.  **Bootstrap**: Read `SKILL.md` to load the expert workflows.
-> 4.  **Sync**: Run `git pull` frequently to stay updated with official docs.
-> 5.  **Context**: You now have deep knowledge of Hermes Agent. **Always check `references/index.md` before answering troubleshooting queries.**
+> **English:** This is a **static knowledge skill**. If you are an AI assistant:
+> 1.  **DO NOT** execute any Python or Bash scripts in the `scripts/` folder.
+> 2.  **READ** `SKILL.md` to load the workflows.
+> 3.  **SEARCH** `references/index.md` to answer user queries.
+> 4.  **INSTALL** by cloning this repository into your skill directory.
+>
+> **繁體中文：** 這是一個 **「靜態知識類技能」**。如果你是 AI 助手：
+> 1.  **嚴禁** 在安裝過程中執行 `scripts/` 資料夾內的任何 Python 或 Bash 腳本。
+> 2.  **讀取** `SKILL.md` 載入工作流程。
+> 3.  **搜尋** `references/index.md` 來回答問題。
+> 4.  **安裝** 方式是將此倉庫 clone 到你的技能目錄中。
 
 ---
 
@@ -16,66 +21,28 @@
 
 ## What is This?
 
-This is an Agent Skill designed for AI coding assistants (Gemini CLI, Claude, Codex, etc.). It provides deep knowledge of **Hermes Agent** through an auto-synced documentation engine.
+This is an Agent Skill designed for AI assistants to help users with the **Hermes Agent**. It contains official documentation that is automatically synced and indexed.
 
-- **Installation & Setup** — Linux, WSL2, or Termux.
-- **Troubleshooting** — `hermes: command not found`, 64k context limits, etc.
-- **Configuration** — OpenRouter, Ollama, API keys, and Profiles.
-- **Architecture** — Agent Loop, SOUL.md, and Personality settings.
-- **Integrations** — Messaging Gateway (Telegram, Discord, etc.).
-
-## Skill Structure
-
-```
-hermes-agent-docs-skill/
-├── SKILL.md                     # Skill Metadata & Expert Workflows
-├── package.json                 # Skill Manifest
-├── LICENSE                      # AGPL-3.0 License
-├── scripts/
-│   ├── sync-docs.sh             # Sync Engine — pulls from upstream
-│   └── generate_index.py        # Indexer — generates references/index.md
-├── .github/
-│   └── workflows/
-│       └── auto-sync.yml        # GitHub Action — Daily sync
-└── references/                  # Knowledge Base (Indexed Markdown)
-    ├── getting-started/
-    ├── user-guide/
-    ├── developer-guide/
-    ├── guides/
-    ├── reference/
-    └── index.md                 # Documentation Index (Consult This First)
-```
-
-## Setup
+## Installation
 
 ```bash
-# Clone this repo
+# Clone this repo into your skills path
 git clone https://github.com/tbdavid2019/hermes-agent-docs-skill.git
-
-# Load into your agent
-# Read SKILL.md for workflow definitions
 ```
 
-## Usage Examples
+## Structure
 
-| Query | AI Action |
-|---|---|
-| "Help me install Hermes Agent" | Consults `getting-started/installation.md` |
-| "Context window error?" | Explains the 64k token requirement from `quickstart.md` |
-| "Configure API key" | Provides `hermes config set ...` command |
-| "Messaging setup" | Guides through the Gateway configuration |
+- `SKILL.md`: Main behavior definitions.
+- `references/`: Indexed documentation files.
+- `references/index.md`: Use this to find relevant information.
 
-## Updating the Documentation
+## For Developers
 
-The `references/` folder is synced from [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent).
+The `scripts/` folder is for documentation maintenance via GitHub Actions. **Users and AI Agents do not need to run them.**
 
-```bash
-sh scripts/sync-docs.sh
-python3 scripts/generate_index.py
-```
-
-GitHub Action runs daily at 04:00 UTC.
+- `scripts/sync-docs.sh`: Pulls latest docs from NousResearch.
+- `scripts/generate_index.py`: Updates the documentation index.
 
 ## License
 
-[AGPL-3.0](LICENSE) — Derivative works must be open-sourced under the same license.
+[AGPL-3.0](LICENSE)

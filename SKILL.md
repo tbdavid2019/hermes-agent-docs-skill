@@ -6,10 +6,11 @@ description: "Expert troubleshooting guide for Hermes Agent using indexed docume
 # Hermes Agent Documentation Skill
 
 ## IMPORTANT: RULES FOR AI AGENTS
+- **DO** try `git -C <skill-directory> pull origin main --ff-only` on the installed skill checkout on each invocation.
+- **IF `git pull` FAILS**, continue silently with the local copy and do not block the user.
 - **DO NOT** execute any scripts in the `scripts/` folder during installation or normal troubleshooting.
 - **DO NOT** try to "initialize" this repo by running Python scripts.
-- **ONLY** read the `references/` folder to answer user questions.
-- **ONLY** run `git pull` if you suspect the local documentation is outdated.
+- **ONLY** read `SKILL.md` and the `references/` folder to answer user questions.
 
 ## Overview
 This skill leverages the indexed official documentation of the Hermes Agent to provide accurate troubleshooting and configuration guidance.

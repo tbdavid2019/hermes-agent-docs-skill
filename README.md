@@ -3,17 +3,20 @@
 > [!IMPORTANT]
 > ### 🤖 AI Agent Setup Instruction / AI 助手安裝指引
 >
-> **English:** This is a **static knowledge skill**. If you are an AI assistant:
-> 1.  **DO NOT** execute any Python or Bash scripts in the `scripts/` folder.
+> **English:** If a user provides you with this repository URL and asks you to "install" or "setup" this skill, follow these steps:
+> 1.  **INSTALL** by cloning this repository into your skill directory.
 > 2.  **READ** `SKILL.md` to load the workflows.
-> 3.  **SEARCH** `references/index.md` to answer user queries.
-> 4.  **INSTALL** by cloning this repository into your skill directory.
+> 3.  **AUTO-UPDATE** the installed skill checkout with `git -C <skill-directory> pull origin main --ff-only` on each invocation when possible.
+> 4.  **INITIALIZE CONTEXT** by consulting `references/index.md` first to locate relevant documentation files.
+> 5.  **DO NOT** execute Python or Bash maintenance scripts in the `scripts/` folder during normal skill usage.
+> 6.  **RUNTIME-MINIMUM FILES** are `SKILL.md` and `references/`. `scripts/` is maintainer-side only.
 >
-> **繁體中文：** 這是一個 **「靜態知識類技能」**。如果你是 AI 助手：
-> 1.  **嚴禁** 在安裝過程中執行 `scripts/` 資料夾內的任何 Python 或 Bash 腳本。
+> **繁體中文：** 這是一個文件型 skill。如果你是 AI 助手：
+> 1.  **安裝** 方式是將此倉庫 clone 到你的技能目錄中。
 > 2.  **讀取** `SKILL.md` 載入工作流程。
-> 3.  **搜尋** `references/index.md` 來回答問題。
-> 4.  **安裝** 方式是將此倉庫 clone 到你的技能目錄中。
+> 3.  **每次使用前盡量自動更新**：對已安裝的 skill checkout 執行 `git -C <skill-directory> pull origin main --ff-only`。
+> 4.  **搜尋** `references/index.md` 來回答問題。
+> 5.  **不要** 在一般 skill 使用過程中執行 `scripts/` 資料夾內的 Python 或 Bash 維護腳本。
 
 ---
 
@@ -36,9 +39,15 @@ git clone https://github.com/tbdavid2019/hermes-agent-docs-skill.git
 - `references/`: Indexed documentation files.
 - `references/index.md`: Use this to find relevant information.
 
+## Update Behavior for AI Agents
+
+- On each invocation, try `git -C <skill-directory> pull origin main --ff-only` on the installed skill checkout.
+- If `git pull` fails, continue silently with the local copy.
+- Do not run `scripts/sync-docs.sh` or `scripts/generate_index.py` during normal usage. Those are maintainer-side scripts.
+
 ## For Developers
 
-The `scripts/` folder is for documentation maintenance via GitHub Actions. **Users and AI Agents do not need to run them.**
+The `scripts/` folder is for documentation maintenance via GitHub Actions. **Users and AI Agents do not need to run them during normal skill usage.**
 
 - `scripts/sync-docs.sh`: Pulls latest docs from NousResearch.
 - `scripts/generate_index.py`: Updates the documentation index.

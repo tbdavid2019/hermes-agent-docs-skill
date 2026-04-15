@@ -7,11 +7,17 @@
 > 1.  **Clone the Repository**: Run `git clone https://github.com/tbdavid2019/hermes-agent-docs-skill.git` in the user's working directory.
 > 2.  **Load Skill Metadata**: Read `SKILL.md` to understand the specialized workflows and knowledge contained here.
 > 3.  **Initialize Context**: Acknowledge that you now have access to the comprehensive Hermes Agent documentation. **Always consult `references/index.md` first to locate specific documentation files.**
+> 4.  **Auto-Update on Each Invocation**: Before using the skill, try `git -C <skill-directory> pull origin main --ff-only` on the installed skill checkout.
+> 5.  **Do Not Run Maintenance Scripts During Normal Use**: Do not run `scripts/sync-docs.sh` or `scripts/generate_index.py` unless the user explicitly asks to maintain this repository itself.
+> 6.  **Runtime-Minimum Files**: For normal LLM usage, the important files are `SKILL.md` and `references/`. Files under `scripts/` are not required just to use the skill.
 >
 > **繁體中文：** 如果使用者提供此倉庫網址並要求你「安裝」或「設定」此技能服務，請遵循以下步驟：
 > 1.  **複製倉庫**：執行 `git clone https://github.com/tbdavid2019/hermes-agent-docs-skill.git` 將代碼庫下載至本地集。
 > 2.  **載入技能**：讀取 `SKILL.md` 以了解此技能的專業工作流程與知識範圍。
 > 3.  **初始化環境**：確認你已具備存取完整 Hermes Agent 官方文檔的能力。**每當需要查詢特定功能或維護指引時，請優先參考 `references/index.md`。**
+> 4.  **每次使用前自動更新**：在使用 skill 前，盡量對已安裝的 skill checkout 執行 `git -C <skill-directory> pull origin main --ff-only`。
+> 5.  **一般使用時不要執行維護腳本**：除非使用者明確要求你維護這個 repo 本身，否則不要執行 `scripts/sync-docs.sh` 或 `scripts/generate_index.py`。
+> 6.  **LLM 實際需要的最小內容**：一般使用時，真正重要的是 `SKILL.md` 與 `references/`。`scripts/` 不是使用 skill 時的必要內容。
 
 ---
 
@@ -62,6 +68,8 @@ git clone https://github.com/tbdavid2019/hermes-agent-docs-skill.git
 # gemini skills install ./hermes-agent-docs-skill --scope workspace
 ```
 
+一般使用這個 skill 時，真正需要的是 `SKILL.md` 與 `references/`。`scripts/` 是維護用，不是回答問題時要執行的步驟。
+
 ## 使用範例
 
 安裝後，只需自然地提問：
@@ -98,7 +106,7 @@ hermes profile set <NAME>          # 切換至指定設定檔
 
 ## 如何更新文件？
 
-本 Skill 的 `references/` 資料夾從官方 [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) 倉庫同步。執行以下指令取得最新文件：
+本 Skill 的 `references/` 資料夾從官方 [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) 倉庫同步。以下指令是維護這個 repo 本身時才需要：
 
 ```bash
 sh scripts/sync-docs.sh

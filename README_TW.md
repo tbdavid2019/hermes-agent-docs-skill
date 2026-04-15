@@ -74,6 +74,28 @@ git clone https://github.com/tbdavid2019/hermes-agent-docs-skill.git
 | 「SOUL.md 是如何運作的？」 | 深入探討 Agent Loop 與 Personality 文件內容 |
 | 「設定 Telegram 訊息整合」 | 引導完成 Messaging Gateway 配置 |
 
+## 快速指令參考
+
+```bash
+# 狀態與診斷
+hermes version                     # 檢查版本
+hermes status                      # 檢查當前設定檔與配置
+hermes doctor                      # 執行自動診斷套件
+
+# 配置管理
+hermes config set <KEY> <VALUE>    # 手動設定配置項
+hermes config check                # 驗證當前配置
+hermes config migrate              # 將舊版配置遷移至新版
+
+# 模型
+hermes model                       # 互動式設定模型提供商
+# 註：模型至少需要 64,000 token 的上下文窗口
+
+# 設定檔 (Profiles)
+hermes profile list                # 列出所有設定檔
+hermes profile set <NAME>          # 切換至指定設定檔
+```
+
 ## 如何更新文件？
 
 本 Skill 的 `references/` 資料夾從官方 [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) 倉庫同步。執行以下指令取得最新文件：
@@ -83,13 +105,44 @@ sh scripts/sync-docs.sh
 python3 scripts/generate_index.py
 ```
 
+或在 [GitHub Actions](https://github.com/tbdavid2019/hermes-agent-docs-skill/actions) 頁籤中觸發 **Auto-Sync Documentation** 工作流程。
+
 GitHub Action 每天 UTC 04:00 自動執行，無需手動介入。
 
 ## 文件來源
 
 本 Skill 知識庫來自官方 Hermes Agent 文檔：
-- [Hermes Agent Docs](https://github.com/NousResearch/hermes-agent/tree/main/website/docs)
+- [Getting Started](https://github.com/NousResearch/hermes-agent/tree/main/website/docs/getting-started)
+- [User Guide](https://github.com/NousResearch/hermes-agent/tree/main/website/docs/user-guide)
+- [Developer Guide](https://github.com/NousResearch/hermes-agent/tree/main/website/docs/developer-guide)
+- [Reference](https://github.com/NousResearch/hermes-agent/tree/main/website/docs/reference)
+
+## 貢獻
+
+歡迎提交 Issues 和 PR！特別期待以下方面的貢獻：
+- `SKILL.md` — Agent 的推理邏輯與診斷流程
+- `scripts/sync-docs.sh` — 同步引擎效率優化
+- `references/` — 精選文件品質提升
+
+```
+┌─────────────────────────────────────────────────┐
+│        NousResearch/hermes-agent (官方源頭)      │
+│              /website/docs 資料夾每日更新       │
+└────────────────────┬────────────────────────────┘
+                     │ GitHub Action 每日 04:00 UTC
+                     ▼
+┌─────────────────────────────────────────────────┐
+│    tbdavid2019/hermes-agent-docs-skill          │
+│    最新文件永遠保持同步                          │
+└────────────────────┬────────────────────────────┘
+                     │ 使用者 git clone 一次
+                     ▼
+┌─────────────────────────────────────────────────┐
+│   LLM 本地 Skill (~/.gemini/skills/hermes)     │
+│   參考 references/index.md 進行問題修復         │
+└─────────────────────────────────────────────────┘
+```
 
 ## 授權
 
-[MIT](LICENSE) — Hermes Agent 文件來源於官方 NousResearch/hermes-agent 倉庫。
+[AGPL-3.0](LICENSE) — 任何衍生作品均須以相同授權開源。Hermes Agent 文件來源於官方 [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) 倉庫。

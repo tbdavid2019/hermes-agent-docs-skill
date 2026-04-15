@@ -74,22 +74,76 @@ Once installed, just ask naturally:
 | "How does SOUL.md work?" | Deep dives into the Agent Loop and Personality docs |
 | "Set up Telegram messaging" | Guides through the Messaging Gateway configuration |
 
+## Key Commands Quick Reference
+
+```bash
+# Status & Diagnostics
+hermes version                     # Check version
+hermes status                      # Check active profile and config
+hermes doctor                      # Run automated diagnostic suite
+
+# Configuration
+hermes config set <KEY> <VALUE>    # Manually set a config key
+hermes config check                # Validate current configuration
+hermes config migrate              # Migrate old config to current version
+
+# Models
+hermes model                       # Interactively configure model provider
+# Note: Requires 64,000 token context window minimum
+
+# Profiles
+hermes profile list                # List all profiles
+hermes profile set <NAME>          # Switch to a specific profile
+```
+
 ## Updating the Documentation
 
-This skill's `references/` folder is synced from the official [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) repository. To get the latest docs:
+This skill's `references/` folder is synced from the official NousResearch/hermes-agent repository. To get the latest docs:
 
 ```bash
 sh scripts/sync-docs.sh
 python3 scripts/generate_index.py
 ```
 
-The GitHub Action runs automatically every day at 04:00 UTC.
+Or trigger the **Auto-Sync Documentation** workflow in the [GitHub Actions](https://github.com/tbdavid2019/hermes-agent-docs-skill/actions) tab.
+
+The GitHub Action runs automatically every day at 04:00 UTC — no manual intervention needed.
 
 ## Documentation Source
 
-This skill's knowledge base is built from the official Hermes Agent documentation:
-- [Hermes Agent Docs](https://github.com/NousResearch/hermes-agent/tree/main/website/docs)
+This skill's knowledge base is built from the official [Hermes Agent Documentation](https://github.com/NousResearch/hermes-agent/tree/main/website/docs), covering:
+
+- [Getting Started](https://github.com/NousResearch/hermes-agent/tree/main/website/docs/getting-started)
+- [User Guide](https://github.com/NousResearch/hermes-agent/tree/main/website/docs/user-guide)
+- [Developer Guide](https://github.com/NousResearch/hermes-agent/tree/main/website/docs/developer-guide)
+- [Reference](https://github.com/NousResearch/hermes-agent/tree/main/website/docs/reference)
+
+## Contributing
+
+Issues and PRs welcome! Contributions that improve:
+- `SKILL.md` — the agent's reasoning and diagnostic logic
+- `scripts/sync-docs.sh` — the sync engine efficiency
+- `references/` — curated documentation quality
+
+```
+┌─────────────────────────────────────────────────┐
+│        NousResearch/hermes-agent (Upstream)      │
+│              /website/docs Daily Update         │
+└────────────────────┬────────────────────────────┘
+                     │ GitHub Action Daily 04:00 UTC
+                     ▼
+┌─────────────────────────────────────────────────┐
+│    tbdavid2019/hermes-agent-docs-skill          │
+│    Fresh documentation kept in sync             │
+└────────────────────┬────────────────────────────┘
+                     │ git clone by user
+                     ▼
+┌─────────────────────────────────────────────────┐
+│   LLM Local Skill (~/.gemini/skills/hermes)     │
+│   Consults references/index.md for fixes        │
+└─────────────────────────────────────────────────┘
+```
 
 ## License
 
-[MIT](LICENSE) — Hermes Agent documentation is sourced from the official NousResearch/hermes-agent repository.
+[AGPL-3.0](LICENSE) — Any derivative work must also be open-sourced under the same license. Hermes Agent documentation is sourced from the official [Hermes Agent repository](https://github.com/NousResearch/hermes-agent).

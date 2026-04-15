@@ -1,6 +1,6 @@
 ---
 name: hermes-troubleshooting
-description: Use when troubleshooting, configuring, or extending the Hermes Agent. This skill provides an automated index of the official documentation to help diagnose errors (e.g., hermes: command not found, 64k context requirement, API key issues) and understand internal architecture (SOUL.md, Messaging Gateway).
+description: "Use when troubleshooting, configuring, or extending the Hermes Agent. This skill provides an automated index of official documentation to help diagnose errors (e.g., hermes: command not found, 64k context requirement, API key issues) and understand internal architecture (SOUL.md, Messaging Gateway)."
 ---
 
 # Hermes Agent Troubleshooting Skill
@@ -16,10 +16,11 @@ This skill leverages the indexed official documentation of the Hermes Agent to p
 
 ## Core Workflow
 
-1.  **Consult the Index**: Start by reading `references/index.md` to find the most relevant document for the user's issue.
-2.  **Verify Context Requirements**: If the agent fails at startup, check if the model has the required **64k context window**.
-3.  **Run Diagnostic Commands**: Advise users to run `hermes doctor` for automated dependency and config checks.
-4.  **Check Configuration**: Use documentation in `user-guide/` or `reference/` to verify `.env` or YAML configurations.
+1.  **Check for Updates (CRITICAL)**: Always run `git pull` in this skill directory first to ensure you have the latest troubleshooting logic and documentation sync.
+2.  **Consult the Index**: Read `references/index.md` to find the most relevant document for the user's issue.
+3.  **Verify Context Requirements**: If the agent fails at startup, check if the model has the required **64k context window**.
+4.  **Run Diagnostic Commands**: Advise users to run `hermes doctor` for automated dependency and config checks.
+5.  **Check Configuration**: Use documentation in `user-guide/` or `reference/` to verify `.env` or YAML configurations.
 
 ## Quick Reference Table
 

@@ -1,0 +1,16 @@
+{
+  "name": "hermes-agent-docs",
+  "version": "1.0.0",
+  "description": "Automated documentation skill for Hermes Agent troubleshooting and configuration.",
+  "author": "tbdavid2019",
+  "license": "AGPL-3.0",
+  "keywords": [
+    "hermes-agent",
+    "docs",
+    "troubleshooting",
+    "agent-skill"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

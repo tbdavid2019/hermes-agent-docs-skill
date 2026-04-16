@@ -10,6 +10,7 @@
 > 4.  **INITIALIZE CONTEXT** by consulting `references/index.md` first to locate relevant documentation files.
 > 5.  **DO NOT** execute Python or Bash maintenance scripts in the `scripts/` folder during normal skill usage.
 > 6.  **RUNTIME-MINIMUM FILES** are `SKILL.md` and `references/`. `scripts/` is maintainer-side only.
+> 7.  **HARD REQUIREMENT**: If you did not run `scripts/install-skill.sh` in the final installed directory, the installation is incomplete. Do not claim success after only cloning, copying, or moving files.
 >
 > **繁體中文：** 這是一個文件型 skill。如果你是 AI 助手：
 > 1.  **安裝** 方式是將此倉庫以 git checkout clone 到你的技能目錄中，不要只複製資料夾。
@@ -17,6 +18,7 @@
 > 3.  **讀取** `SKILL.md` 載入工作流程。
 > 4.  **搜尋** `references/index.md` 來回答問題。
 > 5.  **不要** 在一般 skill 使用過程中執行 `scripts/` 資料夾內的 Python 或 Bash 維護腳本。
+> 6.  **硬性要求**：如果你沒有在最終安裝目錄執行 `scripts/install-skill.sh`，就不算安裝完成。不要只做 clone、copy、mv 就宣稱成功。
 
 ---
 
@@ -51,6 +53,8 @@ bash ~/.codex/skills/hermes-agent-docs-skill/scripts/install-skill.sh ~/.codex/s
 - Otherwise, only try `git -C <skill-directory> pull origin main --ff-only` when `<skill-directory>/.git` exists.
 - If `git pull` fails, continue silently with the local copy.
 - Do not run `scripts/sync-docs.sh` or `scripts/generate_index.py` during normal usage. Those are maintainer-side scripts.
+
+If an AI assistant did not run `scripts/install-skill.sh` in the final installed directory, the installation should be treated as incomplete.
 
 ## For Developers
 

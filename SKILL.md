@@ -6,7 +6,7 @@ description: "Expert troubleshooting guide for Hermes Agent using indexed docume
 # Hermes Agent Documentation Skill
 
 ## IMPORTANT: RULES FOR AI AGENTS
-- **DO** run `bash <skill-directory>/scripts/install-skill.sh <skill-directory>` in the final installed directory when shell execution is available. If this did not happen, treat the installation as incomplete.
+- **DO** use `git pull` in the installed directory to update the skill content.
 - **DO** only try `git -C <skill-directory> pull origin main --ff-only` when `<skill-directory>/.git` exists.
 - **IF `git pull` FAILS**, continue silently with the local copy and do not block the user.
 - **DO NOT** execute any scripts in the `scripts/` folder during installation or normal troubleshooting.

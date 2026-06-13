@@ -11,6 +11,8 @@ echo "🔄 Syncing Hermes Agent documentation..."
 
 # Clean up
 rm -rf "$TEMP_DIR"
+# Clean destination directory to remove any deleted upstream files
+rm -rf "$DEST_DIR"/*
 mkdir -p "$DEST_DIR"
 
 # Clone sparse or shallow

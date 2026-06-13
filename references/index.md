@@ -20,10 +20,6 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Windows (Native) Guide](user-guide/windows-native.md)
 *   [Windows (WSL2) Guide](user-guide/windows-wsl-quickstart.md)
 
-## User-Guide / Secrets
-
-*   [Bitwarden Secrets Manager](user-guide/secrets/bitwarden.md)
-
 ## User-Guide / Features
 
 *   [ACP Editor Integration](user-guide/features/acp.md)
@@ -73,43 +69,46 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Web Search & Extract](user-guide/features/web-search.md)
 *   [X (Twitter) Search](user-guide/features/x-search.md)
 
+## User-Guide / Messaging
+
+*   [BlueBubbles (iMessage)](user-guide/messaging/bluebubbles.md)
+*   [DingTalk Setup](user-guide/messaging/dingtalk.md)
+*   [Discord Setup](user-guide/messaging/discord.md)
+*   [Email Setup](user-guide/messaging/email.md)
+*   [Feishu / Lark Setup](user-guide/messaging/feishu.md)
+*   [Google Chat Setup](user-guide/messaging/google_chat.md)
+*   [Home Assistant Integration](user-guide/messaging/homeassistant.md)
+*   [LINE Setup](user-guide/messaging/line.md)
+*   [Matrix Setup](user-guide/messaging/matrix.md)
+*   [Mattermost Setup](user-guide/messaging/mattermost.md)
+*   [Microsoft Graph Webhook Listener](user-guide/messaging/msgraph-webhook.md)
+*   [ntfy](user-guide/messaging/ntfy.md)
+*   [Open WebUI Integration](user-guide/messaging/open-webui.md)
+*   [Photon iMessage](user-guide/messaging/photon.md)
+*   [QQ Bot](user-guide/messaging/qqbot.md)
+*   [Signal Setup](user-guide/messaging/signal.md)
+*   [SimpleX Chat](user-guide/messaging/simplex.md)
+*   [Slack Setup](user-guide/messaging/slack.md)
+*   [SMS Setup (Twilio)](user-guide/messaging/sms.md)
+*   [Microsoft Teams Meetings](user-guide/messaging/teams-meetings.md)
+*   [Microsoft Teams Setup](user-guide/messaging/teams.md)
+*   [Telegram Setup](user-guide/messaging/telegram.md)
+*   [Webhooks](user-guide/messaging/webhooks.md)
+*   [WeCom Callback (Self-Built App)](user-guide/messaging/wecom-callback.md)
+*   [WeCom (Enterprise WeChat)](user-guide/messaging/wecom.md)
+*   [Weixin (WeChat)](user-guide/messaging/weixin.md)
+*   [WhatsApp Business Cloud API Setup](user-guide/messaging/whatsapp-cloud.md)
+*   [WhatsApp Setup](user-guide/messaging/whatsapp.md)
+*   [Yuanbao](user-guide/messaging/yuanbao.md)
+
+## User-Guide / Secrets
+
+*   [Bitwarden Secrets Manager](user-guide/secrets/bitwarden.md)
+
 ## User-Guide / Skills
 
 *   [G0DM0D3 — Godmode Jailbreaking Skill](user-guide/skills/godmode.md)
 *   [Google Workspace Skill](user-guide/skills/google-workspace.md)
-
-## User-Guide / Skills / Bundled / Apple
-
-*   [Apple Notes](user-guide/skills/bundled/apple/apple-apple-notes.md)
-*   [Apple Reminders](user-guide/skills/bundled/apple/apple-apple-reminders.md)
-*   [Findmy](user-guide/skills/bundled/apple/apple-findmy.md)
-*   [Imessage](user-guide/skills/bundled/apple/apple-imessage.md)
-*   [Macos Computer Use](user-guide/skills/bundled/apple/apple-macos-computer-use.md)
-
-## User-Guide / Skills / Bundled / Research
-
-*   [Arxiv](user-guide/skills/bundled/research/research-arxiv.md)
-*   [Blogwatcher](user-guide/skills/bundled/research/research-blogwatcher.md)
-*   [Llm Wiki](user-guide/skills/bundled/research/research-llm-wiki.md)
-*   [Polymarket](user-guide/skills/bundled/research/research-polymarket.md)
-*   [Research Paper Writing](user-guide/skills/bundled/research/research-research-paper-writing.md)
-
-## User-Guide / Skills / Bundled / Social-Media
-
-*   [Xurl](user-guide/skills/bundled/social-media/social-media-xurl.md)
-
-## User-Guide / Skills / Bundled / Devops
-
-*   [Kanban Orchestrator](user-guide/skills/bundled/devops/devops-kanban-orchestrator.md)
-*   [Kanban Worker](user-guide/skills/bundled/devops/devops-kanban-worker.md)
-
-## User-Guide / Skills / Bundled / Yuanbao
-
-*   [Yuanbao](user-guide/skills/bundled/yuanbao/yuanbao-yuanbao.md)
-
-## User-Guide / Skills / Bundled / Data-Science
-
-*   [Jupyter Live Kernel](user-guide/skills/bundled/data-science/data-science-jupyter-live-kernel.md)
 
 ## User-Guide / Skills / Bundled / Software-Development
 
@@ -123,15 +122,13 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Systematic Debugging](user-guide/skills/bundled/software-development/software-development-systematic-debugging.md)
 *   [Test Driven Development](user-guide/skills/bundled/software-development/software-development-test-driven-development.md)
 
-## User-Guide / Skills / Bundled / Mlops
+## User-Guide / Skills / Bundled / Apple
 
-*   [Evaluating Llms Harness](user-guide/skills/bundled/mlops/mlops-evaluation-lm-evaluation-harness.md)
-*   [Weights And Biases](user-guide/skills/bundled/mlops/mlops-evaluation-weights-and-biases.md)
-*   [Huggingface Hub](user-guide/skills/bundled/mlops/mlops-huggingface-hub.md)
-*   [Llama Cpp](user-guide/skills/bundled/mlops/mlops-inference-llama-cpp.md)
-*   [Serving Llms Vllm](user-guide/skills/bundled/mlops/mlops-inference-vllm.md)
-*   [Audiocraft Audio Generation](user-guide/skills/bundled/mlops/mlops-models-audiocraft.md)
-*   [Segment Anything Model](user-guide/skills/bundled/mlops/mlops-models-segment-anything.md)
+*   [Apple Notes](user-guide/skills/bundled/apple/apple-apple-notes.md)
+*   [Apple Reminders](user-guide/skills/bundled/apple/apple-apple-reminders.md)
+*   [Findmy](user-guide/skills/bundled/apple/apple-findmy.md)
+*   [Imessage](user-guide/skills/bundled/apple/apple-imessage.md)
+*   [Macos Computer Use](user-guide/skills/bundled/apple/apple-macos-computer-use.md)
 
 ## User-Guide / Skills / Bundled / Github
 
@@ -142,9 +139,24 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Github Pr Workflow](user-guide/skills/bundled/github/github-github-pr-workflow.md)
 *   [Github Repo Management](user-guide/skills/bundled/github/github-github-repo-management.md)
 
-## User-Guide / Skills / Bundled / Note-Taking
+## User-Guide / Skills / Bundled / Data-Science
 
-*   [Obsidian](user-guide/skills/bundled/note-taking/note-taking-obsidian.md)
+*   [Jupyter Live Kernel](user-guide/skills/bundled/data-science/data-science-jupyter-live-kernel.md)
+
+## User-Guide / Skills / Bundled / Productivity
+
+*   [Airtable](user-guide/skills/bundled/productivity/productivity-airtable.md)
+*   [Google Workspace](user-guide/skills/bundled/productivity/productivity-google-workspace.md)
+*   [Maps](user-guide/skills/bundled/productivity/productivity-maps.md)
+*   [Nano Pdf](user-guide/skills/bundled/productivity/productivity-nano-pdf.md)
+*   [Notion](user-guide/skills/bundled/productivity/productivity-notion.md)
+*   [Ocr And Documents](user-guide/skills/bundled/productivity/productivity-ocr-and-documents.md)
+*   [Powerpoint](user-guide/skills/bundled/productivity/productivity-powerpoint.md)
+*   [Teams Meeting Pipeline](user-guide/skills/bundled/productivity/productivity-teams-meeting-pipeline.md)
+
+## User-Guide / Skills / Bundled / Email
+
+*   [Himalaya](user-guide/skills/bundled/email/email-himalaya.md)
 
 ## User-Guide / Skills / Bundled / Creative
 
@@ -165,13 +177,39 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Songwriting And Ai Music](user-guide/skills/bundled/creative/creative-songwriting-and-ai-music.md)
 *   [Touchdesigner Mcp](user-guide/skills/bundled/creative/creative-touchdesigner-mcp.md)
 
-## User-Guide / Skills / Bundled / Email
-
-*   [Himalaya](user-guide/skills/bundled/email/email-himalaya.md)
-
 ## User-Guide / Skills / Bundled / Smart-Home
 
 *   [Openhue](user-guide/skills/bundled/smart-home/smart-home-openhue.md)
+
+## User-Guide / Skills / Bundled / Devops
+
+*   [Kanban Orchestrator](user-guide/skills/bundled/devops/devops-kanban-orchestrator.md)
+*   [Kanban Worker](user-guide/skills/bundled/devops/devops-kanban-worker.md)
+
+## User-Guide / Skills / Bundled / Dogfood
+
+*   [Dogfood](user-guide/skills/bundled/dogfood/dogfood-dogfood.md)
+
+## User-Guide / Skills / Bundled / Social-Media
+
+*   [Xurl](user-guide/skills/bundled/social-media/social-media-xurl.md)
+
+## User-Guide / Skills / Bundled / Mlops
+
+*   [Evaluating Llms Harness](user-guide/skills/bundled/mlops/mlops-evaluation-lm-evaluation-harness.md)
+*   [Weights And Biases](user-guide/skills/bundled/mlops/mlops-evaluation-weights-and-biases.md)
+*   [Huggingface Hub](user-guide/skills/bundled/mlops/mlops-huggingface-hub.md)
+*   [Llama Cpp](user-guide/skills/bundled/mlops/mlops-inference-llama-cpp.md)
+*   [Serving Llms Vllm](user-guide/skills/bundled/mlops/mlops-inference-vllm.md)
+*   [Audiocraft Audio Generation](user-guide/skills/bundled/mlops/mlops-models-audiocraft.md)
+*   [Segment Anything Model](user-guide/skills/bundled/mlops/mlops-models-segment-anything.md)
+
+## User-Guide / Skills / Bundled / Media
+
+*   [Gif Search](user-guide/skills/bundled/media/media-gif-search.md)
+*   [Heartmula](user-guide/skills/bundled/media/media-heartmula.md)
+*   [Songsee](user-guide/skills/bundled/media/media-songsee.md)
+*   [Youtube Content](user-guide/skills/bundled/media/media-youtube-content.md)
 
 ## User-Guide / Skills / Bundled / Autonomous-Ai-Agents
 
@@ -181,46 +219,58 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Kanban Codex Lane](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-kanban-codex-lane.md)
 *   [Opencode](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-opencode.md)
 
-## User-Guide / Skills / Bundled / Dogfood
+## User-Guide / Skills / Bundled / Note-Taking
 
-*   [Dogfood](user-guide/skills/bundled/dogfood/dogfood-dogfood.md)
+*   [Obsidian](user-guide/skills/bundled/note-taking/note-taking-obsidian.md)
 
-## User-Guide / Skills / Bundled / Productivity
+## User-Guide / Skills / Bundled / Research
 
-*   [Airtable](user-guide/skills/bundled/productivity/productivity-airtable.md)
-*   [Google Workspace](user-guide/skills/bundled/productivity/productivity-google-workspace.md)
-*   [Maps](user-guide/skills/bundled/productivity/productivity-maps.md)
-*   [Nano Pdf](user-guide/skills/bundled/productivity/productivity-nano-pdf.md)
-*   [Notion](user-guide/skills/bundled/productivity/productivity-notion.md)
-*   [Ocr And Documents](user-guide/skills/bundled/productivity/productivity-ocr-and-documents.md)
-*   [Powerpoint](user-guide/skills/bundled/productivity/productivity-powerpoint.md)
-*   [Teams Meeting Pipeline](user-guide/skills/bundled/productivity/productivity-teams-meeting-pipeline.md)
+*   [Arxiv](user-guide/skills/bundled/research/research-arxiv.md)
+*   [Blogwatcher](user-guide/skills/bundled/research/research-blogwatcher.md)
+*   [Llm Wiki](user-guide/skills/bundled/research/research-llm-wiki.md)
+*   [Polymarket](user-guide/skills/bundled/research/research-polymarket.md)
+*   [Research Paper Writing](user-guide/skills/bundled/research/research-research-paper-writing.md)
 
-## User-Guide / Skills / Bundled / Media
+## User-Guide / Skills / Bundled / Yuanbao
 
-*   [Gif Search](user-guide/skills/bundled/media/media-gif-search.md)
-*   [Heartmula](user-guide/skills/bundled/media/media-heartmula.md)
-*   [Songsee](user-guide/skills/bundled/media/media-songsee.md)
-*   [Youtube Content](user-guide/skills/bundled/media/media-youtube-content.md)
+*   [Yuanbao](user-guide/skills/bundled/yuanbao/yuanbao-yuanbao.md)
 
-## User-Guide / Skills / Optional / Research
+## User-Guide / Skills / Optional / Software-Development
 
-*   [Bioinformatics](user-guide/skills/optional/research/research-bioinformatics.md)
-*   [Darwinian Evolver](user-guide/skills/optional/research/research-darwinian-evolver.md)
-*   [Domain Intel](user-guide/skills/optional/research/research-domain-intel.md)
-*   [Drug Discovery](user-guide/skills/optional/research/research-drug-discovery.md)
-*   [Duckduckgo Search](user-guide/skills/optional/research/research-duckduckgo-search.md)
-*   [Gitnexus Explorer](user-guide/skills/optional/research/research-gitnexus-explorer.md)
-*   [Osint Investigation](user-guide/skills/optional/research/research-osint-investigation.md)
-*   [Parallel Cli](user-guide/skills/optional/research/research-parallel-cli.md)
-*   [Qmd](user-guide/skills/optional/research/research-qmd.md)
-*   [Scrapling](user-guide/skills/optional/research/research-scrapling.md)
-*   [Searxng Search](user-guide/skills/optional/research/research-searxng-search.md)
+*   [Code Wiki](user-guide/skills/optional/software-development/software-development-code-wiki.md)
+*   [Rest Graphql Debug](user-guide/skills/optional/software-development/software-development-rest-graphql-debug.md)
+*   [Subagent Driven Development](user-guide/skills/optional/software-development/software-development-subagent-driven-development.md)
 
-## User-Guide / Skills / Optional / Gaming
+## User-Guide / Skills / Optional / Productivity
 
-*   [Minecraft Modpack Server](user-guide/skills/optional/gaming/gaming-minecraft-modpack-server.md)
-*   [Pokemon Player](user-guide/skills/optional/gaming/gaming-pokemon-player.md)
+*   [Canvas](user-guide/skills/optional/productivity/productivity-canvas.md)
+*   [Here.Now](user-guide/skills/optional/productivity/productivity-here-now.md)
+*   [Memento Flashcards](user-guide/skills/optional/productivity/productivity-memento-flashcards.md)
+*   [Shop App](user-guide/skills/optional/productivity/productivity-shop-app.md)
+*   [Shopify](user-guide/skills/optional/productivity/productivity-shopify.md)
+*   [Siyuan](user-guide/skills/optional/productivity/productivity-siyuan.md)
+*   [Telephony](user-guide/skills/optional/productivity/productivity-telephony.md)
+
+## User-Guide / Skills / Optional / Email
+
+*   [Agentmail](user-guide/skills/optional/email/email-agentmail.md)
+
+## User-Guide / Skills / Optional / Creative
+
+*   [Baoyu Article Illustrator](user-guide/skills/optional/creative/creative-baoyu-article-illustrator.md)
+*   [Baoyu Comic](user-guide/skills/optional/creative/creative-baoyu-comic.md)
+*   [Blender Mcp](user-guide/skills/optional/creative/creative-blender-mcp.md)
+*   [Concept Diagrams](user-guide/skills/optional/creative/creative-concept-diagrams.md)
+*   [Ideation](user-guide/skills/optional/creative/creative-creative-ideation.md)
+*   [Hyperframes](user-guide/skills/optional/creative/creative-hyperframes.md)
+*   [Kanban Video Orchestrator](user-guide/skills/optional/creative/creative-kanban-video-orchestrator.md)
+*   [Meme Generation](user-guide/skills/optional/creative/creative-meme-generation.md)
+*   [Pixel Art](user-guide/skills/optional/creative/creative-pixel-art.md)
+
+## User-Guide / Skills / Optional / Mcp
+
+*   [Fastmcp](user-guide/skills/optional/mcp/mcp-fastmcp.md)
+*   [Mcporter](user-guide/skills/optional/mcp/mcp-mcporter.md)
 
 ## User-Guide / Skills / Optional / Devops
 
@@ -230,24 +280,20 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Pinggy Tunnel](user-guide/skills/optional/devops/devops-pinggy-tunnel.md)
 *   [Watchers](user-guide/skills/optional/devops/devops-watchers.md)
 
-## User-Guide / Skills / Optional / Security
+## User-Guide / Skills / Optional / Dogfood
 
-*   [1Password](user-guide/skills/optional/security/security-1password.md)
-*   [Godmode](user-guide/skills/optional/security/security-godmode.md)
-*   [Oss Forensics](user-guide/skills/optional/security/security-oss-forensics.md)
-*   [Sherlock](user-guide/skills/optional/security/security-sherlock.md)
-*   [Web Pentest](user-guide/skills/optional/security/security-web-pentest.md)
+*   [Adversarial Ux Test](user-guide/skills/optional/dogfood/dogfood-adversarial-ux-test.md)
 
-## User-Guide / Skills / Optional / Software-Development
+## User-Guide / Skills / Optional / Finance
 
-*   [Code Wiki](user-guide/skills/optional/software-development/software-development-code-wiki.md)
-*   [Rest Graphql Debug](user-guide/skills/optional/software-development/software-development-rest-graphql-debug.md)
-*   [Subagent Driven Development](user-guide/skills/optional/software-development/software-development-subagent-driven-development.md)
-
-## User-Guide / Skills / Optional / Health
-
-*   [Fitness Nutrition](user-guide/skills/optional/health/health-fitness-nutrition.md)
-*   [Neuroskill Bci](user-guide/skills/optional/health/health-neuroskill-bci.md)
+*   [3 Statement Model](user-guide/skills/optional/finance/finance-3-statement-model.md)
+*   [Comps Analysis](user-guide/skills/optional/finance/finance-comps-analysis.md)
+*   [Dcf Model](user-guide/skills/optional/finance/finance-dcf-model.md)
+*   [Excel Author](user-guide/skills/optional/finance/finance-excel-author.md)
+*   [Lbo Model](user-guide/skills/optional/finance/finance-lbo-model.md)
+*   [Merger Model](user-guide/skills/optional/finance/finance-merger-model.md)
+*   [Pptx Author](user-guide/skills/optional/finance/finance-pptx-author.md)
+*   [Stocks](user-guide/skills/optional/finance/finance-stocks.md)
 
 ## User-Guide / Skills / Optional / Mlops
 
@@ -282,55 +328,19 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Unsloth](user-guide/skills/optional/mlops/mlops-training-unsloth.md)
 *   [Whisper](user-guide/skills/optional/mlops/mlops-whisper.md)
 
-## User-Guide / Skills / Optional / Mcp
+## User-Guide / Skills / Optional / Migration
 
-*   [Fastmcp](user-guide/skills/optional/mcp/mcp-fastmcp.md)
-*   [Mcporter](user-guide/skills/optional/mcp/mcp-mcporter.md)
+*   [Openclaw Migration](user-guide/skills/optional/migration/migration-openclaw-migration.md)
+
+## User-Guide / Skills / Optional / Communication
+
+*   [One Three One Rule](user-guide/skills/optional/communication/communication-one-three-one-rule.md)
 
 ## User-Guide / Skills / Optional / Blockchain
 
 *   [Evm](user-guide/skills/optional/blockchain/blockchain-evm.md)
 *   [Hyperliquid](user-guide/skills/optional/blockchain/blockchain-hyperliquid.md)
 *   [Solana](user-guide/skills/optional/blockchain/blockchain-solana.md)
-
-## User-Guide / Skills / Optional / Finance
-
-*   [3 Statement Model](user-guide/skills/optional/finance/finance-3-statement-model.md)
-*   [Comps Analysis](user-guide/skills/optional/finance/finance-comps-analysis.md)
-*   [Dcf Model](user-guide/skills/optional/finance/finance-dcf-model.md)
-*   [Excel Author](user-guide/skills/optional/finance/finance-excel-author.md)
-*   [Lbo Model](user-guide/skills/optional/finance/finance-lbo-model.md)
-*   [Merger Model](user-guide/skills/optional/finance/finance-merger-model.md)
-*   [Pptx Author](user-guide/skills/optional/finance/finance-pptx-author.md)
-*   [Stocks](user-guide/skills/optional/finance/finance-stocks.md)
-
-## User-Guide / Skills / Optional / Creative
-
-*   [Baoyu Article Illustrator](user-guide/skills/optional/creative/creative-baoyu-article-illustrator.md)
-*   [Baoyu Comic](user-guide/skills/optional/creative/creative-baoyu-comic.md)
-*   [Blender Mcp](user-guide/skills/optional/creative/creative-blender-mcp.md)
-*   [Concept Diagrams](user-guide/skills/optional/creative/creative-concept-diagrams.md)
-*   [Ideation](user-guide/skills/optional/creative/creative-creative-ideation.md)
-*   [Hyperframes](user-guide/skills/optional/creative/creative-hyperframes.md)
-*   [Kanban Video Orchestrator](user-guide/skills/optional/creative/creative-kanban-video-orchestrator.md)
-*   [Meme Generation](user-guide/skills/optional/creative/creative-meme-generation.md)
-*   [Pixel Art](user-guide/skills/optional/creative/creative-pixel-art.md)
-
-## User-Guide / Skills / Optional / Communication
-
-*   [One Three One Rule](user-guide/skills/optional/communication/communication-one-three-one-rule.md)
-
-## User-Guide / Skills / Optional / Web-Development
-
-*   [Page Agent](user-guide/skills/optional/web-development/web-development-page-agent.md)
-
-## User-Guide / Skills / Optional / Migration
-
-*   [Openclaw Migration](user-guide/skills/optional/migration/migration-openclaw-migration.md)
-
-## User-Guide / Skills / Optional / Email
-
-*   [Agentmail](user-guide/skills/optional/email/email-agentmail.md)
 
 ## User-Guide / Skills / Optional / Autonomous-Ai-Agents
 
@@ -340,65 +350,46 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Honcho](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-honcho.md)
 *   [Openhands](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-openhands.md)
 
-## User-Guide / Skills / Optional / Dogfood
+## User-Guide / Skills / Optional / Security
 
-*   [Adversarial Ux Test](user-guide/skills/optional/dogfood/dogfood-adversarial-ux-test.md)
+*   [1Password](user-guide/skills/optional/security/security-1password.md)
+*   [Godmode](user-guide/skills/optional/security/security-godmode.md)
+*   [Oss Forensics](user-guide/skills/optional/security/security-oss-forensics.md)
+*   [Sherlock](user-guide/skills/optional/security/security-sherlock.md)
+*   [Web Pentest](user-guide/skills/optional/security/security-web-pentest.md)
 
-## User-Guide / Skills / Optional / Productivity
+## User-Guide / Skills / Optional / Web-Development
 
-*   [Canvas](user-guide/skills/optional/productivity/productivity-canvas.md)
-*   [Here.Now](user-guide/skills/optional/productivity/productivity-here-now.md)
-*   [Memento Flashcards](user-guide/skills/optional/productivity/productivity-memento-flashcards.md)
-*   [Shop App](user-guide/skills/optional/productivity/productivity-shop-app.md)
-*   [Shopify](user-guide/skills/optional/productivity/productivity-shopify.md)
-*   [Siyuan](user-guide/skills/optional/productivity/productivity-siyuan.md)
-*   [Telephony](user-guide/skills/optional/productivity/productivity-telephony.md)
+*   [Page Agent](user-guide/skills/optional/web-development/web-development-page-agent.md)
 
-## User-Guide / Messaging
+## User-Guide / Skills / Optional / Research
 
-*   [BlueBubbles (iMessage)](user-guide/messaging/bluebubbles.md)
-*   [DingTalk Setup](user-guide/messaging/dingtalk.md)
-*   [Discord Setup](user-guide/messaging/discord.md)
-*   [Email Setup](user-guide/messaging/email.md)
-*   [Feishu / Lark Setup](user-guide/messaging/feishu.md)
-*   [Google Chat Setup](user-guide/messaging/google_chat.md)
-*   [Home Assistant Integration](user-guide/messaging/homeassistant.md)
-*   [LINE Setup](user-guide/messaging/line.md)
-*   [Matrix Setup](user-guide/messaging/matrix.md)
-*   [Mattermost Setup](user-guide/messaging/mattermost.md)
-*   [Microsoft Graph Webhook Listener](user-guide/messaging/msgraph-webhook.md)
-*   [ntfy](user-guide/messaging/ntfy.md)
-*   [Open WebUI Integration](user-guide/messaging/open-webui.md)
-*   [Photon iMessage](user-guide/messaging/photon.md)
-*   [QQ Bot](user-guide/messaging/qqbot.md)
-*   [Signal Setup](user-guide/messaging/signal.md)
-*   [SimpleX Chat](user-guide/messaging/simplex.md)
-*   [Slack Setup](user-guide/messaging/slack.md)
-*   [SMS Setup (Twilio)](user-guide/messaging/sms.md)
-*   [Microsoft Teams Meetings](user-guide/messaging/teams-meetings.md)
-*   [Microsoft Teams Setup](user-guide/messaging/teams.md)
-*   [Telegram Setup](user-guide/messaging/telegram.md)
-*   [Webhooks](user-guide/messaging/webhooks.md)
-*   [WeCom Callback (Self-Built App)](user-guide/messaging/wecom-callback.md)
-*   [WeCom (Enterprise WeChat)](user-guide/messaging/wecom.md)
-*   [Weixin (WeChat)](user-guide/messaging/weixin.md)
-*   [WhatsApp Business Cloud API Setup](user-guide/messaging/whatsapp-cloud.md)
-*   [WhatsApp Setup](user-guide/messaging/whatsapp.md)
-*   [Yuanbao](user-guide/messaging/yuanbao.md)
+*   [Bioinformatics](user-guide/skills/optional/research/research-bioinformatics.md)
+*   [Darwinian Evolver](user-guide/skills/optional/research/research-darwinian-evolver.md)
+*   [Domain Intel](user-guide/skills/optional/research/research-domain-intel.md)
+*   [Drug Discovery](user-guide/skills/optional/research/research-drug-discovery.md)
+*   [Duckduckgo Search](user-guide/skills/optional/research/research-duckduckgo-search.md)
+*   [Gitnexus Explorer](user-guide/skills/optional/research/research-gitnexus-explorer.md)
+*   [Osint Investigation](user-guide/skills/optional/research/research-osint-investigation.md)
+*   [Parallel Cli](user-guide/skills/optional/research/research-parallel-cli.md)
+*   [Qmd](user-guide/skills/optional/research/research-qmd.md)
+*   [Scrapling](user-guide/skills/optional/research/research-scrapling.md)
+*   [Searxng Search](user-guide/skills/optional/research/research-searxng-search.md)
+
+## User-Guide / Skills / Optional / Gaming
+
+*   [Minecraft Modpack Server](user-guide/skills/optional/gaming/gaming-minecraft-modpack-server.md)
+*   [Pokemon Player](user-guide/skills/optional/gaming/gaming-pokemon-player.md)
+
+## User-Guide / Skills / Optional / Health
+
+*   [Fitness Nutrition](user-guide/skills/optional/health/health-fitness-nutrition.md)
+*   [Neuroskill Bci](user-guide/skills/optional/health/health-neuroskill-bci.md)
 
 ## Integrations
 
 *   [Nous Portal](integrations/nous-portal.md)
 *   [AI Providers](integrations/providers.md)
-
-## Getting-Started
-
-*   [Installation](getting-started/installation.md)
-*   [Learning Path](getting-started/learning-path.md)
-*   [Nix & NixOS Setup](getting-started/nix-setup.md)
-*   [Quickstart](getting-started/quickstart.md)
-*   [Hermes on Android with Termux](getting-started/termux.md)
-*   [Updating & Uninstalling](getting-started/updating.md)
 
 ## Guides
 
@@ -434,6 +425,20 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Working with Skills](guides/work-with-skills.md)
 *   [xAI Grok OAuth (SuperGrok / X Premium+)](guides/xai-grok-oauth.md)
 
+## Reference
+
+*   [CLI Commands Reference](reference/cli-commands.md)
+*   [Environment Variables Reference](reference/environment-variables.md)
+*   [FAQ & Troubleshooting](reference/faq.md)
+*   [MCP Config Reference](reference/mcp-config-reference.md)
+*   [Model Catalog](reference/model-catalog.md)
+*   [Optional Skills Catalog](reference/optional-skills-catalog.md)
+*   [Profile Commands Reference](reference/profile-commands.md)
+*   [Bundled Skills Catalog](reference/skills-catalog.md)
+*   [Slash Commands Reference](reference/slash-commands.md)
+*   [Built-in Tools Reference](reference/tools-reference.md)
+*   [Toolsets Reference](reference/toolsets-reference.md)
+
 ## Developer-Guide
 
 *   [ACP Internals](developer-guide/acp-internals.md)
@@ -464,17 +469,12 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Building a Video Generation Provider Plugin](developer-guide/video-gen-provider-plugin.md)
 *   [Building a Web Search Provider Plugin](developer-guide/web-search-provider-plugin.md)
 
-## Reference
+## Getting-Started
 
-*   [CLI Commands Reference](reference/cli-commands.md)
-*   [Environment Variables Reference](reference/environment-variables.md)
-*   [FAQ & Troubleshooting](reference/faq.md)
-*   [MCP Config Reference](reference/mcp-config-reference.md)
-*   [Model Catalog](reference/model-catalog.md)
-*   [Optional Skills Catalog](reference/optional-skills-catalog.md)
-*   [Profile Commands Reference](reference/profile-commands.md)
-*   [Bundled Skills Catalog](reference/skills-catalog.md)
-*   [Slash Commands Reference](reference/slash-commands.md)
-*   [Built-in Tools Reference](reference/tools-reference.md)
-*   [Toolsets Reference](reference/toolsets-reference.md)
+*   [Installation](getting-started/installation.md)
+*   [Learning Path](getting-started/learning-path.md)
+*   [Nix & NixOS Setup](getting-started/nix-setup.md)
+*   [Quickstart](getting-started/quickstart.md)
+*   [Hermes on Android with Termux](getting-started/termux.md)
+*   [Updating & Uninstalling](getting-started/updating.md)
 

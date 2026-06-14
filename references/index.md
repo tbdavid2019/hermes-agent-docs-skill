@@ -54,7 +54,6 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Personality & SOUL.md](user-guide/features/personality.md)
 *   [Plugins](user-guide/features/plugins.md)
 *   [Provider Routing](user-guide/features/provider-routing.md)
-*   [RL Training](user-guide/features/rl-training.md)
 *   [Skills System](user-guide/features/skills.md)
 *   [Skins & Themes](user-guide/features/skins.md)
 *   [Spotify](user-guide/features/spotify.md)
@@ -107,7 +106,6 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 
 ## User-Guide / Skills
 
-*   [G0DM0D3 — Godmode Jailbreaking Skill](user-guide/skills/godmode.md)
 *   [Google Workspace Skill](user-guide/skills/google-workspace.md)
 
 ## User-Guide / Skills / Bundled / Software-Development
@@ -395,7 +393,6 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 
 *   [Automate Anything with Cron](guides/automate-with-cron.md)
 *   [Automation Blueprints](guides/automation-blueprints.md)
-*   [Automation Templates](guides/automation-templates.md)
 *   [AWS Bedrock](guides/aws-bedrock.md)
 *   [Microsoft Foundry](guides/azure-foundry.md)
 *   [Build a Hermes Plugin](guides/build-a-hermes-plugin.md)
@@ -453,7 +450,6 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Contributing](developer-guide/contributing.md)
 *   [Creating Skills](developer-guide/creating-skills.md)
 *   [Cron Internals](developer-guide/cron-internals.md)
-*   [Environments, Benchmarks & Data Generation](developer-guide/environments.md)
 *   [Extending the CLI](developer-guide/extending-the-cli.md)
 *   [Gateway Internals](developer-guide/gateway-internals.md)
 *   [Building an Image Generation Provider Plugin](developer-guide/image-gen-provider-plugin.md)

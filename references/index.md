@@ -239,6 +239,12 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Rest Graphql Debug](user-guide/skills/optional/software-development/software-development-rest-graphql-debug.md)
 *   [Subagent Driven Development](user-guide/skills/optional/software-development/software-development-subagent-driven-development.md)
 
+## User-Guide / Skills / Optional / Payments
+
+*   [Mpp Agent](user-guide/skills/optional/payments/payments-mpp-agent.md)
+*   [Stripe Link Cli](user-guide/skills/optional/payments/payments-stripe-link-cli.md)
+*   [Stripe Projects](user-guide/skills/optional/payments/payments-stripe-projects.md)
+
 ## User-Guide / Skills / Optional / Productivity
 
 *   [Canvas](user-guide/skills/optional/productivity/productivity-canvas.md)

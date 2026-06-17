@@ -250,7 +250,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Canvas](user-guide/skills/optional/productivity/productivity-canvas.md)
 *   [Here.Now](user-guide/skills/optional/productivity/productivity-here-now.md)
 *   [Memento Flashcards](user-guide/skills/optional/productivity/productivity-memento-flashcards.md)
-*   [Shop App](user-guide/skills/optional/productivity/productivity-shop-app.md)
+*   [Shop](user-guide/skills/optional/productivity/productivity-shop.md)
 *   [Shopify](user-guide/skills/optional/productivity/productivity-shopify.md)
 *   [Siyuan](user-guide/skills/optional/productivity/productivity-siyuan.md)
 *   [Telephony](user-guide/skills/optional/productivity/productivity-telephony.md)

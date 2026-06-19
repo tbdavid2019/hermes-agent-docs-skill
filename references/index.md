@@ -158,7 +158,6 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 
 ## User-Guide / Skills / Bundled / Creative
 
-*   [Architecture Diagram](user-guide/skills/bundled/creative/creative-architecture-diagram.md)
 *   [Ascii Art](user-guide/skills/bundled/creative/creative-ascii-art.md)
 *   [Ascii Video](user-guide/skills/bundled/creative/creative-ascii-video.md)
 *   [Baoyu Infographic](user-guide/skills/bundled/creative/creative-baoyu-infographic.md)
@@ -166,12 +165,12 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Comfyui](user-guide/skills/bundled/creative/creative-comfyui.md)
 *   [Design Md](user-guide/skills/bundled/creative/creative-design-md.md)
 *   [Excalidraw](user-guide/skills/bundled/creative/creative-excalidraw.md)
+*   [Html Artifact](user-guide/skills/bundled/creative/creative-html-artifact.md)
 *   [Humanizer](user-guide/skills/bundled/creative/creative-humanizer.md)
 *   [Manim Video](user-guide/skills/bundled/creative/creative-manim-video.md)
 *   [P5Js](user-guide/skills/bundled/creative/creative-p5js.md)
 *   [Popular Web Designs](user-guide/skills/bundled/creative/creative-popular-web-designs.md)
 *   [Pretext](user-guide/skills/bundled/creative/creative-pretext.md)
-*   [Sketch](user-guide/skills/bundled/creative/creative-sketch.md)
 *   [Songwriting And Ai Music](user-guide/skills/bundled/creative/creative-songwriting-and-ai-music.md)
 *   [Touchdesigner Mcp](user-guide/skills/bundled/creative/creative-touchdesigner-mcp.md)
 
@@ -264,7 +263,6 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Baoyu Article Illustrator](user-guide/skills/optional/creative/creative-baoyu-article-illustrator.md)
 *   [Baoyu Comic](user-guide/skills/optional/creative/creative-baoyu-comic.md)
 *   [Blender Mcp](user-guide/skills/optional/creative/creative-blender-mcp.md)
-*   [Concept Diagrams](user-guide/skills/optional/creative/creative-concept-diagrams.md)
 *   [Ideation](user-guide/skills/optional/creative/creative-creative-ideation.md)
 *   [Hyperframes](user-guide/skills/optional/creative/creative-hyperframes.md)
 *   [Kanban Video Orchestrator](user-guide/skills/optional/creative/creative-kanban-video-orchestrator.md)

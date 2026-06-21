@@ -267,7 +267,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Baoyu Comic](user-guide/skills/optional/creative/creative-baoyu-comic.md)
 *   [Blender Mcp](user-guide/skills/optional/creative/creative-blender-mcp.md)
 *   [Concept Diagrams](user-guide/skills/optional/creative/creative-concept-diagrams.md)
-*   [Ideation](user-guide/skills/optional/creative/creative-creative-ideation.md)
+*   [Creative Ideation](user-guide/skills/optional/creative/creative-creative-ideation.md)
 *   [Hyperframes](user-guide/skills/optional/creative/creative-hyperframes.md)
 *   [Kanban Video Orchestrator](user-guide/skills/optional/creative/creative-kanban-video-orchestrator.md)
 *   [Meme Generation](user-guide/skills/optional/creative/creative-meme-generation.md)

@@ -181,11 +181,6 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 
 *   [Openhue](user-guide/skills/bundled/smart-home/smart-home-openhue.md)
 
-## User-Guide / Skills / Bundled / Devops
-
-*   [Kanban Orchestrator](user-guide/skills/bundled/devops/devops-kanban-orchestrator.md)
-*   [Kanban Worker](user-guide/skills/bundled/devops/devops-kanban-worker.md)
-
 ## User-Guide / Skills / Bundled / Dogfood
 
 *   [Dogfood](user-guide/skills/bundled/dogfood/dogfood-dogfood.md)

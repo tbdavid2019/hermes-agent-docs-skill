@@ -30,7 +30,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Built-in Plugins](user-guide/features/built-in-plugins.md)
 *   [Code Execution (Programmatic Tool Calling)](user-guide/features/code-execution.md)
 *   [Codex App-Server Runtime](user-guide/features/codex-app-server-runtime.md)
-*   [Computer Use (macOS)](user-guide/features/computer-use.md)
+*   [Computer Use](user-guide/features/computer-use.md)
 *   [Context Files](user-guide/features/context-files.md)
 *   [Context References](user-guide/features/context-references.md)
 *   [Credential Pools](user-guide/features/credential-pools.md)

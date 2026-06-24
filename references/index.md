@@ -53,6 +53,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Persistent Memory](user-guide/features/memory.md)
 *   [Features Overview](user-guide/features/overview.md)
 *   [Personality & SOUL.md](user-guide/features/personality.md)
+*   [Pets](user-guide/features/pets.md)
 *   [Plugins](user-guide/features/plugins.md)
 *   [Provider Routing](user-guide/features/provider-routing.md)
 *   [Skills System](user-guide/features/skills.md)
@@ -151,6 +152,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Nano Pdf](user-guide/skills/bundled/productivity/productivity-nano-pdf.md)
 *   [Notion](user-guide/skills/bundled/productivity/productivity-notion.md)
 *   [Ocr And Documents](user-guide/skills/bundled/productivity/productivity-ocr-and-documents.md)
+*   [Petdex](user-guide/skills/bundled/productivity/productivity-petdex.md)
 *   [Powerpoint](user-guide/skills/bundled/productivity/productivity-powerpoint.md)
 *   [Teams Meeting Pipeline](user-guide/skills/bundled/productivity/productivity-teams-meeting-pipeline.md)
 

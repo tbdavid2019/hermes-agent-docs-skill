@@ -51,6 +51,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [MCP (Model Context Protocol)](user-guide/features/mcp.md)
 *   [Memory Providers](user-guide/features/memory-providers.md)
 *   [Persistent Memory](user-guide/features/memory.md)
+*   [Mixture of Agents](user-guide/features/mixture-of-agents.md)
 *   [Features Overview](user-guide/features/overview.md)
 *   [Personality & SOUL.md](user-guide/features/personality.md)
 *   [Pets](user-guide/features/pets.md)

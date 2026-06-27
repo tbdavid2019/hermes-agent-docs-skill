@@ -476,6 +476,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Installation](getting-started/installation.md)
 *   [Learning Path](getting-started/learning-path.md)
 *   [Nix & NixOS Setup](getting-started/nix-setup.md)
+*   [Platform Support](getting-started/platform-support.md)
 *   [Quickstart](getting-started/quickstart.md)
 *   [Hermes on Android with Termux](getting-started/termux.md)
 *   [Updating & Uninstalling](getting-started/updating.md)

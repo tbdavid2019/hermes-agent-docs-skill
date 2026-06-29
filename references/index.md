@@ -80,6 +80,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Feishu / Lark Setup](user-guide/messaging/feishu.md)
 *   [Google Chat Setup](user-guide/messaging/google_chat.md)
 *   [Home Assistant Integration](user-guide/messaging/homeassistant.md)
+*   [IRC](user-guide/messaging/irc.md)
 *   [LINE Setup](user-guide/messaging/line.md)
 *   [Matrix Setup](user-guide/messaging/matrix.md)
 *   [Mattermost Setup](user-guide/messaging/mattermost.md)

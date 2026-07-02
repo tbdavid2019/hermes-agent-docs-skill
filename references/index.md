@@ -409,6 +409,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Delegation & Parallel Work](guides/delegation-patterns.md)
 *   [Tutorial: Build a GitHub PR Review Agent](guides/github-pr-review-agent.md)
 *   [Google Gemini](guides/google-gemini.md)
+*   [Google Vertex AI](guides/google-vertex.md)
 *   [Run Local LLMs on Mac](guides/local-llm-on-mac.md)
 *   [Run Hermes Locally with Ollama — Zero API Cost](guides/local-ollama-setup.md)
 *   [Register a Microsoft Graph Application](guides/microsoft-graph-app-registration.md)

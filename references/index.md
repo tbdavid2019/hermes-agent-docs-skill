@@ -108,6 +108,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 ## User-Guide / Secrets
 
 *   [Bitwarden Secrets Manager](user-guide/secrets/bitwarden.md)
+*   [1Password](user-guide/secrets/onepassword.md)
 
 ## User-Guide / Skills
 
@@ -402,7 +403,6 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Automation Blueprints](guides/automation-blueprints.md)
 *   [AWS Bedrock](guides/aws-bedrock.md)
 *   [Microsoft Foundry](guides/azure-foundry.md)
-*   [Build a Hermes Plugin](guides/build-a-hermes-plugin.md)
 *   [Script-Only Cron Jobs](guides/cron-script-only.md)
 *   [Cron Troubleshooting](guides/cron-troubleshooting.md)
 *   [Tutorial: Build a Daily Briefing Bot](guides/daily-briefing-bot.md)
@@ -452,6 +452,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Adding Tools](developer-guide/adding-tools.md)
 *   [Agent Loop Internals](developer-guide/agent-loop.md)
 *   [Architecture](developer-guide/architecture.md)
+*   [Building a Browser Provider Plugin](developer-guide/browser-provider-plugin.md)
 *   [Browser CDP Supervisor](developer-guide/browser-supervisor.md)
 *   [Context Compression and Caching](developer-guide/context-compression-and-caching.md)
 *   [Building a Context Engine Plugin](developer-guide/context-engine-plugin.md)
@@ -467,6 +468,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Programmatic Integration](developer-guide/programmatic-integration.md)
 *   [Prompt Assembly](developer-guide/prompt-assembly.md)
 *   [Provider Runtime Resolution](developer-guide/provider-runtime.md)
+*   [Building a Secret Source Plugin](developer-guide/secret-source-plugin.md)
 *   [Session Storage](developer-guide/session-storage.md)
 *   [Tools Runtime](developer-guide/tools-runtime.md)
 *   [Trajectory Format](developer-guide/trajectory-format.md)

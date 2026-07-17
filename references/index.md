@@ -32,6 +32,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Trajectory Format](developer-guide/trajectory-format.md)
 *   [Building a Video Generation Provider Plugin](developer-guide/video-gen-provider-plugin.md)
 *   [Building a Web Search Provider Plugin](developer-guide/web-search-provider-plugin.md)
+*   [TUI & Desktop from Worktrees](developer-guide/worktree-ui-dev.md)
 
 ## Reference
 
@@ -131,6 +132,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 ## User-Guide / Skills / Optional / Mcp
 
 *   [Fastmcp](user-guide/skills/optional/mcp/mcp-fastmcp.md)
+*   [Mcp Oauth Remote Gateway](user-guide/skills/optional/mcp/mcp-mcp-oauth-remote-gateway.md)
 *   [Mcporter](user-guide/skills/optional/mcp/mcp-mcporter.md)
 
 ## User-Guide / Skills / Optional / Productivity

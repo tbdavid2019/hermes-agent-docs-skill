@@ -17,6 +17,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Contributing](developer-guide/contributing.md)
 *   [Creating Skills](developer-guide/creating-skills.md)
 *   [Cron Internals](developer-guide/cron-internals.md)
+*   [Desktop Plugin SDK](developer-guide/desktop-plugin-sdk.md)
 *   [Extending the CLI](developer-guide/extending-the-cli.md)
 *   [Gateway Internals](developer-guide/gateway-internals.md)
 *   [Building an Image Generation Provider Plugin](developer-guide/image-gen-provider-plugin.md)

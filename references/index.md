@@ -128,6 +128,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 
 ## User-Guide / Skills / Optional / Web-Development
 
+*   [Cloudflare Temporary Deploy](user-guide/skills/optional/web-development/web-development-cloudflare-temporary-deploy.md)
 *   [Page Agent](user-guide/skills/optional/web-development/web-development-page-agent.md)
 
 ## User-Guide / Skills / Optional / Mcp
@@ -224,6 +225,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Godmode](user-guide/skills/optional/security/security-godmode.md)
 *   [Oss Forensics](user-guide/skills/optional/security/security-oss-forensics.md)
 *   [Sherlock](user-guide/skills/optional/security/security-sherlock.md)
+*   [Unbroker](user-guide/skills/optional/security/security-unbroker.md)
 *   [Web Pentest](user-guide/skills/optional/security/security-web-pentest.md)
 
 ## User-Guide / Skills / Optional / Research
@@ -266,6 +268,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Kanban Video Orchestrator](user-guide/skills/optional/creative/creative-kanban-video-orchestrator.md)
 *   [Meme Generation](user-guide/skills/optional/creative/creative-meme-generation.md)
 *   [Pixel Art](user-guide/skills/optional/creative/creative-pixel-art.md)
+*   [Unreal Mcp](user-guide/skills/optional/creative/creative-unreal-mcp.md)
 
 ## User-Guide / Skills / Optional / Payments
 
@@ -276,14 +279,17 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 ## User-Guide / Skills / Bundled / Productivity
 
 *   [Airtable](user-guide/skills/bundled/productivity/productivity-airtable.md)
+*   [Docx](user-guide/skills/bundled/productivity/productivity-docx.md)
 *   [Google Workspace](user-guide/skills/bundled/productivity/productivity-google-workspace.md)
 *   [Maps](user-guide/skills/bundled/productivity/productivity-maps.md)
 *   [Nano Pdf](user-guide/skills/bundled/productivity/productivity-nano-pdf.md)
 *   [Notion](user-guide/skills/bundled/productivity/productivity-notion.md)
 *   [Ocr And Documents](user-guide/skills/bundled/productivity/productivity-ocr-and-documents.md)
+*   [Pdf](user-guide/skills/bundled/productivity/productivity-pdf.md)
 *   [Petdex](user-guide/skills/bundled/productivity/productivity-petdex.md)
 *   [Powerpoint](user-guide/skills/bundled/productivity/productivity-powerpoint.md)
 *   [Teams Meeting Pipeline](user-guide/skills/bundled/productivity/productivity-teams-meeting-pipeline.md)
+*   [Xlsx](user-guide/skills/bundled/productivity/productivity-xlsx.md)
 
 ## User-Guide / Skills / Bundled / Dogfood
 
@@ -336,6 +342,10 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Github Pr Workflow](user-guide/skills/bundled/github/github-github-pr-workflow.md)
 *   [Github Repo Management](user-guide/skills/bundled/github/github-github-repo-management.md)
 
+## User-Guide / Skills / Bundled / Computer-Use
+
+*   [Computer Use](user-guide/skills/bundled/computer-use/computer-use-computer-use.md)
+
 ## User-Guide / Skills / Bundled / Smart-Home
 
 *   [Openhue](user-guide/skills/bundled/smart-home/smart-home-openhue.md)
@@ -373,7 +383,6 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Apple Reminders](user-guide/skills/bundled/apple/apple-apple-reminders.md)
 *   [Findmy](user-guide/skills/bundled/apple/apple-findmy.md)
 *   [Imessage](user-guide/skills/bundled/apple/apple-imessage.md)
-*   [Macos Computer Use](user-guide/skills/bundled/apple/apple-macos-computer-use.md)
 
 ## User-Guide / Skills / Bundled / Creative
 
@@ -393,6 +402,10 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Sketch](user-guide/skills/bundled/creative/creative-sketch.md)
 *   [Songwriting And Ai Music](user-guide/skills/bundled/creative/creative-songwriting-and-ai-music.md)
 *   [Touchdesigner Mcp](user-guide/skills/bundled/creative/creative-touchdesigner-mcp.md)
+
+## User-Guide / Skills / Bundled / Hermes-Desktop-Plugins
+
+*   [Hermes Desktop Plugins](user-guide/skills/bundled/hermes-desktop-plugins/hermes-desktop-plugins-hermes-desktop-plugins.md)
 
 ## User-Guide / Features
 

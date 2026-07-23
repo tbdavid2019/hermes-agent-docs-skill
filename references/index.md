@@ -59,6 +59,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Cron Troubleshooting](guides/cron-troubleshooting.md)
 *   [Tutorial: Build a Daily Briefing Bot](guides/daily-briefing-bot.md)
 *   [Delegation & Parallel Work](guides/delegation-patterns.md)
+*   [Desktop Native Sign-In (RFC 8252)](guides/desktop-native-signin.md)
 *   [Tutorial: Build a GitHub PR Review Agent](guides/github-pr-review-agent.md)
 *   [Google Gemini](guides/google-gemini.md)
 *   [Google Vertex AI](guides/google-vertex.md)
@@ -494,6 +495,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 ## User-Guide / Secrets
 
 *   [Bitwarden Secrets Manager](user-guide/secrets/bitwarden.md)
+*   [Command Helper Secret Source](user-guide/secrets/command.md)
 *   [1Password](user-guide/secrets/onepassword.md)
 
 ## Integrations

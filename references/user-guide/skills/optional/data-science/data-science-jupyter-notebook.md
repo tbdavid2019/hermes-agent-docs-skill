@@ -1,12 +1,12 @@
 ---
-title: "Jupyter Live Kernel — Iterative Python via live Jupyter kernel (hamelnb)"
-sidebar_label: "Jupyter Live Kernel"
+title: "Jupyter Notebook — Iterative Python via live Jupyter kernel (hamelnb)"
+sidebar_label: "Jupyter Notebook"
 description: "Iterative Python via live Jupyter kernel (hamelnb)"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}
 
-# Jupyter Live Kernel
+# Jupyter Notebook
 
 Iterative Python via live Jupyter kernel (hamelnb).
 
@@ -14,8 +14,8 @@ Iterative Python via live Jupyter kernel (hamelnb).
 
 | | |
 |---|---|
-| Source | Bundled (installed by default) |
-| Path | `skills/data-science/jupyter-live-kernel` |
+| Source | Optional — install with `hermes skills install official/data-science/jupyter-notebook` |
+| Path | `optional-skills/data-science/jupyter-notebook` |
 | Version | `1.0.0` |
 | Author | Hermes Agent |
 | License | MIT |
@@ -28,7 +28,7 @@ Iterative Python via live Jupyter kernel (hamelnb).
 The following is the complete skill definition that Hermes loads when this skill is triggered. This is what the agent sees as instructions when the skill is active.
 :::
 
-# Jupyter Live Kernel (hamelnb)
+# Jupyter Notebook (hamelnb live kernel)
 
 Gives you a **stateful Python REPL** via a live Jupyter kernel. Variables persist
 across executions. Use this instead of `execute_code` when you need to build up
@@ -176,6 +176,17 @@ uv run "$SCRIPT" restart-run-all --path <notebook.ipynb> --save-outputs --compac
 
 8. **Occasional websocket timeouts** — some operations may timeout on first try,
    especially after a kernel restart. Retry once before escalating.
+
+9. **If websocket consistently times out on this host**, force zmq transport:
+   `uv run "$SCRIPT" execute --transport zmq ...`. Symptom: every execute returns
+   "Websocket execution may already have reached the kernel, so auto fallback was
+   skipped". The kernel actually ran fine (REST shows execution_state=idle and
+   execution_count increments) — only the websocket reply channel is broken.
+   zmq transport uses jupyter_client directly and sidesteps the issue.
+
+10. **When starting a fresh server for REST-only use**, add
+    `--ServerApp.disable_check_xsrf=True` — otherwise POST /api/sessions returns
+    `"'_xsrf' argument missing from POST"` and kernel session creation fails.
 
 ## Timeout Defaults
 

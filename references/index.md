@@ -31,6 +31,10 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Windows (Native) Guide](user-guide/windows-native.md)
 *   [Windows (WSL2) Guide](user-guide/windows-wsl-quickstart.md)
 
+## User-Guide / Egress
+
+*   [Egress credential-injection proxy (iron-proxy)](user-guide/egress/iron-proxy.md)
+
 ## User-Guide / Skills
 
 *   [Google Workspace Skill](user-guide/skills/google-workspace.md)
@@ -55,11 +59,11 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 
 ## User-Guide / Skills / Bundled / Mlops
 
-*   [Evaluating Llms Harness](user-guide/skills/bundled/mlops/mlops-evaluation-lm-evaluation-harness.md)
+*   [Evaluating Llms Harness](user-guide/skills/bundled/mlops/mlops-evaluation-evaluating-llms-harness.md)
 *   [Weights And Biases](user-guide/skills/bundled/mlops/mlops-evaluation-weights-and-biases.md)
 *   [Huggingface Hub](user-guide/skills/bundled/mlops/mlops-huggingface-hub.md)
 *   [Llama Cpp](user-guide/skills/bundled/mlops/mlops-inference-llama-cpp.md)
-*   [Serving Llms Vllm](user-guide/skills/bundled/mlops/mlops-inference-vllm.md)
+*   [Serving Llms Vllm](user-guide/skills/bundled/mlops/mlops-inference-serving-llms-vllm.md)
 
 ## User-Guide / Skills / Bundled / Note-Taking
 
@@ -191,7 +195,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Lambda Labs Gpu Cloud](user-guide/skills/optional/mlops/mlops-lambda-labs.md)
 *   [Llava](user-guide/skills/optional/mlops/mlops-llava.md)
 *   [Modal Serverless Gpu](user-guide/skills/optional/mlops/mlops-modal.md)
-*   [Segment Anything Model](user-guide/skills/optional/mlops/mlops-models-segment-anything.md)
+*   [Segment Anything Model](user-guide/skills/optional/mlops/mlops-models-segment-anything-model.md)
 *   [Nemo Curator](user-guide/skills/optional/mlops/mlops-nemo-curator.md)
 *   [Obliteratus](user-guide/skills/optional/mlops/mlops-obliteratus.md)
 *   [Peft Fine Tuning](user-guide/skills/optional/mlops/mlops-peft.md)
@@ -285,7 +289,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 
 ## User-Guide / Skills / Optional / Creative
 
-*   [Audiocraft Audio Generation](user-guide/skills/optional/creative/creative-audiocraft.md)
+*   [Audiocraft Audio Generation](user-guide/skills/optional/creative/creative-audiocraft-audio-generation.md)
 *   [Baoyu Article Illustrator](user-guide/skills/optional/creative/creative-baoyu-article-illustrator.md)
 *   [Baoyu Comic](user-guide/skills/optional/creative/creative-baoyu-comic.md)
 *   [Blender Mcp](user-guide/skills/optional/creative/creative-blender-mcp.md)
@@ -436,6 +440,7 @@ This index is automatically generated to help troubleshoot and navigate Hermes A
 *   [Creating Skills](developer-guide/creating-skills.md)
 *   [Cron Internals](developer-guide/cron-internals.md)
 *   [Desktop Plugin SDK](developer-guide/desktop-plugin-sdk.md)
+*   [Egress proxy internals](developer-guide/egress-internals.md)
 *   [Extending the CLI](developer-guide/extending-the-cli.md)
 *   [Gateway Internals](developer-guide/gateway-internals.md)
 *   [Building an Image Generation Provider Plugin](developer-guide/image-gen-provider-plugin.md)

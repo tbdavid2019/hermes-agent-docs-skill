@@ -42,6 +42,60 @@ NousResearch/hermes-agent / website/docs
 GitHub 上的來源 repository 會每日更新；本機安裝不會自行啟動背景排程。
 需要更新本機副本時，請明確執行更新，或明確要求 host agent 更新此 skill。
 
+## AI Agent Installation Contract
+
+當使用者提供這個 repository URL，並要求 AI agent 安裝或更新 skill 時，
+agent 必須遵守以下契約：
+
+1. 先確認 host runtime 的 skills 目錄。最終目錄名稱必須是
+   `hermes-agent-docs-skill`。
+2. 必須安裝為 Git checkout。若目標不存在，clone 到該精確目錄；若已存在
+   非 Git 目錄，停止並回報衝突，不得直接覆寫。
+3. **必須執行不含 `--check` 的 `scripts/install-skill.sh`。**
+   對既有 checkout，installer 會執行
+   `git pull --ff-only origin <目前分支>`，然後驗證完整安裝。
+4. 讀取 `SKILL.md`。
+5. 確認 `.git`、`references/SOURCE.md`、`references/catalog.md` 與
+   `references/index.md` 存在。
+6. 讀取 `references/SOURCE.md`，回報最終安裝目錄、上游 source commit
+   與同步時間。
+
+如果 Git pull 或 validation 失敗，不得宣稱安裝或更新成功。安裝時不得執行
+`sync-docs.sh` 或 `generate_index.py`；這些是 maintainer 維護鏡像的腳本。
+
+### 可直接交給 LLM 的安裝 Prompt
+
+```text
+請把以下 repo 安裝為 Hermes Agent documentation skill：
+
+https://github.com/tbdavid2019/hermes-agent-docs-skill
+
+請依 README.md 的「AI Agent Installation Contract」執行：
+1. Clone 到你的 skills 目錄，最終目錄名稱使用
+   hermes-agent-docs-skill
+2. 執行不含 --check 的 scripts/install-skill.sh，確保 checkout
+   實際執行 git pull --ff-only 並完成 repository validation
+3. 讀取 SKILL.md
+4. 確認 references/SOURCE.md、references/catalog.md 與
+   references/index.md 存在
+5. 回報安裝目錄、目前 upstream source commit 與同步時間
+
+Git pull 或 validation 失敗時，不得回報安裝成功。
+```
+
+### 可直接使用的 LLM Prompt
+
+```text
+使用 $hermes-agent-docs-skill，依本機同步的 Hermes Agent 官方文件回答
+我的問題。
+
+如果問題依賴最新／目前行為，回答前先重新執行 skill installer，確保完成
+git pull --ff-only 與 validation，並回報 references/SOURCE.md 中的
+source commit。
+
+請列出引用的本機文件路徑，並清楚區分官方文件事實與你的推論。
+```
+
 ## 安裝
 
 最終資料夾名稱必須是 `hermes-agent-docs-skill`，以符合 `SKILL.md` 的
@@ -55,7 +109,7 @@ git clone \
   ~/.codex/skills/hermes-agent-docs-skill
 
 bash ~/.codex/skills/hermes-agent-docs-skill/scripts/install-skill.sh \
-  --check ~/.codex/skills/hermes-agent-docs-skill
+  ~/.codex/skills/hermes-agent-docs-skill
 ```
 
 ### 其他支援 Agent Skill 的工具
@@ -68,7 +122,7 @@ git clone \
   <skills-directory>/hermes-agent-docs-skill
 
 bash <skills-directory>/hermes-agent-docs-skill/scripts/install-skill.sh \
-  --check <skills-directory>/hermes-agent-docs-skill
+  <skills-directory>/hermes-agent-docs-skill
 ```
 
 部分受管 skill 安裝器會複製檔案並移除 `.git`。這種副本仍可供 LLM
@@ -97,11 +151,26 @@ bash <skills-directory>/hermes-agent-docs-skill/scripts/install-skill.sh \
 如果 Git pull 或 repository validation 失敗，安裝器會以非零狀態結束，
 不會在失敗後仍回報完成。
 
+當問題明確依賴 Hermes「最新／目前」行為時，回答前必須重新執行 installer。
+如果因網路、權限或 checkout 問題無法執行，必須從
+`references/SOURCE.md` 回報本機 source commit 與同步時間，並明確說明
+文件新鮮度尚未驗證。若環境無法執行 installer，但允許更新 checkout，
+fallback 為：
+
+```bash
+git -C <skills-directory>/hermes-agent-docs-skill \
+  pull --ff-only origin main
+
+bash <skills-directory>/hermes-agent-docs-skill/scripts/install-skill.sh \
+  --check <skills-directory>/hermes-agent-docs-skill
+```
+
 ## LLM 如何使用此 Skill
 
 `SKILL.md` 會要求 agent：
 
-1. 版本相容性重要時先確認來源新鮮度。
+1. 回答最新／目前行為前先更新 Git checkout，再確認 source commit 與
+   同步時間。
 2. 先讀取 `references/catalog.md`。
 3. 目錄不足時，搜尋完整錯誤、命令、環境變數或設定鍵。
 4. 只載入能完成任務的最少文件。
@@ -111,6 +180,8 @@ bash <skills-directory>/hermes-agent-docs-skill/scripts/install-skill.sh \
 
 提問範例：
 
+- 「更新 `$hermes-agent-docs-skill`，回報 upstream commit，再依更新後的
+  本機文件回答。」
 - 「在原生 Windows 安裝 Hermes Agent。」
 - 「本機 Ollama 模型為何無法通過 context length 檢查？」
 - 「設定 Telegram gateway 並驗證服務已啟動。」

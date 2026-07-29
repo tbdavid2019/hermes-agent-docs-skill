@@ -21,6 +21,9 @@
   repository validation.
 - Added installation and maintenance guidance in English and Traditional
   Chinese.
+- Added a prominent bilingual `AI Agent Installation Contract` with a
+  copy-paste installation and usage prompts, mandatory installer execution,
+  required file checks, and upstream commit reporting.
 
 ### Changed
 
@@ -53,3 +56,5 @@
   reference uses `hermes profile use`.
 - Clarified that the GitHub source mirror updates daily while local installations
   update only when their Git checkout is explicitly refreshed.
+- Required LLMs to complete `git pull --ff-only` through the installer before
+  claiming install/update success or current documentation freshness.

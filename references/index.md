@@ -94,6 +94,7 @@ This complete index is generated deterministically from the mirrored official do
 
 ## Integrations
 
+*   [Buzz Integration](integrations/buzz.md)
 *   [Integrations](integrations/index.md)
 *   [Nous Portal](integrations/nous-portal.md)
 *   [AI Providers](integrations/providers.md)

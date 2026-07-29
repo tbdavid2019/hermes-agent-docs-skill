@@ -135,6 +135,37 @@ class SyncDocsTests(unittest.TestCase):
             self.assertNotEqual(0, result.returncode)
             self.assertTrue((skill_root / "references" / "stale.md").is_file())
 
+    def test_failed_final_validation_removes_new_mirror_when_no_previous_copy_exists(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir)
+            upstream = temp_path / "upstream"
+            create_upstream(upstream, complete=True)
+            skill_root = temp_path / "hermes-agent-docs-skill"
+            create_skill_repository(skill_root)
+            shutil.rmtree(skill_root / "references")
+            (skill_root / "SKILL.md").write_text(
+                "---\n"
+                "name: wrong-directory-name\n"
+                'description: "Guides Hermes. Use when Hermes needs help."\n'
+                "---\n",
+                encoding="utf-8",
+            )
+
+            result = run(
+                [
+                    "bash",
+                    str(skill_root / "scripts" / "sync-docs.sh"),
+                    "--repository",
+                    str(upstream),
+                    "--minimum-documents",
+                    "1",
+                ],
+                cwd=skill_root,
+            )
+
+            self.assertNotEqual(0, result.returncode)
+            self.assertFalse((skill_root / "references").exists())
+
 
 if __name__ == "__main__":
     unittest.main()

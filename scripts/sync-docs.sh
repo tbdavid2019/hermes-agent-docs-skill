@@ -13,6 +13,7 @@ STAGING="$REPOSITORY_ROOT/.references-staging-$$"
 BACKUP="$REPOSITORY_ROOT/.references-backup-$$"
 REJECTED="$REPOSITORY_ROOT/.references-rejected-$$"
 TEMP_ROOT=""
+DESTINATION_REPLACED=false
 
 usage() {
     echo "Usage: $0 [--repository URL] [--docs-source PATH] [--minimum-documents N]"
@@ -27,11 +28,15 @@ cleanup() {
     local status="$?"
     trap - EXIT
 
-    if [ "$status" -ne 0 ] && [ -d "$BACKUP" ]; then
-        if [ -d "$DESTINATION" ]; then
+    if [ "$status" -ne 0 ]; then
+        if [ -d "$BACKUP" ]; then
+            if [ -d "$DESTINATION" ]; then
+                mv "$DESTINATION" "$REJECTED"
+            fi
+            mv "$BACKUP" "$DESTINATION"
+        elif [ "$DESTINATION_REPLACED" = true ] && [ -d "$DESTINATION" ]; then
             mv "$DESTINATION" "$REJECTED"
         fi
-        mv "$BACKUP" "$DESTINATION"
     fi
 
     [ ! -d "$STAGING" ] || rm -rf -- "$STAGING"
@@ -130,6 +135,7 @@ if [ -d "$DESTINATION" ]; then
     mv "$DESTINATION" "$BACKUP"
 fi
 mv "$STAGING" "$DESTINATION"
+DESTINATION_REPLACED=true
 
 python3 "$SCRIPT_DIR/validate_repository.py" \
     --repository-root "$REPOSITORY_ROOT" \

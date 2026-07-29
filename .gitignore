@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.references-backup-*/
+.references-rejected-*/
+.references-staging-*/
+.env
+.env.*
+*.key
+*.pem

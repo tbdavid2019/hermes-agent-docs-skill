@@ -68,6 +68,45 @@ class GenerateIndexTests(unittest.TestCase):
                 generated.index("## Z Section"),
             )
 
+    def test_catalog_contains_compact_routes_for_available_core_documents(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            docs_dir = Path(temp_dir) / "references"
+            messaging_dir = docs_dir / "user-guide" / "messaging"
+            messaging_dir.mkdir(parents=True)
+            (messaging_dir / "index.md").write_text(
+                "# Messaging\n", encoding="utf-8"
+            )
+            (docs_dir / "index.md").write_text("# Full Index\n", encoding="utf-8")
+            catalog_file = docs_dir / "catalog.md"
+
+            generate_index_module.generate_catalog(docs_dir, catalog_file)
+
+            catalog = catalog_file.read_text(encoding="utf-8")
+            self.assertIn(
+                "[Messaging overview](user-guide/messaging/index.md)",
+                catalog,
+            )
+            self.assertIn("[Complete document index](index.md)", catalog)
+            self.assertNotIn("getting-started/installation.md", catalog)
+
+    def test_writes_machine_verifiable_source_metadata(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_file = Path(temp_dir) / "SOURCE.md"
+
+            generate_index_module.write_source_metadata(
+                output_file=output_file,
+                repository="https://github.com/NousResearch/hermes-agent",
+                commit="0123456789abcdef0123456789abcdef01234567",
+                synced_at="2026-07-29T04:00:00Z",
+            )
+
+            metadata = output_file.read_text(encoding="utf-8")
+            self.assertIn(
+                "- Source commit: `0123456789abcdef0123456789abcdef01234567`",
+                metadata,
+            )
+            self.assertIn("- Synced at: `2026-07-29T04:00:00Z`", metadata)
+
 
 if __name__ == "__main__":
     unittest.main()

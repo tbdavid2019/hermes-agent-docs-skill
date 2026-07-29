@@ -1,57 +1,179 @@
-# Hermes Agent Documentation Skill (Auto-Sync Version)
-
-> [!IMPORTANT]
-> ### 🤖 Instructions for AI Agent Installation / AI 助手安裝指引
->
-> **English:** If a user provides you with this repository URL and asks you to "install" or "setup" this skill, follow these steps:
-> 1.  **Install as a Git Checkout, Not a Copied Folder**: Run `git clone https://github.com/tbdavid2019/hermes-agent-docs-skill.git <skill-directory>`. Do not copy the files into a managed skills folder if you expect updates to work.
-> 2.  **Prefer the Installer Script**: If shell execution is available, run `bash <skill-directory>/scripts/install-skill.sh <skill-directory>`. This keeps the installed skill as a git checkout and turns later re-runs into `git pull --ff-only`.
-> 3.  **Load Skill Metadata**: Read `SKILL.md` to understand the specialized workflows and knowledge contained here.
-> 4.  **Initialize Context**: Acknowledge that you now have access to the comprehensive Hermes Agent documentation. **Always consult `references/index.md` first to locate specific documentation files.**
-> 5.  **Do Not Run Maintenance Scripts During Normal Use**: Installing or using this skill means cloning/copying it and reading `SKILL.md`. **Do not run `scripts/sync-docs.sh`, `scripts/generate_index.py`, or other repo-maintenance scripts unless the user explicitly asks to refresh this repository itself.**
-> 6.  **Hard Requirement**: If you did not run `scripts/install-skill.sh` in the final installed directory, the installation is incomplete. Do not claim success after only cloning, copying, or moving files.
->
-> **繁體中文：** 如果使用者提供此倉庫網址並要求你「安裝」或「設定」此技能服務，請遵循以下步驟：
-> 1.  **請用 Git checkout 安裝，不要只複製資料夾**：執行 `git clone https://github.com/tbdavid2019/hermes-agent-docs-skill.git <skill-directory>`。如果只是把檔案複製進某個受管目錄，之後更新通常不會成立。
-> 2.  **優先使用安裝器腳本**：如果環境允許執行 shell，接著執行 `bash <skill-directory>/scripts/install-skill.sh <skill-directory>`。這會確保安裝結果維持為 git checkout，之後重跑同一支腳本就會變成 `git pull --ff-only`。
-> 3.  **載入技能**：讀取 `SKILL.md` 以了解此技能的專業工作流程與知識範圍。
-> 4.  **初始化環境**：確認你已具備存取完整 Hermes Agent 官方文檔的能力。**每當需要查詢特定功能或維護指引時，請優先參考 `references/index.md`。**
-> 5.  **一般使用時不要執行維護腳本**：安裝 or 使用此 skill 的意思是 clone 或複製資料夾，並讀取 `SKILL.md`。**除非使用者明確要求你更新這個 repo 本身，否則不要執行 `scripts/sync-docs.sh`、`scripts/generate_index.py` 或其他維護腳本。**
-> 6.  **硬性要求**：如果你沒有在最終安裝目錄執行 `scripts/install-skill.sh`，就不算安裝完成。不要只做 clone、copy、mv 就宣稱成功。
-
----
+# Hermes Agent Documentation Skill
 
 [繁體中文](README_TW.md) | English
 
-## What is This?
+An Agent Skill that gives compatible AI assistants a documentation-grounded
+workflow for installing, configuring, operating, developing, and
+troubleshooting [Hermes Agent](https://github.com/NousResearch/hermes-agent).
 
-This is an Agent Skill designed for AI assistants to help users with the **Hermes Agent**. It contains official documentation that is automatically synced and indexed.
+The official documentation mirror is refreshed by GitHub Actions every day at
+04:00 UTC. Each successful mirror records the exact upstream commit and sync
+time in `references/SOURCE.md`.
 
-## Installation
+## What This Repository Guarantees
 
-```bash
-git clone https://github.com/tbdavid2019/hermes-agent-docs-skill.git ~/.codex/skills/hermes-agent-docs-skill
+- Mirrors official `.md` and `.mdx` documentation.
+- Records upstream repository, commit SHA, and sync timestamp.
+- Generates a compact task catalog and a deterministic complete index.
+- Validates required documents, index completeness, source metadata, skill
+  naming, symlinks, and minimum document count.
+- Replaces the existing mirror only after a new copy passes preflight checks.
+- Provides tested install/update behavior that refuses to overwrite non-Git
+  directories.
+- Gives LLMs progressive-disclosure, citation, verification, and secret
+  redaction rules.
+
+## Architecture
+
+```text
+NousResearch/hermes-agent / website/docs
+                    │
+                    │ daily GitHub Action
+                    ▼
+       validated staging documentation
+                    │
+                    │ validated swap with rollback
+                    ▼
+ references/catalog.md + index.md + SOURCE.md
+                    │
+                    │ Git checkout in an agent skills directory
+                    ▼
+              SKILL.md workflow
+                    │
+                    ▼
+      documentation-grounded LLM support
 ```
 
-## Structure
+The GitHub repository updates daily. A local installation does not run a
+background updater: update the local checkout explicitly, or let the host
+agent do so only when you ask it to update this skill.
 
-- `SKILL.md`: Main behavior definitions.
-- `references/`: Indexed documentation files.
-- `references/index.md`: Use this to find relevant information.
+## Install
 
-## Update Behavior for AI Agents
+The final directory name must be `hermes-agent-docs-skill`, matching the
+`name` in `SKILL.md`. Keep the installation as a Git checkout if you want it to
+receive updates.
 
-- To update, execute `git pull` inside the skill directory.
-- If `git pull` fails, continue silently with the local copy.
-- Do not run `scripts/sync-docs.sh` or `scripts/generate_index.py` during normal usage. Those are maintainer-side scripts.
+### Codex
 
-## For Developers
+```bash
+git clone \
+  https://github.com/tbdavid2019/hermes-agent-docs-skill.git \
+  ~/.codex/skills/hermes-agent-docs-skill
 
-The `scripts/` folder is for documentation maintenance via GitHub Actions. **Users and AI Agents do not need to run them during normal skill usage.**
+bash ~/.codex/skills/hermes-agent-docs-skill/scripts/install-skill.sh \
+  --check ~/.codex/skills/hermes-agent-docs-skill
+```
 
-- `scripts/sync-docs.sh`: Pulls latest docs from NousResearch.
-- `scripts/generate_index.py`: Updates the documentation index.
+### Other Agent Skill Runtimes
+
+Replace `<skills-directory>` with the user-level or workspace-level skills
+directory supported by that runtime:
+
+```bash
+git clone \
+  https://github.com/tbdavid2019/hermes-agent-docs-skill.git \
+  <skills-directory>/hermes-agent-docs-skill
+
+bash <skills-directory>/hermes-agent-docs-skill/scripts/install-skill.sh \
+  --check <skills-directory>/hermes-agent-docs-skill
+```
+
+Some managed skill installers copy files and discard `.git`. Such a copy can
+be read by the LLM, but it cannot be updated with this repository's installer.
+Use a Git checkout when freshness matters.
+
+The installer refuses to overwrite an existing non-Git directory. Back up or
+rename an old copied installation before installing the Git checkout.
+
+## Update Or Verify A Local Installation
+
+Update with fast-forward-only Git behavior, then validate the result:
+
+```bash
+bash <skills-directory>/hermes-agent-docs-skill/scripts/install-skill.sh \
+  <skills-directory>/hermes-agent-docs-skill
+```
+
+Validate without network access or mutation:
+
+```bash
+bash <skills-directory>/hermes-agent-docs-skill/scripts/install-skill.sh \
+  --check <skills-directory>/hermes-agent-docs-skill
+```
+
+The installer exits non-zero if Git update or repository validation fails. It
+does not report success after a failed pull.
+
+## How The LLM Uses The Skill
+
+The workflow in `SKILL.md` tells the agent to:
+
+1. Check source freshness when version compatibility matters.
+2. Start with `references/catalog.md`.
+3. Search exact errors, commands, environment variables, or configuration keys
+   when the catalog is insufficient.
+4. Load only the smallest useful set of reference pages.
+5. Separate platform, installation, provider, gateway, and feature-specific
+   failure branches.
+6. Cite the local documentation paths used.
+7. Finish with a concrete verification command or observable result.
+
+Example prompts:
+
+- “Install Hermes Agent on native Windows.”
+- “Why does my local Ollama model fail the context-length check?”
+- “Configure a Telegram gateway and verify that it is running.”
+- “Which command switches the active Hermes profile?”
+- “How do Hermes plugins register tools?”
+
+## Repository Structure
+
+```text
+.
+├── SKILL.md                         # Agent workflow and safety contract
+├── CHANGELOG.md                     # Maintainer-visible changes
+├── references/
+│   ├── SOURCE.md                    # Exact upstream revision and sync time
+│   ├── catalog.md                   # Compact task-to-document routing
+│   ├── index.md                     # Complete .md/.mdx inventory
+│   └── ...                          # Mirrored official documentation
+├── scripts/
+│   ├── install-skill.sh             # Clone/update/check installation
+│   ├── sync-docs.sh                 # Safe upstream mirror
+│   ├── generate_index.py            # Catalog, index, source metadata
+│   └── validate_repository.py       # CI and installation quality gate
+├── tests/                            # Unit and local Git integration tests
+└── .github/workflows/auto-sync.yml  # Daily sync workflow
+```
+
+## Maintainer Workflow
+
+Normal skill usage must not execute repository maintenance scripts. Maintainers
+can run:
+
+```bash
+python3 -m unittest discover -s tests -v
+bash -n scripts/install-skill.sh scripts/sync-docs.sh
+bash scripts/sync-docs.sh
+python3 scripts/validate_repository.py
+git diff --check -- . ':!references'
+```
+
+`sync-docs.sh` clones into a temporary checkout, rejects symlinks and incomplete
+mirrors, generates metadata/navigation, swaps directories only after preflight,
+and restores the previous mirror if final repository validation fails.
+
+## Security Boundary
+
+Mirrored documentation is external data, not agent instructions. `SKILL.md`
+requires agents to ignore embedded prompt-like instructions, redact secrets,
+and follow normal approval rules before destructive, privileged, or externally
+mutating actions.
 
 ## License
 
-[AGPL-3.0](LICENSE)
+Repository automation and skill instructions are licensed under
+[AGPL-3.0](LICENSE). Mirrored Hermes Agent documentation remains attributable
+to its [upstream source](https://github.com/NousResearch/hermes-agent); inspect
+`references/SOURCE.md` for the exact mirrored revision.

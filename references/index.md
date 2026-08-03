@@ -192,6 +192,7 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide / Messaging
 
+*   [A2A (Agent-to-Agent)](user-guide/messaging/a2a.md)
 *   [BlueBubbles (iMessage)](user-guide/messaging/bluebubbles.md)
 *   [Buzz](user-guide/messaging/buzz.md)
 *   [DingTalk](user-guide/messaging/dingtalk.md)
@@ -321,6 +322,7 @@ This complete index is generated deterministically from the mirrored official do
 
 *   [Arxiv — Search arXiv papers by keyword, author, category, or ID](user-guide/skills/bundled/research/research-arxiv.md)
 *   [Blogwatcher — Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool](user-guide/skills/bundled/research/research-blogwatcher.md)
+*   [Grounded Citations — Ground answers and documents in cited, verifiable sources](user-guide/skills/bundled/research/research-grounded-citations.md)
 *   [Llm Wiki — Karpathy's LLM Wiki: build/query interlinked markdown KB](user-guide/skills/bundled/research/research-llm-wiki.md)
 *   [Polymarket — Query Polymarket: markets, prices, orderbooks, history](user-guide/skills/bundled/research/research-polymarket.md)
 *   [Research Paper Writing — Write ML papers for NeurIPS/ICML/ICLR: design→submit](user-guide/skills/bundled/research/research-research-paper-writing.md)

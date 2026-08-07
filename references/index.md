@@ -328,7 +328,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Blogwatcher — Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool](user-guide/skills/bundled/research/research-blogwatcher.md)
 *   [Grounded Citations — Ground answers and documents in cited, verifiable sources](user-guide/skills/bundled/research/research-grounded-citations.md)
 *   [Llm Wiki — Karpathy's LLM Wiki: build/query interlinked markdown KB](user-guide/skills/bundled/research/research-llm-wiki.md)
-*   [Polymarket — Query Polymarket: markets, prices, orderbooks, history](user-guide/skills/bundled/research/research-polymarket.md)
 *   [Research Paper Writing — Write ML papers for NeurIPS/ICML/ICLR: design→submit](user-guide/skills/bundled/research/research-research-paper-writing.md)
 
 ## User Guide / Skills / Bundled / Smart Home
@@ -415,6 +414,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Excel Author — Build auditable financial workbooks headless via openpyxl](user-guide/skills/optional/finance/finance-excel-author.md)
 *   [Lbo Model — Build leveraged buyout workbooks with IRR/MOIC in Excel](user-guide/skills/optional/finance/finance-lbo-model.md)
 *   [Merger Model — Build M&A accretion/dilution workbooks in Excel](user-guide/skills/optional/finance/finance-merger-model.md)
+*   [Polymarket — Query Polymarket: markets, prices, orderbooks, history](user-guide/skills/optional/finance/finance-polymarket.md)
 *   [Pptx Author — Build PowerPoint decks headless with python-pptx](user-guide/skills/optional/finance/finance-pptx-author.md)
 *   [Stocks — Stock quotes, history, search, compare, crypto via Yahoo](user-guide/skills/optional/finance/finance-stocks.md)
 

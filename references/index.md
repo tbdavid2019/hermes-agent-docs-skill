@@ -19,6 +19,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Architecture](developer-guide/architecture.md)
 *   [Browser Provider Plugins](developer-guide/browser-provider-plugin.md)
 *   [Browser CDP Supervisor](developer-guide/browser-supervisor.md)
+*   [Codebase Ownership Map](developer-guide/codebase-ownership.md)
 *   [Context Compression and Caching](developer-guide/context-compression-and-caching.md)
 *   [Context Engine Plugins](developer-guide/context-engine-plugin.md)
 *   [Contributing](developer-guide/contributing.md)
@@ -60,6 +61,7 @@ This complete index is generated deterministically from the mirrored official do
 
 ## Guides
 
+*   [Give Your Agent Its Own Email Address](guides/agent-email-address.md)
 *   [Automate Anything with Cron](guides/automate-with-cron.md)
 *   [Automation Blueprints](guides/automation-blueprints.md)
 *   [AWS Bedrock](guides/aws-bedrock.md)
@@ -311,6 +313,7 @@ This complete index is generated deterministically from the mirrored official do
 ## User Guide / Skills / Bundled / Productivity
 
 *   [Airtable — Airtable REST API via curl](user-guide/skills/bundled/productivity/productivity-airtable.md)
+*   [Document To Action Items — Extract cited obligations, deadlines, tasks from documents](user-guide/skills/bundled/productivity/productivity-document-to-action-items.md)
 *   [Docx — Create, read, edit Word .docx documents and templates](user-guide/skills/bundled/productivity/productivity-docx.md)
 *   [Google Workspace — Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python](user-guide/skills/bundled/productivity/productivity-google-workspace.md)
 *   [Maps — Geocode, POIs, routes, timezones via OpenStreetMap/OSRM](user-guide/skills/bundled/productivity/productivity-maps.md)

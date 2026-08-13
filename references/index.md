@@ -327,6 +327,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Pdf — Create, read, merge, fill, and secure PDF files](user-guide/skills/bundled/productivity/productivity-pdf.md)
 *   [Powerpoint — Create, read, edit .pptx decks with python-pptx](user-guide/skills/bundled/productivity/productivity-powerpoint.md)
 *   [Product Price Monitor — Watch product, flight, or listing prices; alert on target](user-guide/skills/bundled/productivity/productivity-product-price-monitor.md)
+*   [Session Librarian — Organize sessions by prompt: find, rename, archive, prune](user-guide/skills/bundled/productivity/productivity-session-librarian.md)
 *   [Teams Meeting Pipeline — Teams meeting summaries, job replay, Graph subscriptions](user-guide/skills/bundled/productivity/productivity-teams-meeting-pipeline.md)
 *   [Weekly Review Planning — Weekly reset: commitments, stalled work, next-week plan](user-guide/skills/bundled/productivity/productivity-weekly-review-planning.md)
 *   [Xlsx — Create, read, edit Excel .xlsx workbooks and CSVs](user-guide/skills/bundled/productivity/productivity-xlsx.md)
@@ -334,6 +335,7 @@ This complete index is generated deterministically from the mirrored official do
 ## User Guide / Skills / Bundled / Research
 
 *   [Arxiv — Search arXiv papers by keyword, author, category, or ID](user-guide/skills/bundled/research/research-arxiv.md)
+*   [Blocked Page Recovery — Recover blocked/paywalled/WAF'd pages via archive snapshots and reader fallbacks](user-guide/skills/bundled/research/research-blocked-page-recovery.md)
 *   [Blogwatcher — Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool](user-guide/skills/bundled/research/research-blogwatcher.md)
 *   [Competitor News Monitor — Watch named companies for material news; cited digests](user-guide/skills/bundled/research/research-competitor-news-monitor.md)
 *   [Grounded Citations — Ground answers and documents in cited, verifiable sources](user-guide/skills/bundled/research/research-grounded-citations.md)

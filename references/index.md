@@ -316,6 +316,7 @@ This complete index is generated deterministically from the mirrored official do
 ## User Guide / Skills / Bundled / Productivity
 
 *   [Airtable — Airtable REST API via curl](user-guide/skills/bundled/productivity/productivity-airtable.md)
+*   [Box — Box manages cloud files, sharing, search, and metadata](user-guide/skills/bundled/productivity/productivity-box.md)
 *   [Document To Action Items — Extract cited obligations, deadlines, tasks from documents](user-guide/skills/bundled/productivity/productivity-document-to-action-items.md)
 *   [Docx — Create, read, edit, and template Word .docx files](user-guide/skills/bundled/productivity/productivity-docx.md)
 *   [Google Workspace — Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python](user-guide/skills/bundled/productivity/productivity-google-workspace.md)

@@ -129,6 +129,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Git Worktrees](user-guide/git-worktrees.md)
 *   [Import from Other Agents](user-guide/import-from-other-agents.md)
 *   [Managed Scope](user-guide/managed-scope.md)
+*   [Connecting Desktop to Many Hermes Instances](user-guide/multi-connection-desktop.md)
 *   [Running Many Gateways at Once](user-guide/multi-profile-gateways.md)
 *   [Profile Distributions: Share a Whole Agent](user-guide/profile-distributions.md)
 *   [Profiles: Running Multiple Agents](user-guide/profiles.md)

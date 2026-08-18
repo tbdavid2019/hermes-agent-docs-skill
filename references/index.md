@@ -120,6 +120,7 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide
 
+*   [Bot Mode](user-guide/bot-mode.md)
 *   [Checkpoints and /rollback](user-guide/checkpoints-and-rollback.md)
 *   [CLI Interface](user-guide/cli.md)
 *   [Configuration](user-guide/configuration.md)
@@ -392,11 +393,13 @@ This complete index is generated deterministically from the mirrored official do
 *   [Baoyu Comic — Knowledge comics (知识漫画): educational, biography, tutorial](user-guide/skills/optional/creative/creative-baoyu-comic.md)
 *   [Concept Diagrams — Generate flat, minimal educational SVG visuals as HTML](user-guide/skills/optional/creative/creative-concept-diagrams.md)
 *   [Creative Ideation — Generate ideas via named methods from creative practice](user-guide/skills/optional/creative/creative-creative-ideation.md)
+*   [Draw Your Font — Turn a photo of handwriting into an installable font (TTF/WOFF)](user-guide/skills/optional/creative/creative-draw-your-font.md)
 *   [Heartmula — HeartMuLa: Suno-like song generation from lyrics + tags](user-guide/skills/optional/creative/creative-heartmula.md)
 *   [Hyperframes — Render MP4/WebM videos from HTML compositions](user-guide/skills/optional/creative/creative-hyperframes.md)
 *   [Kanban Video Orchestrator — Plan and run multi-agent video production pipelines](user-guide/skills/optional/creative/creative-kanban-video-orchestrator.md)
 *   [Meme Generation — Create meme PNGs from templates with Pillow text overlay](user-guide/skills/optional/creative/creative-meme-generation.md)
 *   [Pixel Art — Pixel art w/ era palettes (NES, Game Boy, PICO-8)](user-guide/skills/optional/creative/creative-pixel-art.md)
+*   [Simple English — Rewrite technical text to ASD-STE100 Simplified Technical English](user-guide/skills/optional/creative/creative-simple-english.md)
 *   [Social Media Content Calendar — Plan multi-platform social campaigns: briefs to posting](user-guide/skills/optional/creative/creative-social-media-content-calendar.md)
 *   [Tldraw Offline — Drive and script tldraw offline canvases with an agent](user-guide/skills/optional/creative/creative-tldraw-offline.md)
 *   [Unreal Mcp — Automate Unreal Engine editor scenes, actors, and renders](user-guide/skills/optional/creative/creative-unreal-mcp.md)

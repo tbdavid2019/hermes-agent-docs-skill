@@ -107,6 +107,7 @@ This complete index is generated deterministically from the mirrored official do
 
 *   [Automation Blueprints Catalog](reference/automation-blueprints-catalog.mdx)
 *   [CLI Commands Reference](reference/cli-commands.md)
+*   [CLI Symbols Glossary](reference/cli-symbols.md)
 *   [Environment Variables](reference/environment-variables.md)
 *   [FAQ & Troubleshooting](reference/faq.md)
 *   [MCP Config Reference](reference/mcp-config-reference.md)

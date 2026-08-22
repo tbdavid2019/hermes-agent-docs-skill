@@ -76,6 +76,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Google Vertex AI](guides/google-vertex.md)
 *   [Run Local LLMs on Mac](guides/local-llm-on-mac.md)
 *   [Run Hermes Locally with Ollama — Zero API Cost](guides/local-ollama-setup.md)
+*   [Manage Hermes Cloud with MCP](guides/manage-hermes-cloud-with-mcp.md)
 *   [Register a Microsoft Graph Application](guides/microsoft-graph-app-registration.md)
 *   [Migrate from OpenClaw](guides/migrate-from-openclaw.md)
 *   [MiniMax OAuth](guides/minimax-oauth.md)

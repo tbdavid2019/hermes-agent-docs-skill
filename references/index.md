@@ -39,6 +39,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Secret Source Plugins](developer-guide/secret-source-plugin.md)
 *   [Session Storage](developer-guide/session-storage.md)
 *   [Public Subagent Lifecycle API](developer-guide/subagent-lifecycle-api.md)
+*   [Terminal Environment Provider Plugins](developer-guide/terminal-environment-plugin.md)
 *   [Tools Runtime](developer-guide/tools-runtime.md)
 *   [Trajectory Format](developer-guide/trajectory-format.md)
 *   [Video Generation Provider Plugins](developer-guide/video-gen-provider-plugin.md)
@@ -55,7 +56,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Learning Path](getting-started/learning-path.md)
 *   [Nix & NixOS Setup](getting-started/nix-setup.md)
 *   [Platform Support](getting-started/platform-support.md)
-*   [Quickstart](getting-started/quickstart.md)
+*   [Hermes Agent Quickstart](getting-started/quickstart.md)
 *   [Android / Termux](getting-started/termux.md)
 *   [Updating & Uninstalling](getting-started/updating.md)
 
@@ -102,7 +103,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Buzz Integration](integrations/buzz.md)
 *   [Integrations](integrations/index.md)
 *   [Nous Portal](integrations/nous-portal.md)
-*   [AI Providers](integrations/providers.md)
+*   [LLM and Model Providers](integrations/providers.md)
 
 ## Reference
 
@@ -125,10 +126,10 @@ This complete index is generated deterministically from the mirrored official do
 *   [Bot Mode](user-guide/bot-mode.md)
 *   [Checkpoints and /rollback](user-guide/checkpoints-and-rollback.md)
 *   [CLI Interface](user-guide/cli.md)
-*   [Configuration](user-guide/configuration.md)
+*   [Hermes Agent Configuration](user-guide/configuration.md)
 *   [Configuring Models](user-guide/configuring-models.md)
-*   [Desktop App](user-guide/desktop.md)
-*   [Docker](user-guide/docker.md)
+*   [Hermes Desktop](user-guide/desktop.md)
+*   [Hermes Docker Setup](user-guide/docker.md)
 *   [Git Worktrees](user-guide/git-worktrees.md)
 *   [Import from Other Agents](user-guide/import-from-other-agents.md)
 *   [Managed Scope](user-guide/managed-scope.md)
@@ -198,7 +199,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Vision & Image Paste](user-guide/features/vision.md)
 *   [Voice Mode](user-guide/features/voice-mode.md)
 *   [Wake Word](user-guide/features/wake-word.md)
-*   [Web Dashboard](user-guide/features/web-dashboard.md)
+*   [Hermes Web Dashboard](user-guide/features/web-dashboard.md)
 *   [Web Search & Extract](user-guide/features/web-search.md)
 *   [X (Twitter) Search](user-guide/features/x-search.md)
 

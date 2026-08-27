@@ -544,6 +544,7 @@ This complete index is generated deterministically from the mirrored official do
 
 *   [Cloudflare Temporary Deploy — Deploy a Worker live, no account, via wrangler --temporary](user-guide/skills/optional/web-development/web-development-cloudflare-temporary-deploy.md)
 *   [Page Agent — Embed an in-page natural-language GUI copilot in web apps](user-guide/skills/optional/web-development/web-development-page-agent.md)
+*   [Publish Site — Versioned site deploys to GitHub/Cloudflare/Netlify Pages](user-guide/skills/optional/web-development/web-development-publish-site.md)
 
 ## User Guide / Skills / Optional / Yuanbao
 

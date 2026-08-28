@@ -426,7 +426,7 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide / Skills / Optional / Email
 
-*   [Agentmail — Give the agent its own inbox: send and receive email](user-guide/skills/optional/email/email-agentmail.md)
+*   [Agentmail — Use when an agent needs AgentMail CLI email inboxes](user-guide/skills/optional/email/email-agentmail.md)
 
 ## User Guide / Skills / Optional / Finance
 

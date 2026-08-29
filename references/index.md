@@ -537,6 +537,7 @@ This complete index is generated deterministically from the mirrored official do
 ## User Guide / Skills / Optional / Software Development
 
 *   [Code Wiki — Generate wiki docs + Mermaid diagrams for any codebase](user-guide/skills/optional/software-development/software-development-code-wiki.md)
+*   [Grill Me — Adversarial plan interview before implementation](user-guide/skills/optional/software-development/software-development-grill-me.md)
 *   [Rest Graphql Debug — Debug REST/GraphQL APIs: status codes, auth, schemas, repro](user-guide/skills/optional/software-development/software-development-rest-graphql-debug.md)
 *   [Subagent Driven Development — Execute plans via delegate_task subagents (2-stage review)](user-guide/skills/optional/software-development/software-development-subagent-driven-development.md)
 

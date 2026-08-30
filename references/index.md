@@ -263,7 +263,7 @@ This complete index is generated deterministically from the mirrored official do
 
 *   [Claude Code — Delegate coding to Claude Code CLI (features, PRs)](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-claude-code.md)
 *   [Codex — Delegate coding to OpenAI Codex CLI (features, PRs)](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-codex.md)
-*   [Computer Use — Drive the desktop in the background without stealing focus](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-computer-use.md)
+*   [Computer Use — Drive the desktop background-first; escalate on signal](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-computer-use.md)
 *   [Hermes Agent — Use, configure, theme, extend, and orchestrate Hermes Agent](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-hermes-agent.md)
 *   [Opencode — Delegate coding to OpenCode CLI (features, PR review)](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-opencode.md)
 
@@ -363,7 +363,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Hermes Agent Skill Authoring — Author in-repo SKILL.md files: frontmatter and structure](user-guide/skills/bundled/software-development/software-development-hermes-agent-skill-authoring.md)
 *   [Inspecting Hermes Desktop Dom — Read the live Hermes desktop DOM/CSS over CDP](user-guide/skills/bundled/software-development/software-development-inspecting-hermes-desktop-dom.md)
 *   [Node Inspect Debugger — Debug Node.js via --inspect + Chrome DevTools Protocol CLI](user-guide/skills/bundled/software-development/software-development-node-inspect-debugger.md)
-*   [Plan — Write a markdown plan to .hermes/plans/; no execution](user-guide/skills/bundled/software-development/software-development-plan.md)
 *   [Python Debugpy — Debug Python: pdb REPL + debugpy remote (DAP)](user-guide/skills/bundled/software-development/software-development-python-debugpy.md)
 *   [Requesting Code Review — Pre-commit review: security scan, quality gates, auto-fix](user-guide/skills/bundled/software-development/software-development-requesting-code-review.md)
 *   [Simplify Code — Parallel 4-agent cleanup of recent code changes](user-guide/skills/bundled/software-development/software-development-simplify-code.md)
@@ -399,6 +398,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Draw Your Font — Turn a photo of handwriting into an installable font (TTF/WOFF)](user-guide/skills/optional/creative/creative-draw-your-font.md)
 *   [Heartmula — HeartMuLa: Suno-like song generation from lyrics + tags](user-guide/skills/optional/creative/creative-heartmula.md)
 *   [Hyperframes — Render MP4/WebM videos from HTML compositions](user-guide/skills/optional/creative/creative-hyperframes.md)
+*   [Impeccable — Frontend design guidance, upstream-maintained (impeccable)](user-guide/skills/optional/creative/creative-impeccable.md)
 *   [Kanban Video Orchestrator — Plan and run multi-agent video production pipelines](user-guide/skills/optional/creative/creative-kanban-video-orchestrator.md)
 *   [Meme Generation — Create meme PNGs from templates with Pillow text overlay](user-guide/skills/optional/creative/creative-meme-generation.md)
 *   [Pixel Art — Pixel art w/ era palettes (NES, Game Boy, PICO-8)](user-guide/skills/optional/creative/creative-pixel-art.md)
@@ -418,6 +418,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Hermes S6 Container Supervision — Modify or debug s6 services in the Hermes Docker image](user-guide/skills/optional/devops/devops-hermes-s6-container-supervision.md)
 *   [Inference Sh Cli — Run 150+ AI apps (image, video, LLM) via inference.sh CLI](user-guide/skills/optional/devops/devops-inference-sh-cli.md)
 *   [Pinggy Tunnel — Zero-install localhost tunnels over SSH via Pinggy](user-guide/skills/optional/devops/devops-pinggy-tunnel.md)
+*   [Setup Wizard Generator — Generate a bash wizard guiding a human through manual setup](user-guide/skills/optional/devops/devops-setup-wizard-generator.md)
 *   [Watchers — Poll RSS, JSON APIs, and GitHub with watermark dedup](user-guide/skills/optional/devops/devops-watchers.md)
 
 ## User Guide / Skills / Optional / Dogfood
@@ -503,6 +504,7 @@ This complete index is generated deterministically from the mirrored official do
 ## User Guide / Skills / Optional / Productivity
 
 *   [Canvas — Fetch Canvas LMS courses and assignments via API token](user-guide/skills/optional/productivity/productivity-canvas.md)
+*   [Decision Questionnaire — Turn an unanswerable decision into a questionnaire doc](user-guide/skills/optional/productivity/productivity-decision-questionnaire.md)
 *   [Here Now — Publish sites to {slug}.here.now and store files in Drives](user-guide/skills/optional/productivity/productivity-here-now.md)
 *   [Memento Flashcards — Spaced-repetition flashcards: create, review, quiz, export](user-guide/skills/optional/productivity/productivity-memento-flashcards.md)
 *   [Shop — Shop catalog search, checkout, order tracking, returns](user-guide/skills/optional/productivity/productivity-shop.md)

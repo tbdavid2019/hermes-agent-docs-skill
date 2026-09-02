@@ -132,6 +132,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Hermes Docker Setup](user-guide/docker.md)
 *   [Git Worktrees](user-guide/git-worktrees.md)
 *   [Import from Other Agents](user-guide/import-from-other-agents.md)
+*   [Local Models](user-guide/local-models.md)
 *   [Managed Scope](user-guide/managed-scope.md)
 *   [Connecting Desktop to Many Hermes Instances](user-guide/multi-connection-desktop.md)
 *   [Running Many Gateways at Once](user-guide/multi-profile-gateways.md)

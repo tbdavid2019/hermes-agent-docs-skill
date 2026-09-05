@@ -19,6 +19,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Architecture](developer-guide/architecture.md)
 *   [Browser Provider Plugins](developer-guide/browser-provider-plugin.md)
 *   [Browser CDP Supervisor](developer-guide/browser-supervisor.md)
+*   [CLI Internals](developer-guide/cli-internals.md)
 *   [Codebase Ownership Map](developer-guide/codebase-ownership.md)
 *   [Context Compression and Caching](developer-guide/context-compression-and-caching.md)
 *   [Context Engine Plugins](developer-guide/context-engine-plugin.md)

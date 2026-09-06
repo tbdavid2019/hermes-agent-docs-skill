@@ -355,6 +355,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Grounded Citations — Ground answers and documents in cited, verifiable sources](user-guide/skills/bundled/research/research-grounded-citations.md)
 *   [Llm Wiki — Karpathy's LLM Wiki: build/query interlinked markdown KB](user-guide/skills/bundled/research/research-llm-wiki.md)
 *   [Research Paper Writing — Write ML papers for NeurIPS/ICML/ICLR: design→submit](user-guide/skills/bundled/research/research-research-paper-writing.md)
+*   [Rss Feeds — Read RSS, Atom, JSON feeds; discover feeds behind a page](user-guide/skills/bundled/research/research-rss-feeds.md)
 
 ## User Guide / Skills / Bundled / Smart Home
 
@@ -362,6 +363,7 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide / Skills / Bundled / Social Media
 
+*   [Reddit Reading — Read Reddit: subreddits, search, threads, users](user-guide/skills/bundled/social-media/social-media-reddit-reading.md)
 *   [Xurl — X/Twitter via xurl CLI: raw post search, posting, DM, media](user-guide/skills/bundled/social-media/social-media-xurl.md)
 
 ## User Guide / Skills / Bundled / Software Development

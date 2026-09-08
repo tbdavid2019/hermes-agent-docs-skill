@@ -21,6 +21,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Browser CDP Supervisor](developer-guide/browser-supervisor.md)
 *   [CLI Internals](developer-guide/cli-internals.md)
 *   [Codebase Ownership Map](developer-guide/codebase-ownership.md)
+*   [Background completion backlogs](developer-guide/completion-backlog-delivery.md)
 *   [Context Compression and Caching](developer-guide/context-compression-and-caching.md)
 *   [Context Engine Plugins](developer-guide/context-engine-plugin.md)
 *   [Contributing](developer-guide/contributing.md)

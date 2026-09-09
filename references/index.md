@@ -356,7 +356,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Grounded Citations — Ground answers and documents in cited, verifiable sources](user-guide/skills/bundled/research/research-grounded-citations.md)
 *   [Llm Wiki — Karpathy's LLM Wiki: build/query interlinked markdown KB](user-guide/skills/bundled/research/research-llm-wiki.md)
 *   [Research Paper Writing — Write ML papers for NeurIPS/ICML/ICLR: design→submit](user-guide/skills/bundled/research/research-research-paper-writing.md)
-*   [Rss Feeds — Read RSS, Atom, JSON feeds; discover feeds behind a page](user-guide/skills/bundled/research/research-rss-feeds.md)
 
 ## User Guide / Skills / Bundled / Smart Home
 
@@ -364,7 +363,6 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide / Skills / Bundled / Social Media
 
-*   [Reddit Reading — Read Reddit: subreddits, search, threads, users](user-guide/skills/bundled/social-media/social-media-reddit-reading.md)
 *   [Xurl — X/Twitter via xurl CLI: raw post search, posting, DM, media](user-guide/skills/bundled/social-media/social-media-xurl.md)
 
 ## User Guide / Skills / Bundled / Software Development
@@ -534,6 +532,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Decision Questionnaire — Turn an unanswerable decision into a questionnaire doc](user-guide/skills/optional/productivity/productivity-decision-questionnaire.md)
 *   [Here Now — Publish sites to {slug}.here.now and store files in Drives](user-guide/skills/optional/productivity/productivity-here-now.md)
 *   [Memento Flashcards — Spaced-repetition flashcards: create, review, quiz, export](user-guide/skills/optional/productivity/productivity-memento-flashcards.md)
+*   [Property Listings — Present property and rental listings as desktop cards](user-guide/skills/optional/productivity/productivity-property-listings.md)
 *   [Shop — Shop catalog search, checkout, order tracking, returns](user-guide/skills/optional/productivity/productivity-shop.md)
 *   [Shopify — Query Shopify Admin/Storefront GraphQL APIs via curl](user-guide/skills/optional/productivity/productivity-shopify.md)
 *   [Siyuan — Query and edit a SiYuan knowledge base via its API](user-guide/skills/optional/productivity/productivity-siyuan.md)
@@ -553,6 +552,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Pinecone Research — Agent RAG and long-term memory with Pinecone](user-guide/skills/optional/research/research-pinecone-research.md)
 *   [Qmd — Hybrid local search over notes, docs, and transcripts](user-guide/skills/optional/research/research-qmd.md)
 *   [Research Paper Writing — Write ML papers for NeurIPS/ICML/ICLR: design→submit](user-guide/skills/optional/research/research-research-paper-writing.md)
+*   [Rss Feeds — Read RSS, Atom, JSON feeds; discover feeds behind a page](user-guide/skills/optional/research/research-rss-feeds.md)
 *   [Scrapling — Scrape sites with stealth browsing and Cloudflare bypass](user-guide/skills/optional/research/research-scrapling.md)
 *   [Searxng Search — Free keyless meta-search aggregating 70+ engines](user-guide/skills/optional/research/research-searxng-search.md)
 
@@ -568,6 +568,10 @@ This complete index is generated deterministically from the mirrored official do
 ## User Guide / Skills / Optional / Smart Home
 
 *   [Openhue — Control Philips Hue lights, scenes, rooms via OpenHue CLI](user-guide/skills/optional/smart-home/smart-home-openhue.md)
+
+## User Guide / Skills / Optional / Social Media
+
+*   [Reddit Reading — Read Reddit: subreddits, search, threads, users](user-guide/skills/optional/social-media/social-media-reddit-reading.md)
 
 ## User Guide / Skills / Optional / Software Development
 

@@ -189,6 +189,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Features Overview](user-guide/features/overview.md)
 *   [Personality & SOUL.md](user-guide/features/personality.md)
 *   [Pets (Petdex Mascots)](user-guide/features/pets.md)
+*   [Plugin Catalog](user-guide/features/plugin-catalog.md)
 *   [Plugins](user-guide/features/plugins.md)
 *   [Provider Routing](user-guide/features/provider-routing.md)
 *   [Skills System](user-guide/features/skills.md)

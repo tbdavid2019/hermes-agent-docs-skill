@@ -132,6 +132,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Configuring Models](user-guide/configuring-models.md)
 *   [Hermes Desktop](user-guide/desktop.md)
 *   [Hermes Docker Setup](user-guide/docker.md)
+*   [Free tier and signing in](user-guide/free-tier.md)
 *   [Git Worktrees](user-guide/git-worktrees.md)
 *   [Import from Other Agents](user-guide/import-from-other-agents.md)
 *   [Local Models](user-guide/local-models.md)
@@ -165,6 +166,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Context Files](user-guide/features/context-files.md)
 *   [Context References](user-guide/features/context-references.md)
 *   [Credential Pools](user-guide/features/credential-pools.md)
+*   [Passwords & Logins](user-guide/features/credential-vault.md)
 *   [Scheduled Tasks (Cron)](user-guide/features/cron.md)
 *   [Curator](user-guide/features/curator.md)
 *   [Subagent Delegation](user-guide/features/delegation.md)
@@ -405,6 +407,7 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide / Skills / Optional / Creative
 
+*   [Archify — Validated interactive HTML diagrams, upstream-maintained](user-guide/skills/optional/creative/creative-archify.md)
 *   [Ascii Art — ASCII art: pyfiglet, cowsay, boxes, image-to-ascii](user-guide/skills/optional/creative/creative-ascii-art.md)
 *   [Audiocraft Audio Generation — AudioCraft: MusicGen text-to-music, AudioGen text-to-sound](user-guide/skills/optional/creative/creative-audiocraft-audio-generation.md)
 *   [Baoyu Article Illustrator — Article illustrations: type × style × palette consistency](user-guide/skills/optional/creative/creative-baoyu-article-illustrator.md)

@@ -391,6 +391,7 @@ This complete index is generated deterministically from the mirrored official do
 
 *   [Antigravity Cli — Operate the Antigravity CLI (agy): plugins, auth, sandbox](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-antigravity-cli.md)
 *   [Blackbox — Delegate coding tasks to the Blackbox AI multi-model CLI](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-blackbox.md)
+*   [Dynamic Workflow — Plan-in-code fan-outs, adversarial verification, waves](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-dynamic-workflow.md)
 *   [Grok — Delegate coding to xAI Grok Build CLI (features, PRs)](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-grok.md)
 *   [Honcho — Configure and troubleshoot Honcho memory for Hermes](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-honcho.md)
 *   [Openhands — Delegate coding to OpenHands CLI (model-agnostic, LiteLLM)](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-openhands.md)

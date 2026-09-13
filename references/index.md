@@ -132,7 +132,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Configuring Models](user-guide/configuring-models.md)
 *   [Hermes Desktop](user-guide/desktop.md)
 *   [Hermes Docker Setup](user-guide/docker.md)
-*   [Free tier and signing in](user-guide/free-tier.md)
 *   [Git Worktrees](user-guide/git-worktrees.md)
 *   [Import from Other Agents](user-guide/import-from-other-agents.md)
 *   [Local Models](user-guide/local-models.md)
@@ -291,7 +290,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Pretext — Build creative browser demos with DOM-free text layout](user-guide/skills/bundled/creative/creative-pretext.md)
 *   [Sketch — Throwaway HTML mockups: 2-3 design variants to compare](user-guide/skills/bundled/creative/creative-sketch.md)
 *   [Songwriting And Ai Music — Songwriting craft and Suno AI music prompts](user-guide/skills/bundled/creative/creative-songwriting-and-ai-music.md)
-*   [Touchdesigner Mcp — Control TouchDesigner via twozero MCP](user-guide/skills/bundled/creative/creative-touchdesigner-mcp.md)
 
 ## User Guide / Skills / Bundled / Devops
 
@@ -417,19 +415,21 @@ This complete index is generated deterministically from the mirrored official do
 *   [Concept Diagrams — Generate flat, minimal educational SVG visuals as HTML](user-guide/skills/optional/creative/creative-concept-diagrams.md)
 *   [Creative Ideation — Generate ideas via named methods from creative practice](user-guide/skills/optional/creative/creative-creative-ideation.md)
 *   [Draw Your Font — Turn a handwriting photo into an installable TTF font](user-guide/skills/optional/creative/creative-draw-your-font.md)
+*   [Dream Loop — Build stunning 3D scenes via a concept-art fidelity loop](user-guide/skills/optional/creative/creative-dream-loop.md)
 *   [Excalidraw — Hand-drawn Excalidraw JSON diagrams (arch, flow, seq)](user-guide/skills/optional/creative/creative-excalidraw.md)
 *   [Heartmula — HeartMuLa: Suno-like song generation from lyrics + tags](user-guide/skills/optional/creative/creative-heartmula.md)
 *   [Hyperframes — Render MP4/WebM videos from HTML compositions](user-guide/skills/optional/creative/creative-hyperframes.md)
 *   [Impeccable — Frontend design guidance, upstream-maintained (impeccable)](user-guide/skills/optional/creative/creative-impeccable.md)
 *   [Kanban Video Orchestrator — Plan and run multi-agent video production pipelines](user-guide/skills/optional/creative/creative-kanban-video-orchestrator.md)
 *   [Meme Generation — Create meme PNGs from templates with Pillow text overlay](user-guide/skills/optional/creative/creative-meme-generation.md)
+*   [Mono Color — Generate one- or two-ink editorial print poster images](user-guide/skills/optional/creative/creative-mono-color.md)
 *   [Pixel Art — Pixel art w/ era palettes (NES, Game Boy, PICO-8)](user-guide/skills/optional/creative/creative-pixel-art.md)
 *   [Pretext — Build creative browser demos with DOM-free text layout](user-guide/skills/optional/creative/creative-pretext.md)
 *   [Simple English — Rewrite text to ASD-STE100 Simplified Technical English](user-guide/skills/optional/creative/creative-simple-english.md)
 *   [Sketch — Throwaway HTML mockups: 2-3 design variants to compare](user-guide/skills/optional/creative/creative-sketch.md)
 *   [Social Media Content Calendar — Plan multi-platform social campaigns: briefs to posting](user-guide/skills/optional/creative/creative-social-media-content-calendar.md)
+*   [System Atlas — Build explorable isometric architecture atlases as HTML](user-guide/skills/optional/creative/creative-system-atlas.md)
 *   [Tldraw Offline — Drive and script tldraw offline canvases with an agent](user-guide/skills/optional/creative/creative-tldraw-offline.md)
-*   [Touchdesigner Mcp — Control TouchDesigner via twozero MCP](user-guide/skills/optional/creative/creative-touchdesigner-mcp.md)
 *   [Unreal Mcp — Automate Unreal Engine editor scenes, actors, and renders](user-guide/skills/optional/creative/creative-unreal-mcp.md)
 
 ## User Guide / Skills / Optional / Data Science
@@ -583,6 +583,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Ast Grep — AST-aware structural code search and rewrite via ast-grep](user-guide/skills/optional/software-development/software-development-ast-grep.md)
 *   [Code Wiki — Generate wiki docs + Mermaid diagrams for any codebase](user-guide/skills/optional/software-development/software-development-code-wiki.md)
 *   [Grill Me — Adversarial plan interview before implementation](user-guide/skills/optional/software-development/software-development-grill-me.md)
+*   [Pr Lens — Draw code changes as animated architecture/data-flow SVGs](user-guide/skills/optional/software-development/software-development-pr-lens.md)
 *   [Rest Graphql Debug — Debug REST/GraphQL APIs: status codes, auth, schemas, repro](user-guide/skills/optional/software-development/software-development-rest-graphql-debug.md)
 *   [Subagent Driven Development — Execute plans via delegate_task subagents (2-stage review)](user-guide/skills/optional/software-development/software-development-subagent-driven-development.md)
 

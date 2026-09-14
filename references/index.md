@@ -17,8 +17,10 @@ This complete index is generated deterministically from the mirrored official do
 *   [Adding Tools](developer-guide/adding-tools.md)
 *   [Agent Loop Internals](developer-guide/agent-loop.md)
 *   [Architecture](developer-guide/architecture.md)
+*   [Billing Lifecycle (TUI)](developer-guide/billing-lifecycle.md)
 *   [Browser Provider Plugins](developer-guide/browser-provider-plugin.md)
 *   [Browser CDP Supervisor](developer-guide/browser-supervisor.md)
+*   [Chronos Managed-Cron Contract](developer-guide/chronos-managed-cron-contract.md)
 *   [CLI Internals](developer-guide/cli-internals.md)
 *   [Codebase Ownership Map](developer-guide/codebase-ownership.md)
 *   [Background completion backlogs](developer-guide/completion-backlog-delivery.md)
@@ -31,15 +33,25 @@ This complete index is generated deterministically from the mirrored official do
 *   [Egress proxy internals](developer-guide/egress-internals.md)
 *   [Extending the CLI](developer-guide/extending-the-cli.md)
 *   [Gateway Internals](developer-guide/gateway-internals.md)
+*   [Gateway Monitoring](developer-guide/gateway-monitoring.md)
+*   [Gateway Session Lifecycle](developer-guide/gateway-session-lifecycle.md)
 *   [Image Generation Provider Plugins](developer-guide/image-gen-provider-plugin.md)
 *   [Memory Provider Plugins](developer-guide/memory-provider-plugin.md)
+*   [Micro-compaction](developer-guide/micro-compaction.md)
+*   [Middleware](developer-guide/middleware.md)
 *   [Model Provider Plugins](developer-guide/model-provider-plugin.md)
+*   [Multiplexing Gateway Internals](developer-guide/multiplexing-gateway.md)
+*   [Observer Hooks](developer-guide/observer-hooks.md)
 *   [Plugin LLM Access](developer-guide/plugin-llm-access.md)
 *   [Programmatic Integration](developer-guide/programmatic-integration.md)
 *   [Prompt Assembly](developer-guide/prompt-assembly.md)
 *   [Provider Runtime Resolution](developer-guide/provider-runtime.md)
+*   [Relay ↔ Connector Contract](developer-guide/relay-connector-contract.md)
+*   [Relay Shared Metrics](developer-guide/relay-shared-metrics.md)
 *   [Secret Source Plugins](developer-guide/secret-source-plugin.md)
 *   [Session Storage](developer-guide/session-storage.md)
+*   [State DB Recovery](developer-guide/state-db-recovery.md)
+*   [Streaming TTS Internals](developer-guide/streaming-tts.md)
 *   [Public Subagent Lifecycle API](developer-guide/subagent-lifecycle-api.md)
 *   [Terminal Environment Provider Plugins](developer-guide/terminal-environment-plugin.md)
 *   [Tools Runtime](developer-guide/tools-runtime.md)
@@ -151,6 +163,7 @@ This complete index is generated deterministically from the mirrored official do
 
 *   [Egress proxy](user-guide/egress/index.md)
 *   [Egress credential-injection proxy (iron-proxy)](user-guide/egress/iron-proxy.md)
+*   [Network Egress Isolation (Docker)](user-guide/egress/network-isolation.md)
 
 ## User Guide / Features
 
@@ -178,6 +191,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Honcho Memory](user-guide/features/honcho.md)
 *   [Event Hooks](user-guide/features/hooks.md)
 *   [Image Generation](user-guide/features/image-generation.md)
+*   [Kanban Multi-Gateway Deployment](user-guide/features/kanban-multi-gateway.md)
 *   [Kanban tutorial](user-guide/features/kanban-tutorial.md)
 *   [Kanban worker lanes](user-guide/features/kanban-worker-lanes.md)
 *   [Kanban (Multi-Agent Board)](user-guide/features/kanban.md)
@@ -406,6 +420,7 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide / Skills / Optional / Creative
 
+*   [Ai Presenter Video — Make a verified AI presenter video from script + image](user-guide/skills/optional/creative/creative-ai-presenter-video.md)
 *   [Archify — Validated interactive HTML diagrams, upstream-maintained](user-guide/skills/optional/creative/creative-archify.md)
 *   [Ascii Art — ASCII art: pyfiglet, cowsay, boxes, image-to-ascii](user-guide/skills/optional/creative/creative-ascii-art.md)
 *   [Audiocraft Audio Generation — AudioCraft: MusicGen text-to-music, AudioGen text-to-sound](user-guide/skills/optional/creative/creative-audiocraft-audio-generation.md)
@@ -593,6 +608,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Har Derived Api Client — Record a site's XHR into a HAR, derive an HTTP client](user-guide/skills/optional/web-development/web-development-har-derived-api-client.md)
 *   [Page Agent — Embed an in-page natural-language GUI copilot in web apps](user-guide/skills/optional/web-development/web-development-page-agent.md)
 *   [Publish Site — Versioned site deploys to GitHub/Cloudflare/Netlify Pages](user-guide/skills/optional/web-development/web-development-publish-site.md)
+*   [Scrollcraft — Premium scroll-driven landing pages; scroll = timeline](user-guide/skills/optional/web-development/web-development-scrollcraft.md)
 
 ## User Guide / Skills / Optional / Yuanbao
 

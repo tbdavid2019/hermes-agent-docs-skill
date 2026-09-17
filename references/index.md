@@ -42,6 +42,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Model Provider Plugins](developer-guide/model-provider-plugin.md)
 *   [Multiplexing Gateway Internals](developer-guide/multiplexing-gateway.md)
 *   [Observer Hooks](developer-guide/observer-hooks.md)
+*   [Onboarding recommendations](developer-guide/onboarding-recommendations.md)
 *   [Plugin LLM Access](developer-guide/plugin-llm-access.md)
 *   [Programmatic Integration](developer-guide/programmatic-integration.md)
 *   [Prompt Assembly](developer-guide/prompt-assembly.md)

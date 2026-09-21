@@ -154,6 +154,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Profile Distributions: Share a Whole Agent](user-guide/profile-distributions.md)
 *   [Profiles: Running Multiple Agents](user-guide/profiles.md)
 *   [Security](user-guide/security.md)
+*   [Session Storage Recovery](user-guide/session-storage-recovery.md)
 *   [Sessions](user-guide/sessions.md)
 *   [TUI](user-guide/tui.md)
 *   [Which File Does What?](user-guide/which-file-does-what.md)
@@ -285,25 +286,19 @@ This complete index is generated deterministically from the mirrored official do
 *   [Codex — Delegate coding to OpenAI Codex CLI (features, PRs)](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-codex.md)
 *   [Computer Use — Drive the desktop background-first; escalate on signal](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-computer-use.md)
 *   [Hermes Agent — Use, configure, theme, extend, and orchestrate Hermes Agent](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-hermes-agent.md)
-*   [Merge Reconciler — Neutral third-party resolution of agent merge conflicts](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-merge-reconciler.md)
 *   [Opencode — Delegate coding to OpenCode CLI (features, PR review)](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-opencode.md)
 
 ## User Guide / Skills / Bundled / Creative
 
 *   [Architecture Diagram — Dark-themed SVG architecture/cloud/infra diagrams as HTML](user-guide/skills/bundled/creative/creative-architecture-diagram.md)
-*   [Ascii Art — ASCII art: pyfiglet, cowsay, boxes, image-to-ascii](user-guide/skills/bundled/creative/creative-ascii-art.md)
 *   [Ascii Video — ASCII video: convert video/audio to colored ASCII MP4/GIF](user-guide/skills/bundled/creative/creative-ascii-video.md)
 *   [Baoyu Infographic — Infographics: 21 layouts x 21 styles (信息图, 可视化)](user-guide/skills/bundled/creative/creative-baoyu-infographic.md)
 *   [Claude Design — Design one-off HTML artifacts (landing, deck, prototype)](user-guide/skills/bundled/creative/creative-claude-design.md)
-*   [Comfyui — Generate images, video, and audio via diffusion workflows](user-guide/skills/bundled/creative/creative-comfyui.md)
 *   [Design Md — Author/validate/export Google's DESIGN.md token spec files](user-guide/skills/bundled/creative/creative-design-md.md)
-*   [Excalidraw — Hand-drawn Excalidraw JSON diagrams (arch, flow, seq)](user-guide/skills/bundled/creative/creative-excalidraw.md)
 *   [Humanizer — Humanize text: strip AI-isms and add real voice](user-guide/skills/bundled/creative/creative-humanizer.md)
 *   [Manim Video — Manim CE animations: 3Blue1Brown math/algo videos](user-guide/skills/bundled/creative/creative-manim-video.md)
 *   [P5Js — p5.js sketches: gen art, shaders, interactive, 3D](user-guide/skills/bundled/creative/creative-p5js.md)
 *   [Popular Web Designs — 54 real design systems (Stripe, Linear, Vercel) as HTML/CSS](user-guide/skills/bundled/creative/creative-popular-web-designs.md)
-*   [Pretext — Build creative browser demos with DOM-free text layout](user-guide/skills/bundled/creative/creative-pretext.md)
-*   [Sketch — Throwaway HTML mockups: 2-3 design variants to compare](user-guide/skills/bundled/creative/creative-sketch.md)
 *   [Songwriting And Ai Music — Songwriting craft and Suno AI music prompts](user-guide/skills/bundled/creative/creative-songwriting-and-ai-music.md)
 
 ## User Guide / Skills / Bundled / Devops
@@ -315,29 +310,11 @@ This complete index is generated deterministically from the mirrored official do
 *   [Email Inbox Triage — Triage an inbox: prioritize threads, draft replies safely](user-guide/skills/bundled/email/email-email-inbox-triage.md)
 *   [Himalaya — Himalaya CLI: IMAP/SMTP email from terminal](user-guide/skills/bundled/email/email-himalaya.md)
 
-## User Guide / Skills / Bundled / Github
-
-*   [Codebase Inspection — Inspect codebases w/ pygount: LOC, languages, ratios](user-guide/skills/bundled/github/github-codebase-inspection.md)
-*   [Github Auth — GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login](user-guide/skills/bundled/github/github-github-auth.md)
-*   [Github Code Review — Review PRs: diffs, inline comments via gh or REST](user-guide/skills/bundled/github/github-github-code-review.md)
-*   [Github Issue To Pr — Carry a GitHub issue to a verified PR with honest CI state](user-guide/skills/bundled/github/github-github-issue-to-pr.md)
-*   [Github Issues — Create, triage, label, assign GitHub issues via gh or REST](user-guide/skills/bundled/github/github-github-issues.md)
-*   [Github Pr Workflow — GitHub PR lifecycle: branch, commit, open, CI, merge](user-guide/skills/bundled/github/github-github-pr-workflow.md)
-*   [Github Repo Management — Clone/create/fork repos; manage remotes, releases](user-guide/skills/bundled/github/github-github-repo-management.md)
-
 ## User Guide / Skills / Bundled / Media
 
 *   [Gif Search — Search/download GIFs from Tenor via curl + jq](user-guide/skills/bundled/media/media-gif-search.md)
 *   [Songsee — Audio spectrograms/features (mel, chroma, MFCC) via CLI](user-guide/skills/bundled/media/media-songsee.md)
 *   [Youtube Content — YouTube transcripts to summaries, threads, blogs](user-guide/skills/bundled/media/media-youtube-content.md)
-
-## User Guide / Skills / Bundled / Mlops
-
-*   [Evaluating Llms Harness — lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.)](user-guide/skills/bundled/mlops/mlops-evaluation-evaluating-llms-harness.md)
-*   [Weights And Biases — W&B: log ML experiments, sweeps, model registry, dashboards](user-guide/skills/bundled/mlops/mlops-evaluation-weights-and-biases.md)
-*   [Huggingface Hub — HuggingFace hf CLI: search/download/upload models, datasets](user-guide/skills/bundled/mlops/mlops-huggingface-hub.md)
-*   [Llama Cpp — llama.cpp local GGUF inference + HF Hub model discovery](user-guide/skills/bundled/mlops/mlops-inference-llama-cpp.md)
-*   [Serving Llms Vllm — vLLM: high-throughput LLM serving, OpenAI API, quantization](user-guide/skills/bundled/mlops/mlops-inference-serving-llms-vllm.md)
 
 ## User Guide / Skills / Bundled / Note Taking
 
@@ -352,13 +329,10 @@ This complete index is generated deterministically from the mirrored official do
 *   [Google Workspace — Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python](user-guide/skills/bundled/productivity/productivity-google-workspace.md)
 *   [Maps — Geocode, POIs, routes, timezones via OpenStreetMap/OSRM](user-guide/skills/bundled/productivity/productivity-maps.md)
 *   [Meeting Action Items — Turn meeting notes into cited decisions, owners, tickets](user-guide/skills/bundled/productivity/productivity-meeting-action-items.md)
-*   [Nano Pdf — Edit text in existing PDFs via natural-language prompts](user-guide/skills/bundled/productivity/productivity-nano-pdf.md)
 *   [Notion — Notion API + ntn CLI: pages, databases, markdown, Workers](user-guide/skills/bundled/productivity/productivity-notion.md)
-*   [Ocr And Documents — Extract text from PDFs/scans (pymupdf, marker-pdf)](user-guide/skills/bundled/productivity/productivity-ocr-and-documents.md)
 *   [Pdf — PDF files: create, read, merge, fill, OCR, edit text](user-guide/skills/bundled/productivity/productivity-pdf.md)
 *   [Powerpoint — Create, read, edit .pptx decks with python-pptx](user-guide/skills/bundled/productivity/productivity-powerpoint.md)
 *   [Product Price Monitor — Watch product, flight, or listing prices; alert on target](user-guide/skills/bundled/productivity/productivity-product-price-monitor.md)
-*   [Session Librarian — Organize sessions by prompt: find, rename, archive, prune](user-guide/skills/bundled/productivity/productivity-session-librarian.md)
 *   [Teams Meeting Pipeline — Teams meeting summaries, job replay, Graph subscriptions](user-guide/skills/bundled/productivity/productivity-teams-meeting-pipeline.md)
 *   [Weekly Review Planning — Weekly reset: commitments, stalled work, next-week plan](user-guide/skills/bundled/productivity/productivity-weekly-review-planning.md)
 *   [Xlsx — Create, read, edit Excel .xlsx workbooks and CSVs](user-guide/skills/bundled/productivity/productivity-xlsx.md)
@@ -366,16 +340,9 @@ This complete index is generated deterministically from the mirrored official do
 ## User Guide / Skills / Bundled / Research
 
 *   [Arxiv — Search arXiv papers by keyword, author, category, or ID](user-guide/skills/bundled/research/research-arxiv.md)
-*   [Blocked Page Recovery — Recover blocked/paywalled/WAF'd pages via archive snapshots and reader fallbacks](user-guide/skills/bundled/research/research-blocked-page-recovery.md)
-*   [Blogwatcher — Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool](user-guide/skills/bundled/research/research-blogwatcher.md)
 *   [Competitor News Monitor — Watch named companies for material news; cited digests](user-guide/skills/bundled/research/research-competitor-news-monitor.md)
 *   [Grounded Citations — Ground answers and documents in cited, verifiable sources](user-guide/skills/bundled/research/research-grounded-citations.md)
 *   [Llm Wiki — Karpathy's LLM Wiki: build/query interlinked markdown KB](user-guide/skills/bundled/research/research-llm-wiki.md)
-*   [Research Paper Writing — Write ML papers for NeurIPS/ICML/ICLR: design→submit](user-guide/skills/bundled/research/research-research-paper-writing.md)
-
-## User Guide / Skills / Bundled / Smart Home
-
-*   [Openhue — Control Philips Hue lights, scenes, rooms via OpenHue CLI](user-guide/skills/bundled/smart-home/smart-home-openhue.md)
 
 ## User Guide / Skills / Bundled / Social Media
 
@@ -402,6 +369,7 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide / Skills / Optional / Autonomous Ai Agents
 
+*   [Agent Merge Conflict Arbiter — Neutral arbiter for merge conflicts between two agents](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-agent-merge-conflict-arbiter.md)
 *   [Antigravity Cli — Operate the Antigravity CLI (agy): plugins, auth, sandbox](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-antigravity-cli.md)
 *   [Blackbox — Delegate coding tasks to the Blackbox AI multi-model CLI](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-blackbox.md)
 *   [Dynamic Workflow — Plan-in-code fan-outs, adversarial verification, waves](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-dynamic-workflow.md)

@@ -173,6 +173,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [ACP Host Integration](user-guide/features/acp.md)
 *   [API Server](user-guide/features/api-server.md)
 *   [Batch Processing](user-guide/features/batch-processing.md)
+*   [Bot Screen](user-guide/features/bot-screen.md)
 *   [Browser Automation](user-guide/features/browser.md)
 *   [Built-in Plugins](user-guide/features/built-in-plugins.md)
 *   [Code Execution](user-guide/features/code-execution.md)

@@ -695,6 +695,51 @@ Migrations for the plugins that motivated this slot:
   that reaches into Settings; the settings *values* still go through
   `host.settings` (allowlisted keys) and `THEMES_AREA`.
 
+### Embedding external content
+
+Use the SDK's `<SandboxedFrame src title />` for any external web content
+(reader views, dashboards, docs). It renders a sandboxed iframe with the app's
+guest-content posture: opaque origin, `allow-scripts` by default, `no-referrer`,
+lazy loading. Never mount a raw Electron `<webview>`: it lands on the app's
+`persist:` preview partition, sharing the app's cookies and storage.
+
+```ts
+interface SandboxedFrameProps {
+  src: string      // absolute http(s): or data: URL; any other scheme renders nothing (console.warn)
+  title: string    // required — an untitled frame is unlabelled in the a11y tree
+  sandbox?: string // extra tokens; filtered through the allowlist below
+  className?: string; style?: CSSProperties
+  onLoad?, onError?: ReactEventHandler<HTMLIFrameElement>
+  ref?: Ref<HTMLIFrameElement>
+}
+```
+
+The props are an explicit allowlist, not `ComponentProps<'iframe'>`: `allow`
+(Permissions-Policy delegation — would hand a third-party site the mic/camera
+grant the app holds), `srcdoc`, `name`, `allowFullScreen`, `csp`,
+`credentialless` and every other iframe attribute are not props and nothing is
+spread onto the element, so they cannot reach the DOM even through a cast.
+
+*Arbitration (allowlist, not blocklist):* the only tokens a caller may add are
+`allow-scripts`, `allow-forms`, `allow-downloads`, `allow-pointer-lock`,
+`allow-orientation-lock`, `allow-presentation`. Everything else —
+`allow-same-origin`, `allow-top-navigation*`, `allow-popups*`, `allow-modals`,
+`allow-storage-access-by-user-activation`, and any token the primitive does not
+know — is dropped case-insensitively even if passed; an emptied set falls back
+to the default posture (`allow-scripts`), because a frame with **no** `sandbox`
+attribute is fully privileged. `loading="lazy"` and
+`referrerPolicy="no-referrer"` are not props. The opaque origin IS the
+containment: guest content cannot reach the app, its storage, or the preload
+bridge.
+
+*Teardown:* it is a plain React element — unmounting your pane/page removes the
+frame and its realm; nothing is registered app-side.
+
+Migration for **rss-reader** (#115972): replace the stubbed `/preview` → 501 →
+`host.openWorkspace('rss-browser')` → empty `RssBrowserFrame` → `ctx.os.openExternal`
+chain with `<SandboxedFrame src={article.url} title={article.title} />` inside
+the workspace page; drop the leftover `.rss-browser-frame-host webview` CSS.
+
 ### Transcript directives — inline components the model addresses
 
 `TRANSCRIPT_DIRECTIVE_AREA` makes the transcript itself a contribution area.
@@ -1331,6 +1376,52 @@ never auto-import Python. This is a security boundary, not an oversight
 (GHSA-mcfc-hp25-cjv7).
 :::
 
+#### Pushing events to your desktop half
+
+Your backend runs inside the gateway process, so it can push an update to your
+own desktop half over the app's global event stream — the same stream
+`host.onEvent` subscribes to:
+
+```python
+from hermes_cli.plugin_events import broadcast_plugin_event
+
+broadcast_plugin_event("rss-reader", "feed.updated", {"count": 3})
+# → event "plugin.rss-reader.feed.updated" reaches every connected desktop client
+```
+
+```javascript
+// register(ctx): the subscription is retired with the plugin
+host.onEvent('plugin.rss-reader.feed.updated', ({ payload }) => refreshFeeds(payload))
+```
+
+`broadcast_plugin_event(plugin_id, event, payload=None)`: the wire name is
+always `plugin.<plugin_id>.<event>`. `plugin_id` is your catalog name
+(`[a-z0-9_-]{1,64}`, no dots — it is the namespace and can't spell another
+plugin's); `event` is the BARE dotted name (`"feed.updated"`, not
+`"plugin.rss-reader.feed.updated"`), segments of `[A-Za-z0-9_-]`, so `""`,
+`"../x"` or `"a..b"` raise `ValueError` instead of stranding the desktop half
+on a name nobody emits. `payload` is a JSON dict (or omitted → `{}`), delivered
+as the event's `payload`; the frame carries `session_id: ""` like every global
+event. Delivery is fire-and-forget (a wedged client is skipped, never stalling
+your handler). Where it lands depends on the process the call runs in:
+
+| Caller runs in | Reaches |
+|---|---|
+| `hermes serve` (the Desktop backend): `plugin_api.py` routers, plugin slash commands, tools and hooks in the agent turn | every connected Desktop window |
+| the `dashboard.turn_isolation` compute-host child (tools/hooks of an isolated turn) | relayed over the host pipe to `hermes serve`, then every window |
+| the stdio TUI (`hermes` in a terminal) | that terminal's client |
+| `hermes gateway run` (messaging platforms), `hermes chat`, cron, `hermes plugins validate` | nobody — no Desktop client is attached to that process; the call is a logged no-op |
+
+Use this instead of importing `tui_gateway.server` internals; for plugin-scoped frames
+with a payload tailored per connection, `ctx.socket('/events')` remains the
+richer door.
+
+Migration (rss-reader): drop the `~/.hermes/rss-reader/commands.jsonl` queue,
+`GET /commands` and the 3 s `ctx.rest('/commands')` poll — the Python side
+calls `broadcast_plugin_event('rss-reader', 'feed.updated', payload)` where it
+used to enqueue, and the desktop side replaces the timer with
+`host.onEvent('plugin.rss-reader.feed.updated', fn)` inside `register(ctx)`.
+
 ### Calling it from the plugin
 
 ```javascript
@@ -1462,7 +1553,7 @@ pipeline as a trust boundary.
 | Area payloads | `RouteContribution`, `SidebarNavContribution`, `StatusbarItem`, `TitlebarTool`, `PaletteContribution`, `KeybindContribution`, `ComposerMiddleware`, `ComposerAttachmentProvider`, `SessionRowSlotContribution`, `SidebarNavPrefsContribution` |
 | React / state | `useValue`, `atom`, `computed`, `useQuery`, `useMutation`, `useQueryClient`, `queryClient`, `Contribute` |
 | Theming | `useTheme`, `requestTheme`, `setAccentOverride`, `$accentOverride`, `retintTheme`, `themeHue`, `DesktopTheme`, `DesktopThemeColors`, plus OKLCH math (`hexToOklch`, `oklchToHex`, `oklchToSrgb255`, `mixOklab`, `maxChroma`, `hueDelta`, `normalizeHex`) and sRGB measures (`contrastRatio` — `number | null`, null for unparseable input — `readableOn`) |
-| UI kit | `Button`, `Input`, `Textarea`, `Select*`, `Switch`, `Checkbox`, `SegmentedControl`, `Tabs*`, `Dialog*`, `ConfirmDialog`, `DropdownMenu*`, `ContextMenu*`, `Popover*`, `Tip`/`Tooltip*`, `Badge`, `Kbd`/`KbdGroup`, `SearchField`, `ScrollArea`, `Separator`, `Skeleton`, `GlyphSpinner`, `Loader`, `EmptyState`, `ErrorState`, `CopyButton`, `StatusDot`, `LogView`, `Codicon`, `DecodeText` |
+| UI kit | `Button`, `Input`, `Textarea`, `Select*`, `Switch`, `Checkbox`, `SegmentedControl`, `Tabs*`, `Dialog*`, `ConfirmDialog`, `DropdownMenu*`, `ContextMenu*`, `Popover*`, `Tip`/`Tooltip*`, `Badge`, `Kbd`/`KbdGroup`, `SearchField`, `ScrollArea`, `Separator`, `Skeleton`, `GlyphSpinner`, `Loader`, `EmptyState`, `ErrorState`, `CopyButton`, `StatusDot`, `LogView`, `Codicon`, `DecodeText`, `SandboxedFrame` |
 | Helpers | `cn`, `icons`, `haptic`, `useI18n`, `profileColor`, `profileColorSoft`, `relativeTime`, `fmtDateTime`, `fmtDayTime`, `coarseElapsed`, `evaluateRuntimeReadiness` |
 
 The canonical, always-current export list is `apps/desktop/src/sdk/index.ts`.

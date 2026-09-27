@@ -405,6 +405,8 @@ This complete index is generated deterministically from the mirrored official do
 *   [Auteur — Design and build cinematic, award-level web pages](user-guide/skills/optional/creative/creative-auteur.md)
 *   [Baoyu Article Illustrator — Article illustrations: type × style × palette consistency](user-guide/skills/optional/creative/creative-baoyu-article-illustrator.md)
 *   [Baoyu Comic — Knowledge comics (知识漫画): educational, biography, tutorial](user-guide/skills/optional/creative/creative-baoyu-comic.md)
+*   [Brag Slim — Launch video from a project or URL, upstream-maintained](user-guide/skills/optional/creative/creative-brag-slim.md)
+*   [Brag — Project launch video via Hyperframes, upstream-maintained](user-guide/skills/optional/creative/creative-brag.md)
 *   [Comfyui — Generate images, video, and audio via diffusion workflows](user-guide/skills/optional/creative/creative-comfyui.md)
 *   [Concept Diagrams — Generate flat, minimal educational SVG visuals as HTML](user-guide/skills/optional/creative/creative-concept-diagrams.md)
 *   [Creative Ideation — Generate ideas via named methods from creative practice](user-guide/skills/optional/creative/creative-creative-ideation.md)

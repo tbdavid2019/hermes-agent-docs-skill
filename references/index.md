@@ -206,6 +206,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Kanban tutorial](user-guide/features/kanban-tutorial.md)
 *   [Kanban worker lanes](user-guide/features/kanban-worker-lanes.md)
 *   [Kanban (Multi-Agent Board)](user-guide/features/kanban.md)
+*   [Language Packs](user-guide/features/language-packs.md)
 *   [Recurring Loops](user-guide/features/loops.md)
 *   [LSP — Semantic Diagnostics](user-guide/features/lsp.md)
 *   [MCP (Model Context Protocol)](user-guide/features/mcp.md)

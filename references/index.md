@@ -43,7 +43,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Model Provider Plugins](developer-guide/model-provider-plugin.md)
 *   [Multiplexing Gateway Internals](developer-guide/multiplexing-gateway.md)
 *   [Observer Hooks](developer-guide/observer-hooks.md)
-*   [Onboarding recommendations](developer-guide/onboarding-recommendations.md)
 *   [Plugin LLM Access](developer-guide/plugin-llm-access.md)
 *   [PM audit remediation status](developer-guide/pm-audit-status.md)
 *   [Programmatic Integration](developer-guide/programmatic-integration.md)
@@ -534,7 +533,9 @@ This complete index is generated deterministically from the mirrored official do
 
 *   [Canvas — Fetch Canvas LMS courses and assignments via API token](user-guide/skills/optional/productivity/productivity-canvas.md)
 *   [Decision Questionnaire — Turn an unanswerable decision into a questionnaire doc](user-guide/skills/optional/productivity/productivity-decision-questionnaire.md)
+*   [First Task — Run the first task chat that setup hands off](user-guide/skills/optional/productivity/productivity-first-task.md)
 *   [Here Now — Publish sites to {slug}.here.now and store files in Drives](user-guide/skills/optional/productivity/productivity-here-now.md)
+*   [Initiate Setup — Run the first-run setup chat in the Hermes desktop app](user-guide/skills/optional/productivity/productivity-initiate-setup.md)
 *   [Live Dashboard — Build self-updating dashboards from live sources](user-guide/skills/optional/productivity/productivity-live-dashboard.md)
 *   [Memento Flashcards — Spaced-repetition flashcards: create, review, quiz, export](user-guide/skills/optional/productivity/productivity-memento-flashcards.md)
 *   [Property Listings — Present property and rental listings as desktop cards](user-guide/skills/optional/productivity/productivity-property-listings.md)

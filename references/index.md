@@ -400,6 +400,7 @@ This complete index is generated deterministically from the mirrored official do
 ## User Guide / Skills / Optional / Creative
 
 *   [Ai Presenter Video — Make a verified AI presenter video from script + image](user-guide/skills/optional/creative/creative-ai-presenter-video.md)
+*   [Anatomy — Explain an idea as an interactive isometric machine figure](user-guide/skills/optional/creative/creative-anatomy.md)
 *   [Archify — Validated interactive HTML diagrams, upstream-maintained](user-guide/skills/optional/creative/creative-archify.md)
 *   [Ascii Art — ASCII art: pyfiglet, cowsay, boxes, image-to-ascii](user-guide/skills/optional/creative/creative-ascii-art.md)
 *   [Audiocraft Audio Generation — AudioCraft: MusicGen text-to-music, AudioGen text-to-sound](user-guide/skills/optional/creative/creative-audiocraft-audio-generation.md)

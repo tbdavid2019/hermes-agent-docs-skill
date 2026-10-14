@@ -534,9 +534,7 @@ This complete index is generated deterministically from the mirrored official do
 
 *   [Canvas — Fetch Canvas LMS courses and assignments via API token](user-guide/skills/optional/productivity/productivity-canvas.md)
 *   [Decision Questionnaire — Turn an unanswerable decision into a questionnaire doc](user-guide/skills/optional/productivity/productivity-decision-questionnaire.md)
-*   [First Task — Run the first task chat that setup hands off](user-guide/skills/optional/productivity/productivity-first-task.md)
 *   [Here Now — Publish sites to {slug}.here.now and store files in Drives](user-guide/skills/optional/productivity/productivity-here-now.md)
-*   [Initiate Setup — Run the first-run setup chat in the Hermes desktop app](user-guide/skills/optional/productivity/productivity-initiate-setup.md)
 *   [Live Dashboard — Build self-updating dashboards from live sources](user-guide/skills/optional/productivity/productivity-live-dashboard.md)
 *   [Memento Flashcards — Spaced-repetition flashcards: create, review, quiz, export](user-guide/skills/optional/productivity/productivity-memento-flashcards.md)
 *   [Property Listings — Present property and rental listings as desktop cards](user-guide/skills/optional/productivity/productivity-property-listings.md)

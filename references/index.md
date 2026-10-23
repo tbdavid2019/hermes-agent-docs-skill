@@ -29,6 +29,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Contributing](developer-guide/contributing.md)
 *   [Creating Skills](developer-guide/creating-skills.md)
 *   [Cron Internals](developer-guide/cron-internals.md)
+*   [Delegation Provider Plugins](developer-guide/delegation-provider-plugin.md)
 *   [Desktop Plugin SDK (@hermes/plugin-sdk)](developer-guide/desktop-plugin-sdk.md)
 *   [Egress proxy internals](developer-guide/egress-internals.md)
 *   [Extending the CLI](developer-guide/extending-the-cli.md)
@@ -484,10 +485,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Fastmcp — Build, test, and deploy Python MCP servers](user-guide/skills/optional/mcp/mcp-fastmcp.md)
 *   [Mcp Oauth Remote Gateway — Manual OAuth for remote MCP servers on headless gateways](user-guide/skills/optional/mcp/mcp-mcp-oauth-remote-gateway.md)
 *   [Mcporter — List, auth, and call MCP servers/tools from the terminal](user-guide/skills/optional/mcp/mcp-mcporter.md)
-
-## User Guide / Skills / Optional / Migration
-
-*   [Openclaw Migration — Import an OpenClaw setup (memories, skills) into Hermes](user-guide/skills/optional/migration/migration-openclaw-migration.md)
 
 ## User Guide / Skills / Optional / Mlops
 

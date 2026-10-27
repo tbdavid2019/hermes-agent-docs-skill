@@ -570,7 +570,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Godmode — Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN](user-guide/skills/optional/security/security-godmode.md)
 *   [Oss Forensics — GitHub supply-chain forensics: recovery, IOCs, reporting](user-guide/skills/optional/security/security-oss-forensics.md)
 *   [Sherlock — Find accounts for a username across 400+ platforms](user-guide/skills/optional/security/security-sherlock.md)
-*   [Unbroker — Autonomously remove your info from data-broker sites](user-guide/skills/optional/security/security-unbroker.md)
+*   [Unbroker — Remove your info from data-broker sites, by name or phone](user-guide/skills/optional/security/security-unbroker.md)
 *   [Web Pentest — Authorized web pentest: recon, proof-based exploits, report](user-guide/skills/optional/security/security-web-pentest.md)
 
 ## User Guide / Skills / Optional / Smart Home

@@ -167,6 +167,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Running Many Gateways at Once](user-guide/multi-profile-gateways.md)
 *   [Profile Distributions: Share a Whole Agent](user-guide/profile-distributions.md)
 *   [Profiles: Running Multiple Agents](user-guide/profiles.md)
+*   [Remote Config](user-guide/remote-config.md)
 *   [Security](user-guide/security.md)
 *   [Session Storage Recovery](user-guide/session-storage-recovery.md)
 *   [Sessions](user-guide/sessions.md)

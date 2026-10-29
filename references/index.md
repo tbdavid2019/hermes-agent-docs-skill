@@ -304,7 +304,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Codex — Delegate coding to OpenAI Codex CLI (features, PRs)](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-codex.md)
 *   [Computer Use — Drive the desktop background-first; escalate on signal](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-computer-use.md)
 *   [Hermes Agent — Use, configure, theme, extend, and orchestrate Hermes Agent](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-hermes-agent.md)
-*   [Opencode — Delegate coding to OpenCode CLI (features, PR review)](user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-opencode.md)
 
 ## User Guide / Skills / Bundled / Creative
 
@@ -312,7 +311,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Ascii Video — ASCII video: convert video/audio to colored ASCII MP4/GIF](user-guide/skills/bundled/creative/creative-ascii-video.md)
 *   [Baoyu Infographic — Infographics: 21 layouts x 21 styles (信息图, 可视化)](user-guide/skills/bundled/creative/creative-baoyu-infographic.md)
 *   [Claude Design — Design one-off HTML artifacts (landing, deck, prototype)](user-guide/skills/bundled/creative/creative-claude-design.md)
-*   [Design Md — Author/validate/export Google's DESIGN.md token spec files](user-guide/skills/bundled/creative/creative-design-md.md)
 *   [Humanizer — Humanize text: strip AI-isms and add real voice](user-guide/skills/bundled/creative/creative-humanizer.md)
 *   [Manim Video — Manim CE animations: 3Blue1Brown math/algo videos](user-guide/skills/bundled/creative/creative-manim-video.md)
 *   [P5Js — p5.js sketches: gen art, shaders, interactive, 3D](user-guide/skills/bundled/creative/creative-p5js.md)
@@ -330,8 +328,6 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide / Skills / Bundled / Media
 
-*   [Gif Search — Search/download GIFs from Tenor via curl + jq](user-guide/skills/bundled/media/media-gif-search.md)
-*   [Songsee — Audio spectrograms/features (mel, chroma, MFCC) via CLI](user-guide/skills/bundled/media/media-songsee.md)
 *   [Youtube Content — YouTube transcripts to summaries, threads, blogs](user-guide/skills/bundled/media/media-youtube-content.md)
 
 ## User Guide / Skills / Bundled / Note Taking
@@ -340,27 +336,21 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide / Skills / Bundled / Productivity
 
-*   [Airtable — Airtable REST API via curl](user-guide/skills/bundled/productivity/productivity-airtable.md)
-*   [Box — Box manages cloud files, sharing, search, and metadata](user-guide/skills/bundled/productivity/productivity-box.md)
 *   [Document To Action Items — Extract cited obligations, deadlines, tasks from documents](user-guide/skills/bundled/productivity/productivity-document-to-action-items.md)
-*   [Docx — Create, read, edit, template, and review Word .docx files](user-guide/skills/bundled/productivity/productivity-docx.md)
 *   [Google Workspace — Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python](user-guide/skills/bundled/productivity/productivity-google-workspace.md)
 *   [Maps — Geocode, POIs, routes, timezones via OpenStreetMap/OSRM](user-guide/skills/bundled/productivity/productivity-maps.md)
 *   [Meeting Action Items — Turn meeting notes into cited decisions, owners, tickets](user-guide/skills/bundled/productivity/productivity-meeting-action-items.md)
-*   [Notion — Notion API + ntn CLI: pages, databases, markdown, Workers](user-guide/skills/bundled/productivity/productivity-notion.md)
+*   [Microsoft Office — Create, read, and edit Word, PowerPoint, and Excel files](user-guide/skills/bundled/productivity/productivity-microsoft-office.md)
 *   [Pdf — PDF files: create, read, merge, fill, OCR, edit text](user-guide/skills/bundled/productivity/productivity-pdf.md)
-*   [Powerpoint — Create, read, edit .pptx decks with python-pptx](user-guide/skills/bundled/productivity/productivity-powerpoint.md)
 *   [Product Price Monitor — Watch product, flight, or listing prices; alert on target](user-guide/skills/bundled/productivity/productivity-product-price-monitor.md)
 *   [Teams Meeting Pipeline — Teams meeting summaries, job replay, Graph subscriptions](user-guide/skills/bundled/productivity/productivity-teams-meeting-pipeline.md)
 *   [Weekly Review Planning — Weekly reset: commitments, stalled work, next-week plan](user-guide/skills/bundled/productivity/productivity-weekly-review-planning.md)
-*   [Xlsx — Create, read, edit Excel .xlsx workbooks and CSVs](user-guide/skills/bundled/productivity/productivity-xlsx.md)
 
 ## User Guide / Skills / Bundled / Research
 
 *   [Arxiv — Search arXiv papers by keyword, author, category, or ID](user-guide/skills/bundled/research/research-arxiv.md)
 *   [Competitor News Monitor — Watch named companies for material news; cited digests](user-guide/skills/bundled/research/research-competitor-news-monitor.md)
 *   [Grounded Citations — Ground answers and documents in cited, verifiable sources](user-guide/skills/bundled/research/research-grounded-citations.md)
-*   [Llm Wiki — Karpathy's LLM Wiki: build/query interlinked markdown KB](user-guide/skills/bundled/research/research-llm-wiki.md)
 
 ## User Guide / Skills / Bundled / Social Media
 
@@ -371,10 +361,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Codebase Inspection — Inspect codebases w/ pygount: LOC, languages, ratios](user-guide/skills/bundled/software-development/software-development-codebase-inspection.md)
 *   [Dogfood — Exploratory QA of web apps: find bugs, evidence, reports](user-guide/skills/bundled/software-development/software-development-dogfood.md)
 *   [Github — GitHub via gh CLI: PRs, issues, reviews, repos, auth](user-guide/skills/bundled/software-development/software-development-github.md)
-*   [Hermes Agent Skill Authoring — Author in-repo SKILL.md files: frontmatter and structure](user-guide/skills/bundled/software-development/software-development-hermes-agent-skill-authoring.md)
-*   [Inspecting Hermes Desktop Dom — Read the live Hermes desktop DOM/CSS over CDP](user-guide/skills/bundled/software-development/software-development-inspecting-hermes-desktop-dom.md)
-*   [Node Inspect Debugger — Debug Node.js via --inspect + Chrome DevTools Protocol CLI](user-guide/skills/bundled/software-development/software-development-node-inspect-debugger.md)
-*   [Python Debugpy — Debug Python: pdb REPL + debugpy remote (DAP)](user-guide/skills/bundled/software-development/software-development-python-debugpy.md)
 *   [Requesting Code Review — Pre-commit review: security scan, quality gates, auto-fix](user-guide/skills/bundled/software-development/software-development-requesting-code-review.md)
 *   [Simplify Code — Parallel 4-agent cleanup of recent code changes](user-guide/skills/bundled/software-development/software-development-simplify-code.md)
 *   [Spike — Throwaway experiments to validate an idea before build](user-guide/skills/bundled/software-development/software-development-spike.md)
@@ -393,6 +379,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Dynamic Workflow — Plan-in-code fan-outs, adversarial verification, waves](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-dynamic-workflow.md)
 *   [Grok — Delegate coding to xAI Grok Build CLI (features, PRs)](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-grok.md)
 *   [Honcho — Configure and troubleshoot Honcho memory for Hermes](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-honcho.md)
+*   [Opencode — Delegate coding to OpenCode CLI (features, PR review)](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-opencode.md)
 *   [Openhands — Delegate coding to OpenHands CLI (model-agnostic, LiteLLM)](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-openhands.md)
 
 ## User Guide / Skills / Optional / Blockchain
@@ -411,7 +398,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Anatomy — Explain an idea as an interactive isometric machine figure](user-guide/skills/optional/creative/creative-anatomy.md)
 *   [Archify — Validated interactive HTML diagrams, upstream-maintained](user-guide/skills/optional/creative/creative-archify.md)
 *   [Ascii Art — ASCII art: pyfiglet, cowsay, boxes, image-to-ascii](user-guide/skills/optional/creative/creative-ascii-art.md)
-*   [Audiocraft Audio Generation — AudioCraft: MusicGen text-to-music, AudioGen text-to-sound](user-guide/skills/optional/creative/creative-audiocraft-audio-generation.md)
 *   [Auteur — Design and build cinematic, award-level web pages](user-guide/skills/optional/creative/creative-auteur.md)
 *   [Baoyu Article Illustrator — Article illustrations: type × style × palette consistency](user-guide/skills/optional/creative/creative-baoyu-article-illustrator.md)
 *   [Baoyu Comic — Knowledge comics (知识漫画): educational, biography, tutorial](user-guide/skills/optional/creative/creative-baoyu-comic.md)
@@ -420,6 +406,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Comfyui — Generate images, video, and audio via diffusion workflows](user-guide/skills/optional/creative/creative-comfyui.md)
 *   [Concept Diagrams — Generate flat, minimal educational SVG visuals as HTML](user-guide/skills/optional/creative/creative-concept-diagrams.md)
 *   [Creative Ideation — Generate ideas via named methods from creative practice](user-guide/skills/optional/creative/creative-creative-ideation.md)
+*   [Design Md — Author/validate/export Google's DESIGN.md token spec files](user-guide/skills/optional/creative/creative-design-md.md)
 *   [Draw Your Font — Turn a handwriting photo into an installable TTF font](user-guide/skills/optional/creative/creative-draw-your-font.md)
 *   [Dream Loop — Build stunning 3D scenes via a concept-art fidelity loop](user-guide/skills/optional/creative/creative-dream-loop.md)
 *   [Excalidraw — Hand-drawn Excalidraw JSON diagrams (arch, flow, seq)](user-guide/skills/optional/creative/creative-excalidraw.md)
@@ -489,44 +476,36 @@ This complete index is generated deterministically from the mirrored official do
 *   [Mcp Oauth Remote Gateway — Manual OAuth for remote MCP servers on headless gateways](user-guide/skills/optional/mcp/mcp-mcp-oauth-remote-gateway.md)
 *   [Mcporter — List, auth, and call MCP servers/tools from the terminal](user-guide/skills/optional/mcp/mcp-mcporter.md)
 
+## User Guide / Skills / Optional / Media
+
+*   [Gif Search — Search/download GIFs from Tenor via curl + jq](user-guide/skills/optional/media/media-gif-search.md)
+*   [Songsee — Audio spectrograms/features (mel, chroma, MFCC) via CLI](user-guide/skills/optional/media/media-songsee.md)
+
 ## User Guide / Skills / Optional / Mlops
 
 *   [Accelerate — Run PyTorch training across GPUs with minimal changes](user-guide/skills/optional/mlops/mlops-accelerate.md)
 *   [Chroma — Embedding database for RAG and semantic search](user-guide/skills/optional/mlops/mlops-chroma.md)
-*   [Clip — Zero-shot image classification and image-text search](user-guide/skills/optional/mlops/mlops-clip.md)
 *   [Evaluating Llms Harness — lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.)](user-guide/skills/optional/mlops/mlops-evaluation-evaluating-llms-harness.md)
-*   [Weights And Biases — W&B: log ML experiments, sweeps, model registry, dashboards](user-guide/skills/optional/mlops/mlops-evaluation-weights-and-biases.md)
 *   [Faiss — Fast vector similarity search at billion scale](user-guide/skills/optional/mlops/mlops-faiss.md)
 *   [Flash Attention — Speed up long-sequence transformer training and inference](user-guide/skills/optional/mlops/mlops-flash-attention.md)
-*   [Guidance — Constrain LLM output with grammars; guarantee valid JSON](user-guide/skills/optional/mlops/mlops-guidance.md)
-*   [Huggingface Tokenizers — Fast BPE/WordPiece tokenization and custom vocab training](user-guide/skills/optional/mlops/mlops-huggingface-tokenizers.md)
 *   [Llama Cpp — llama.cpp local GGUF inference + HF Hub model discovery](user-guide/skills/optional/mlops/mlops-inference-llama-cpp.md)
-*   [Outlines — Outlines: structured JSON/regex/Pydantic LLM generation](user-guide/skills/optional/mlops/mlops-inference-outlines.md)
 *   [Serving Llms Vllm — vLLM: high-throughput LLM serving, OpenAI API, quantization](user-guide/skills/optional/mlops/mlops-inference-serving-llms-vllm.md)
-*   [Instructor — Structured LLM outputs validated with Pydantic](user-guide/skills/optional/mlops/mlops-instructor.md)
 *   [Lambda Labs — On-demand GPU cloud instances for ML training](user-guide/skills/optional/mlops/mlops-lambda-labs.md)
-*   [Llava — Vision-language chat: VQA, captioning, image dialogue](user-guide/skills/optional/mlops/mlops-llava.md)
 *   [Modal — Serverless GPU cloud for ML jobs and model APIs](user-guide/skills/optional/mlops/mlops-modal.md)
-*   [Huggingface Hub — HuggingFace hf CLI: search/download/upload models, datasets](user-guide/skills/optional/mlops/mlops-models-huggingface-hub.md)
 *   [Segment Anything Model — SAM: zero-shot image segmentation via points, boxes, masks](user-guide/skills/optional/mlops/mlops-models-segment-anything-model.md)
 *   [Nemo Curator — Curate LLM training data: dedupe, filter, PII redaction](user-guide/skills/optional/mlops/mlops-nemo-curator.md)
 *   [Obliteratus — OBLITERATUS: abliterate LLM refusals (diff-in-means)](user-guide/skills/optional/mlops/mlops-obliteratus.md)
 *   [Peft — Fine-tune large LLMs with LoRA on limited GPU memory](user-guide/skills/optional/mlops/mlops-peft.md)
-*   [Pinecone — Managed vector DB for production RAG and search](user-guide/skills/optional/mlops/mlops-pinecone.md)
 *   [Pytorch Fsdp — Fully sharded data-parallel training for large models](user-guide/skills/optional/mlops/mlops-pytorch-fsdp.md)
 *   [Pytorch Lightning — Clean training loops with built-in distributed support](user-guide/skills/optional/mlops/mlops-pytorch-lightning.md)
-*   [Qdrant — Vector search engine for production RAG systems](user-guide/skills/optional/mlops/mlops-qdrant.md)
 *   [Dspy — DSPy: declarative LM programs, auto-optimize prompts, RAG](user-guide/skills/optional/mlops/mlops-research-dspy.md)
 *   [Saelens — Train sparse autoencoders to interpret model features](user-guide/skills/optional/mlops/mlops-saelens.md)
 *   [Simpo — Reference-free preference alignment, simpler than DPO](user-guide/skills/optional/mlops/mlops-simpo.md)
 *   [Slime — RL post-training for LLMs with Megatron and SGLang](user-guide/skills/optional/mlops/mlops-slime.md)
-*   [Stable Diffusion — Text-to-image generation, inpainting, and img2img](user-guide/skills/optional/mlops/mlops-stable-diffusion.md)
 *   [Tensorrt Llm — High-throughput LLM inference on NVIDIA GPUs](user-guide/skills/optional/mlops/mlops-tensorrt-llm.md)
 *   [Torchtitan — Pretrain LLMs at scale with PyTorch 4D parallelism](user-guide/skills/optional/mlops/mlops-torchtitan.md)
 *   [Axolotl — Axolotl: YAML LLM fine-tuning (LoRA, DPO, GRPO)](user-guide/skills/optional/mlops/mlops-training-axolotl.md)
-*   [Trl Fine Tuning — TRL: SFT, DPO, GRPO, RLOO reward modeling for LLM RLHF](user-guide/skills/optional/mlops/mlops-training-trl-fine-tuning.md)
 *   [Unsloth — Unsloth: 2-5x faster LoRA/QLoRA fine-tuning, less VRAM](user-guide/skills/optional/mlops/mlops-training-unsloth.md)
-*   [Whisper — Transcribe and translate speech in 99 languages](user-guide/skills/optional/mlops/mlops-whisper.md)
 
 ## User Guide / Skills / Optional / Payments
 
@@ -536,11 +515,14 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide / Skills / Optional / Productivity
 
+*   [Airtable — Airtable REST API via curl](user-guide/skills/optional/productivity/productivity-airtable.md)
+*   [Box — Box manages cloud files, sharing, search, and metadata](user-guide/skills/optional/productivity/productivity-box.md)
 *   [Canvas — Fetch Canvas LMS courses and assignments via API token](user-guide/skills/optional/productivity/productivity-canvas.md)
 *   [Decision Questionnaire — Turn an unanswerable decision into a questionnaire doc](user-guide/skills/optional/productivity/productivity-decision-questionnaire.md)
 *   [Here Now — Publish sites to {slug}.here.now and store files in Drives](user-guide/skills/optional/productivity/productivity-here-now.md)
 *   [Live Dashboard — Build self-updating dashboards from live sources](user-guide/skills/optional/productivity/productivity-live-dashboard.md)
 *   [Memento Flashcards — Spaced-repetition flashcards: create, review, quiz, export](user-guide/skills/optional/productivity/productivity-memento-flashcards.md)
+*   [Notion — Notion API + ntn CLI: pages, databases, markdown, Workers](user-guide/skills/optional/productivity/productivity-notion.md)
 *   [Property Listings — Present property and rental listings as desktop cards](user-guide/skills/optional/productivity/productivity-property-listings.md)
 *   [Shop — Shop catalog search, checkout, order tracking, returns](user-guide/skills/optional/productivity/productivity-shop.md)
 *   [Shopify — Query Shopify Admin/Storefront GraphQL APIs via curl](user-guide/skills/optional/productivity/productivity-shopify.md)
@@ -556,9 +538,9 @@ This complete index is generated deterministically from the mirrored official do
 *   [Drug Discovery — Drug discovery: ChEMBL search, drug-likeness, interactions](user-guide/skills/optional/research/research-drug-discovery.md)
 *   [Duckduckgo Search — Free keyless web, news, and image search via ddgs](user-guide/skills/optional/research/research-duckduckgo-search.md)
 *   [Gitnexus Explorer — Serve an interactive codebase knowledge graph web UI](user-guide/skills/optional/research/research-gitnexus-explorer.md)
+*   [Llm Wiki — Karpathy's LLM Wiki: build/query interlinked markdown KB](user-guide/skills/optional/research/research-llm-wiki.md)
 *   [Osint Investigation — Follow the money via public records and sanctions data](user-guide/skills/optional/research/research-osint-investigation.md)
 *   [Parallel Cli — Agent-native web search, deep research, and enrichment](user-guide/skills/optional/research/research-parallel-cli.md)
-*   [Pinecone Research — Agent RAG and long-term memory with Pinecone](user-guide/skills/optional/research/research-pinecone-research.md)
 *   [Qmd — Hybrid local search over notes, docs, and transcripts](user-guide/skills/optional/research/research-qmd.md)
 *   [Research Paper Writing — Write ML papers for NeurIPS/ICML/ICLR: design→submit](user-guide/skills/optional/research/research-research-paper-writing.md)
 *   [Rss Feeds — Read RSS, Atom, JSON feeds; discover feeds behind a page](user-guide/skills/optional/research/research-rss-feeds.md)
@@ -587,7 +569,11 @@ This complete index is generated deterministically from the mirrored official do
 *   [Ast Grep — AST-aware structural code search and rewrite via ast-grep](user-guide/skills/optional/software-development/software-development-ast-grep.md)
 *   [Code Wiki — Generate wiki docs + Mermaid diagrams for any codebase](user-guide/skills/optional/software-development/software-development-code-wiki.md)
 *   [Grill Me — Adversarial plan interview before implementation](user-guide/skills/optional/software-development/software-development-grill-me.md)
+*   [Hermes Agent Skill Authoring — Author in-repo SKILL.md files: frontmatter and structure](user-guide/skills/optional/software-development/software-development-hermes-agent-skill-authoring.md)
+*   [Inspecting Hermes Desktop Dom — Read the live Hermes desktop DOM/CSS over CDP](user-guide/skills/optional/software-development/software-development-inspecting-hermes-desktop-dom.md)
+*   [Node Inspect Debugger — Debug Node.js via --inspect + Chrome DevTools Protocol CLI](user-guide/skills/optional/software-development/software-development-node-inspect-debugger.md)
 *   [Pr Lens — Draw code changes as animated architecture/data-flow SVGs](user-guide/skills/optional/software-development/software-development-pr-lens.md)
+*   [Python Debugpy — Debug Python: pdb REPL + debugpy remote (DAP)](user-guide/skills/optional/software-development/software-development-python-debugpy.md)
 *   [Rest Graphql Debug — Debug REST/GraphQL APIs: status codes, auth, schemas, repro](user-guide/skills/optional/software-development/software-development-rest-graphql-debug.md)
 *   [Subagent Driven Development — Execute plans via delegate_task subagents (2-stage review)](user-guide/skills/optional/software-development/software-development-subagent-driven-development.md)
 

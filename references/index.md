@@ -378,7 +378,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Blackbox — Delegate coding tasks to the Blackbox AI multi-model CLI](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-blackbox.md)
 *   [Dynamic Workflow — Plan-in-code fan-outs, adversarial verification, waves](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-dynamic-workflow.md)
 *   [Grok — Delegate coding to xAI Grok Build CLI (features, PRs)](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-grok.md)
-*   [Honcho — Configure and troubleshoot Honcho memory for Hermes](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-honcho.md)
 *   [Opencode — Delegate coding to OpenCode CLI (features, PR review)](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-opencode.md)
 *   [Openhands — Delegate coding to OpenHands CLI (model-agnostic, LiteLLM)](user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-openhands.md)
 
@@ -509,23 +508,19 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide / Skills / Optional / Payments
 
-*   [Mpp Agent — Pay HTTP 402 APIs via Machine Payments Protocol (MPP)](user-guide/skills/optional/payments/payments-mpp-agent.md)
 *   [Stripe Link Cli — Agent payments via Stripe Link — cards, SPT, approvals](user-guide/skills/optional/payments/payments-stripe-link-cli.md)
 *   [Stripe Projects — Provision SaaS services + sync creds via Stripe Projects](user-guide/skills/optional/payments/payments-stripe-projects.md)
 
 ## User Guide / Skills / Optional / Productivity
 
-*   [Airtable — Airtable REST API via curl](user-guide/skills/optional/productivity/productivity-airtable.md)
 *   [Box — Box manages cloud files, sharing, search, and metadata](user-guide/skills/optional/productivity/productivity-box.md)
 *   [Canvas — Fetch Canvas LMS courses and assignments via API token](user-guide/skills/optional/productivity/productivity-canvas.md)
 *   [Decision Questionnaire — Turn an unanswerable decision into a questionnaire doc](user-guide/skills/optional/productivity/productivity-decision-questionnaire.md)
 *   [Here Now — Publish sites to {slug}.here.now and store files in Drives](user-guide/skills/optional/productivity/productivity-here-now.md)
 *   [Live Dashboard — Build self-updating dashboards from live sources](user-guide/skills/optional/productivity/productivity-live-dashboard.md)
 *   [Memento Flashcards — Spaced-repetition flashcards: create, review, quiz, export](user-guide/skills/optional/productivity/productivity-memento-flashcards.md)
-*   [Notion — Notion API + ntn CLI: pages, databases, markdown, Workers](user-guide/skills/optional/productivity/productivity-notion.md)
 *   [Property Listings — Present property and rental listings as desktop cards](user-guide/skills/optional/productivity/productivity-property-listings.md)
 *   [Shop — Shop catalog search, checkout, order tracking, returns](user-guide/skills/optional/productivity/productivity-shop.md)
-*   [Shopify — Query Shopify Admin/Storefront GraphQL APIs via curl](user-guide/skills/optional/productivity/productivity-shopify.md)
 *   [Siyuan — Query and edit a SiYuan knowledge base via its API](user-guide/skills/optional/productivity/productivity-siyuan.md)
 *   [Telephony — Provision Twilio numbers, SMS/MMS, and AI outbound calls](user-guide/skills/optional/productivity/productivity-telephony.md)
 
@@ -536,7 +531,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Darwinian Evolver — Evolve prompts/regex/SQL/code with Imbue's evolution loop](user-guide/skills/optional/research/research-darwinian-evolver.md)
 *   [Domain Intel — Passive recon of subdomains, SSL certs, WHOIS, and DNS](user-guide/skills/optional/research/research-domain-intel.md)
 *   [Drug Discovery — Drug discovery: ChEMBL search, drug-likeness, interactions](user-guide/skills/optional/research/research-drug-discovery.md)
-*   [Duckduckgo Search — Free keyless web, news, and image search via ddgs](user-guide/skills/optional/research/research-duckduckgo-search.md)
 *   [Gitnexus Explorer — Serve an interactive codebase knowledge graph web UI](user-guide/skills/optional/research/research-gitnexus-explorer.md)
 *   [Llm Wiki — Karpathy's LLM Wiki: build/query interlinked markdown KB](user-guide/skills/optional/research/research-llm-wiki.md)
 *   [Osint Investigation — Follow the money via public records and sanctions data](user-guide/skills/optional/research/research-osint-investigation.md)
@@ -545,7 +539,6 @@ This complete index is generated deterministically from the mirrored official do
 *   [Research Paper Writing — Write ML papers for NeurIPS/ICML/ICLR: design→submit](user-guide/skills/optional/research/research-research-paper-writing.md)
 *   [Rss Feeds — Read RSS, Atom, JSON feeds; discover feeds behind a page](user-guide/skills/optional/research/research-rss-feeds.md)
 *   [Scrapling — Scrape sites with stealth browsing and Cloudflare bypass](user-guide/skills/optional/research/research-scrapling.md)
-*   [Searxng Search — Free keyless meta-search aggregating 70+ engines](user-guide/skills/optional/research/research-searxng-search.md)
 
 ## User Guide / Skills / Optional / Security
 

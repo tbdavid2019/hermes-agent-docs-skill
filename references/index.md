@@ -83,6 +83,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Installation](getting-started/installation.md)
 *   [Learning Path](getting-started/learning-path.md)
 *   [Nix & NixOS Setup](getting-started/nix-setup.md)
+*   [Official Domains & Phishing Safety](getting-started/official-domains.md)
 *   [Platform Support](getting-started/platform-support.md)
 *   [Hermes Agent Quickstart](getting-started/quickstart.md)
 *   [Android / Termux](getting-started/termux.md)

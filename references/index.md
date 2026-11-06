@@ -77,6 +77,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Application declarations](developer-guide/plugins/application-declarations.md)
 *   [Submitting to the Plugin Catalog](developer-guide/plugins/catalog-submission.md)
 *   [Build a Hermes Plugin](developer-guide/plugins/index.md)
+*   [Public plugin API](developer-guide/plugins/public-api.md)
 
 ## Getting Started
 

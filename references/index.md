@@ -579,7 +579,3 @@ This complete index is generated deterministically from the mirrored official do
 *   [Page Agent — Embed an in-page natural-language GUI copilot in web apps](user-guide/skills/optional/web-development/web-development-page-agent.md)
 *   [Publish Site — Versioned site deploys to GitHub/Cloudflare/Netlify Pages](user-guide/skills/optional/web-development/web-development-publish-site.md)
 *   [Scrollcraft — Premium scroll-driven landing pages; scroll = timeline](user-guide/skills/optional/web-development/web-development-scrollcraft.md)
-
-## User Guide / Skills / Optional / Yuanbao
-
-*   [Yuanbao — Yuanbao (元宝) groups: @mention users, query info/members](user-guide/skills/optional/yuanbao/yuanbao-yuanbao.md)

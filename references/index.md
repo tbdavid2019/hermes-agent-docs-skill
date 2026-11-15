@@ -41,6 +41,7 @@ This complete index is generated deterministically from the mirrored official do
 *   [Gateway local sessions](developer-guide/gateway-local-sessions.md)
 *   [Gateway Monitoring](developer-guide/gateway-monitoring.md)
 *   [Gateway Session Lifecycle](developer-guide/gateway-session-lifecycle.md)
+*   [Gateway over SSH: client contract](developer-guide/gateway-ssh-clients.md)
 *   [Hosted rooms across local profile owners](developer-guide/hosted-profile-owners.md)
 *   [Image Generation Provider Plugins](developer-guide/image-gen-provider-plugin.md)
 *   [macOS bundle updates](developer-guide/macos-bundle-updates.md)

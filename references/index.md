@@ -155,6 +155,7 @@ This complete index is generated deterministically from the mirrored official do
 
 ## User Guide
 
+*   [Backup & Transfer](user-guide/backup-and-transfer.md)
 *   [Bot Mode](user-guide/bot-mode.md)
 *   [Checkpoints and /rollback](user-guide/checkpoints-and-rollback.md)
 *   [CLI Interface](user-guide/cli.md)

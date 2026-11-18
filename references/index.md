@@ -133,6 +133,7 @@ This complete index is generated deterministically from the mirrored official do
 
 *   [Buzz Integration](integrations/buzz.md)
 *   [Integrations](integrations/index.md)
+*   [NeMo Relay](integrations/nemo-relay.md)
 *   [Nous Portal](integrations/nous-portal.md)
 *   [LLM and Model Providers](integrations/providers.md)
 

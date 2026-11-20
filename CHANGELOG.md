@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0
+
+- Added an npm CLI to install and explicitly refresh the validated daily GitHub snapshot.
+- Added tag-based npm publishing for installer changes.
+- Routed explicit lookups and common tasks directly to relevant local sections, with the catalog for broader questions.
+
 ## 2026-07-29
 
 ### Breaking

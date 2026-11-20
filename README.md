@@ -18,8 +18,7 @@ time in `references/SOURCE.md`.
 - Validates required documents, index completeness, source metadata, skill
   naming, symlinks, and minimum document count.
 - Replaces the existing mirror only after a new copy passes preflight checks.
-- Provides tested install/update behavior that refuses to overwrite non-Git
-  directories.
+- Validates npm and Git installations and protects existing installations managed by another method.
 - Gives LLMs progressive-disclosure, citation, verification, and secret
   redaction rules.
 
@@ -36,7 +35,7 @@ NousResearch/hermes-agent / website/docs
                     ▼
  references/catalog.md + index.md + SOURCE.md
                     │
-                    │ Git checkout in an agent skills directory
+                    │ npm installer or Git checkout
                     ▼
               SKILL.md workflow
                     │
@@ -44,33 +43,24 @@ NousResearch/hermes-agent / website/docs
       documentation-grounded LLM support
 ```
 
-The GitHub repository updates daily. A local installation does not run a
-background updater: update the local checkout explicitly, or let the host
-agent do so only when you ask it to update this skill.
+GitHub updates the source snapshot daily. The skill uses local documents for
+ordinary questions. Run the original installer to refresh your local snapshot.
 
 ## AI Agent Installation Contract
 
 When a user gives an AI agent this repository URL and asks it to install or
 update the skill, the agent must follow this contract:
 
-1. Resolve the host runtime's skills directory. The final directory name must
-   be `hermes-agent-docs-skill`.
-2. Install as a Git checkout. If the target does not exist, clone this
-   repository into that exact directory. If a non-Git directory already exists,
-   stop and report the conflict instead of overwriting it.
-3. **Run `scripts/install-skill.sh` without `--check`. This is mandatory.**
-   For an existing checkout, the installer executes
-   `git pull --ff-only origin <current-branch>` and then validates the complete
-   installation.
-4. Read `SKILL.md`.
-5. Confirm that `.git`, `references/SOURCE.md`, `references/catalog.md`, and
-   `references/index.md` exist.
-6. Read `references/SOURCE.md` and report the final installation directory,
-   upstream source commit, and sync time.
-
-Do not claim installation or update success if the pull or validation fails.
-Do not run `sync-docs.sh` or `generate_index.py` during installation; those are
-maintainer-side mirror scripts.
+1. Identify the host and whether the user wants project or global scope. Use
+   `hermes-agent-docs-skill` as the final directory name.
+2. For a new npm installation, run `npx -y hermes-agent-docs-skill@latest` with
+   the matching options. For an existing installation, use its original update method.
+3. For a Git checkout, run `scripts/install-skill.sh <skill-directory>` without
+   `--check`. It clones or fast-forwards the checkout, then validates it.
+4. Read the installed `SKILL.md` and verify `references/SOURCE.md`,
+   `references/catalog.md`, and `references/index.md`.
+5. Report the installation directory, skill commit, upstream commit, and sync
+   time. Report any failure. Reserve sync and index generation tools for maintainers.
 
 ### Copy-Paste Prompt For An AI Agent
 
@@ -80,16 +70,8 @@ Install the following repository as the Hermes Agent documentation skill:
 https://github.com/tbdavid2019/hermes-agent-docs-skill
 
 Follow README.md's "AI Agent Installation Contract":
-1. Clone it into your skills directory using the final directory name
-   hermes-agent-docs-skill
-2. Run scripts/install-skill.sh without --check so the checkout performs
-   git pull --ff-only and repository validation
-3. Read SKILL.md
-4. Confirm references/SOURCE.md, references/catalog.md, and
-   references/index.md exist
-5. Report the installation directory, upstream source commit, and sync time
-
-Do not report success if Git pull or validation fails.
+Prefer npm for a new installation. If I already have the skill, keep its
+original update method. Report the final path and snapshot source information.
 ```
 
 ### Copy-Paste Usage Prompt
@@ -98,9 +80,8 @@ Do not report success if Git pull or validation fails.
 Use $hermes-agent-docs-skill and the locally mirrored official Hermes Agent
 documentation to answer my question.
 
-Before answering anything that depends on latest/current behavior, rerun the
-skill installer so it performs git pull --ff-only and validation. Report the
-source commit from references/SOURCE.md.
+If I ask for the newest snapshot, refresh using the method that installed the
+skill and report the source commit from references/SOURCE.md.
 
 Cite the local documentation paths you used, and clearly separate documented
 facts from your own inference.
@@ -108,11 +89,20 @@ facts from your own inference.
 
 ## Install
 
-The final directory name must be `hermes-agent-docs-skill`, matching the
-`name` in `SKILL.md`. Keep the installation as a Git checkout if you want it to
-receive updates.
+### npm installation
 
-### Codex
+With Node.js 22.20 or later and Git, run this from your project once the
+npm package is published.
+
+```bash
+npx -y hermes-agent-docs-skill@latest
+```
+
+By default, this installs for Codex at `.agents/skills/hermes-agent-docs-skill`.
+Use `--global` for your user directory or `--agent hermes-agent` to target Hermes Agent.
+Re-run the same command and options to refresh from GitHub `main`.
+
+### Git checkout in Codex
 
 ```bash
 git clone \
@@ -137,16 +127,14 @@ bash <skills-directory>/hermes-agent-docs-skill/scripts/install-skill.sh \
   <skills-directory>/hermes-agent-docs-skill
 ```
 
-Some managed skill installers copy files and discard `.git`. Such a copy can
-be read by the LLM, but it cannot be updated with this repository's installer.
-Use a Git checkout when freshness matters.
-
-The installer refuses to overwrite an existing non-Git directory. Back up or
-rename an old copied installation before installing the Git checkout.
+For other host-managed installs, use that host's update mechanism. If the
+chosen destination already contains a copy, use its original installer or
+choose another scope.
 
 ## Update Or Verify A Local Installation
 
-Update with fast-forward-only Git behavior, then validate the result:
+For an npm installation, repeat the original `npx` command. For a Git checkout,
+run the installer to fast-forward and validate:
 
 ```bash
 bash <skills-directory>/hermes-agent-docs-skill/scripts/install-skill.sh \
@@ -163,12 +151,9 @@ bash <skills-directory>/hermes-agent-docs-skill/scripts/install-skill.sh \
 The installer exits non-zero if Git update or repository validation fails. It
 does not report success after a failed pull.
 
-Before answering a request that explicitly depends on the latest/current
-Hermes behavior, rerun the installer. If the installer cannot run because of
-network, permission, or checkout problems, report the local source commit and
-sync time from `references/SOURCE.md` and state that freshness was not
-verified. For update-only environments where the installer cannot be invoked,
-the fallback is:
+If an explicitly requested update fails, report the local source commit and
+sync time from `references/SOURCE.md`. For a Git checkout where the installer
+cannot perform the pull, use this update and validation sequence:
 
 ```bash
 git -C <skills-directory>/hermes-agent-docs-skill \
@@ -182,11 +167,11 @@ bash <skills-directory>/hermes-agent-docs-skill/scripts/install-skill.sh \
 
 The workflow in `SKILL.md` tells the agent to:
 
-1. Refresh the Git checkout before claims about latest/current behavior, then
-   check the recorded source commit and sync time.
-2. Start with `references/catalog.md`.
-3. Search exact errors, commands, environment variables, or configuration keys
-   when the catalog is insufficient.
+1. Use the installed snapshot unless the user asks for an update. Check the
+   source commit and sync time when freshness affects the answer.
+2. Go directly to a known page or search exact errors, commands, environment
+   variables, and configuration keys. Use `references/catalog.md` for broad topics.
+3. Use `references/index.md` when a narrow lookup and the catalog are insufficient.
 4. Load only the smallest useful set of reference pages.
 5. Separate platform, installation, provider, gateway, and feature-specific
    failure branches.
@@ -208,6 +193,7 @@ Example prompts:
 ```text
 .
 ├── SKILL.md                         # Agent workflow and safety contract
+├── package.json                     # npm installer metadata
 ├── CHANGELOG.md                     # Maintainer-visible changes
 ├── references/
 │   ├── SOURCE.md                    # Exact upstream revision and sync time
@@ -215,12 +201,15 @@ Example prompts:
 │   ├── index.md                     # Complete .md/.mdx inventory
 │   └── ...                          # Mirrored official documentation
 ├── scripts/
+│   ├── install-npm.mjs              # Install or refresh a packaged snapshot
 │   ├── install-skill.sh             # Clone/update/check installation
 │   ├── sync-docs.sh                 # Safe upstream mirror
 │   ├── generate_index.py            # Catalog, index, source metadata
 │   └── validate_repository.py       # CI and installation quality gate
 ├── tests/                            # Unit and local Git integration tests
-└── .github/workflows/auto-sync.yml  # Daily sync workflow
+└── .github/workflows/
+    ├── auto-sync.yml                # Daily snapshot synchronization
+    └── publish-npm.yml              # Tag-based installer publishing
 ```
 
 ## Maintainer Workflow
@@ -239,6 +228,14 @@ git diff --check -- . ':!references'
 `sync-docs.sh` clones into a temporary checkout, rejects symlinks and incomplete
 mirrors, generates metadata/navigation, swaps directories only after preflight,
 and restores the previous mirror if final repository validation fails.
+
+### Release the npm installer
+
+Change the npm version and lockfile when the installer changes. For the first
+release, test the output of `npm pack`, then run `npm publish <tarball> --access public`.
+For later releases, configure npm Trusted Publishing for `publish-npm.yml`
+when the installer is ready, then push the matching `v<version>` tag. The first
+OIDC publish must complete within two days of configuring trust.
 
 ## Security Boundary
 
